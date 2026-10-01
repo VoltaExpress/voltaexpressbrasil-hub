@@ -1,4 +1,4 @@
-# 🚚 Volta Express Brasil — Brand, Media & Digital Assets Hub
+# 🚚 Volta Express Brasil — Brand, Media e Digital Assets Hub
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-v6.0_Digital-0052CC?style=for-the-badge&logo=github" alt="Version 6.0">
