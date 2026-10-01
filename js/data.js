@@ -1,5 +1,7 @@
 /**
  * Volta Express Brasil - Catálogo Central de Ativos Digitais
+ * B0 (set/2026): documentos internos, dados de terceiros e links administrativos saíram do catálogo público.
+ * Eles ficam no repositório privado (ver docs/B0-PROTECAO-DE-DADOS.md).
  */
 export const fileData = [
     // ==========================================
@@ -66,15 +68,6 @@ export const fileData = [
                 ]
             },
             {
-                name: "live",
-                label: "🎙️ Registros de Reuniões",
-                type: "folder",
-                path: "assets/voltaexpressbrasil/live",
-                children: [
-                    { name: "Screenshot 2025-04-14 191851.png", label: "Registro de Alinhamento Estratégico", type: "file", ext: "img", path: "assets/voltaexpressbrasil/live/Screenshot 2025-04-14 191851.png", insight: "Registro visual de alinhamento e reunião estratégica online da equipe." }
-                ]
-            },
-            {
                 name: "midias",
                 label: "🎥 Vídeos e Demonstrações",
                 type: "folder",
@@ -93,36 +86,6 @@ export const fileData = [
                             { name: "volta-express-v4.2.mp4", label: "Apresentação da Versão 4.2", type: "file", ext: "video", path: "assets/voltaexpressbrasil/midias/videos/volta-express-v4.2.mp4", insight: "Vídeo de apresentação e navegabilidade da versão 4.2." }
                         ]
                     }
-                ]
-            },
-            {
-                name: "qa-infos",
-                label: "🧪 Evidências de Testes de UI",
-                type: "folder",
-                path: "assets/voltaexpressbrasil/qa-infos",
-                children: [
-                    { name: "legenda1-cargas.jpeg", label: "Legenda do Mapa de Cargas", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/legenda1-cargas.jpeg", insight: "Legenda e especificação das marcas visuais do mapa de cargas." },
-                    { name: "legenda2-motoristas.jpeg", label: "Legenda do Mapa de Motoristas", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/legenda2-motoristas.jpeg", insight: "Legenda e especificação das marcas visuais do mapa de motoristas." },
-                    { name: "legenda3.jpg", label: "Instrução do Mapa Interativo", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/legenda3.jpg", insight: "Elemento visual de legenda para instrução de uso no mapa." },
-                    { name: "volta-express-capa.png", label: "Capa Oficial de Materiais", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/volta-express-capa.png", insight: "Imagem de capa oficial para materiais do sistema." },
-                    { name: "Screenshot 2025-04-14 163923.png", label: "Auditoria QA UI - 14/04/25 (1)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-04-14 163923.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-04-14 194413.png", label: "Auditoria QA UI - 14/04/25 (2)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-04-14 194413.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-04-14 194930.png", label: "Auditoria QA UI - 14/04/25 (3)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-04-14 194930.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-05-08 160947.png", label: "Auditoria QA UI - 08/05/25", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-05-08 160947.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-05-13 100011.png", label: "Auditoria QA UI - 13/05/25 (1)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-05-13 100011.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-05-13 192358.png", label: "Auditoria QA UI - 13/05/25 (2)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-05-13 192358.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-05-13 192505.png", label: "Auditoria QA UI - 13/05/25 (3)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-05-13 192505.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-05-13 193145.png", label: "Auditoria QA UI - 13/05/25 (4)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-05-13 193145.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-05-13 193211.png", label: "Auditoria QA UI - 13/05/25 (5)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-05-13 193211.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-07-08 011647.png", label: "Auditoria QA UI - 08/07/25 (1)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-07-08 011647.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-07-08 011710.png", label: "Auditoria QA UI - 08/07/25 (2)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-07-08 011710.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-07-08 011735.png", label: "Auditoria QA UI - 08/07/25 (3)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-07-08 011735.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-07-08 162533.png", label: "Auditoria QA UI - 08/07/25 (4)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-07-08 162533.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-07-08 162720.png", label: "Auditoria QA UI - 08/07/25 (5)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-07-08 162720.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-08-07 010752.png", label: "Auditoria QA UI - 07/08/25", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-08-07 010752.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-09-03 171930.png", label: "Auditoria QA UI - 03/09/25", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-09-03 171930.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-09-04 105037.png", label: "Auditoria QA UI - 04/09/25 (1)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-09-04 105037.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." },
-                    { name: "Screenshot 2025-09-04 120423.png", label: "Auditoria QA UI - 04/09/25 (2)", type: "file", ext: "img", path: "assets/voltaexpressbrasil/qa-infos/Screenshot 2025-09-04 120423.png", insight: "Registro visual de auditoria de qualidade, navegação e testes de interface." }
                 ]
             },
             {
@@ -478,28 +441,6 @@ export const fileData = [
         path: "assets/arquivos",
         children: [
             {
-                name: "banco-dados",
-                label: "🗄️ Esquema de Banco de Dados",
-                type: "folder",
-                path: "assets/arquivos/banco-dados",
-                children: [
-                    { name: "Documentação Swagger VoltaExpress V01.pdf", label: "Especificação OpenAPI / Swagger v1", type: "file", ext: "pdf", path: "assets/arquivos/banco-dados/Documentação Swagger VoltaExpress V01.pdf", insight: "Especificação técnica OpenAPI/Swagger das rotas, schemas de dados e autenticação da plataforma v1." },
-                    { name: "Documentação VoltaExpress V01.pdf", label: "Documento de Arquitetura Conceitual v1", type: "file", ext: "pdf", path: "assets/arquivos/banco-dados/Documentação VoltaExpress V01.pdf", insight: "Documento conceitual e mapa funcional da arquitetura da plataforma v1." }
-                ]
-            },
-            {
-                name: "forms",
-                label: "📝 Respostas de Formulários (Excel)",
-                type: "folder",
-                path: "assets/arquivos/forms",
-                children: [
-                    { name: "Anuncie sua cargacom o Volta Express (1-16).xlsx", label: "Respostas - Anuncie sua Carga", type: "file", ext: "xlsx", path: "assets/arquivos/forms/Anuncie sua cargacom o Volta Express (1-16).xlsx", insight: "Mapeamento das demandas capturadas dos embarcadores para calibração dos formulários nativos do sistema." },
-                    { name: "Complete sua viagem com o Volta Express (1-26).xlsx", label: "Respostas - Complete sua Viagem", type: "file", ext: "xlsx", path: "assets/arquivos/forms/Complete sua viagem com o Volta Express (1-26).xlsx", insight: "Base de amostragem de dados de caminhoneiros para validação do algoritmo de frete de retorno." },
-                    { name: "Junte-se a todos nósno Volta Express (1-2).xlsx", label: "Respostas - Adesão Geral ao Ecossistema", type: "file", ext: "xlsx", path: "assets/arquivos/forms/Junte-se a todos nósno Volta Express (1-2).xlsx", insight: "Base geral de adesão e cadastros preliminares de usuários no ecossistema." },
-                    { name: "Sou uma transportadora e busco fretes.xlsx", label: "Respostas - Prospecção de Frotistas", type: "file", ext: "xlsx", path: "assets/arquivos/forms/Sou uma transportadora e busco fretes.xlsx", insight: "Respostas do formulário de prospecção para frotistas e empresas de transporte rodoviário." }
-                ]
-            },
-            {
                 name: "json-dados",
                 label: "🧩 Mocks e Dados JSON",
                 type: "folder",
@@ -520,34 +461,6 @@ export const fileData = [
                 ]
             },
             {
-                name: "parceiros",
-                label: "🤝 Acordos e Parceiros",
-                type: "folder",
-                path: "assets/arquivos/parceiros",
-                children: [
-                    { name: "Reuniao - Tera Transporte - 25 de julho de 2024-pt-BR.docx", label: "Ata de Reunião Tera Transporte", type: "file", ext: "doc", path: "assets/arquivos/parceiros/Reuniao - Tera Transporte - 25 de julho de 2024-pt-BR.docx", insight: "Ata de reunião e alinhamento comercial com a parceira Tera Transporte." }
-                ]
-            },
-            {
-                name: "pitch",
-                label: "📊 Pitch Decks e Apresentações",
-                type: "folder",
-                path: "assets/arquivos/pitch",
-                children: [
-                    { name: "pitch-v1-volta-express.pdf", label: "Pitch Deck Executivo v1", type: "file", ext: "pdf", path: "assets/arquivos/pitch/pitch-v1-volta-express.pdf", insight: "Apresentação executiva de Pitch Deck original da startup." },
-                    { name: "VEB - 20-02-2026.docx", label: "Roteiro Institucional Atualizado", type: "file", ext: "doc", path: "assets/arquivos/pitch/VEB - 20-02-2026.docx", insight: "Roteiro e alinhamento institucional atualizado." }
-                ]
-            },
-            {
-                name: "prototipo",
-                label: "🎨 Protótipos e Prompts",
-                type: "folder",
-                path: "assets/arquivos/prototipo",
-                children: [
-                    { name: "VOLTA EXPRESS_Lovable_Parte 2.docx", label: "Especificações de Protótipo Lovable", type: "file", ext: "doc", path: "assets/arquivos/prototipo/VOLTA EXPRESS_Lovable_Parte 2.docx", insight: "Especificações e prompts de prototipagem gerados na plataforma Lovable." }
-                ]
-            },
-            {
                 name: "qa-v5",
                 label: "🔄 Fluxos Funcionais Versão 5",
                 type: "folder",
@@ -555,27 +468,6 @@ export const fileData = [
                 children: [
                     { name: "v5-fluxo.png", label: "Fluxograma de Jornada do Usuário v5", type: "file", ext: "img", path: "assets/arquivos/qa-v5/v5-fluxo.png", insight: "Diagrama funcional da jornada de usuários validada na versão 5." },
                     { name: "v5-funcionalidades.png", label: "Matriz de Funcionalidades v5", type: "file", ext: "img", path: "assets/arquivos/qa-v5/v5-funcionalidades.png", insight: "Mapa visual da matriz de funcionalidades da versão 5." }
-                ]
-            },
-            {
-                name: "supabase",
-                label: "⚡ Infraestrutura Supabase",
-                type: "folder",
-                path: "assets/arquivos/supabase",
-                children: [
-                    { name: "supabase1.jpg", label: "Esquema de Tabelas no Supabase", type: "file", ext: "img", path: "assets/arquivos/supabase/supabase1.jpg", insight: "Registro de configuração e esquemas de tabelas no console Supabase." },
-                    { name: "supabase2.jpg", label: "Autenticação e Regras RLS", type: "file", ext: "img", path: "assets/arquivos/supabase/supabase2.jpg", insight: "Configurações de autenticação e provedores RLS no Supabase." },
-                    { name: "supabase3.jpg", label: "Painel de Logs e Requisições API", type: "file", ext: "img", path: "assets/arquivos/supabase/supabase3.jpg", insight: "Painel de acompanhamento de logs e requisições do Supabase." },
-                    { name: "supabase4.jpg", label: "Variáveis de Ambiente e Callbacks", type: "file", ext: "img", path: "assets/arquivos/supabase/supabase4.jpg", insight: "Ajustes das URLs de callback e variáveis de ambiente do Supabase." }
-                ]
-            },
-            {
-                name: "vaga-dev",
-                label: "💻 Desafios Técnicos de Dev",
-                type: "folder",
-                path: "assets/arquivos/vaga-dev",
-                children: [
-                    { name: "volta_express-desafio_freelancer.pdf", label: "Desafio Técnico para Dev Freelancer", type: "file", ext: "pdf", path: "assets/arquivos/vaga-dev/volta_express-desafio_freelancer.pdf", insight: "Documento de requisitos e desafio técnico para seleção de desenvolvedores freelancers." }
                 ]
             },
             // --- ITENS VIRTUAIS INTEGRADOS DIRETAMENTE EM ARQUIVOS ---
@@ -595,112 +487,6 @@ export const fileData = [
                     { name: "TikTok", label: "TikTok Official Volta Express", type: "file", ext: "social", icon: "fa-tiktok", color: "text-slate-900", url: "https://www.tiktok.com/@voltaexpressbrasil", insight: "Conta oficial para vídeos curtos e conteúdos dinâmicos de bastidores." }
                 ]
             },
-            {
-                name: "pesquisa-cliente-forms",
-                label: "📋 Formulários e Pesquisas",
-                type: "folder",
-                children: [
-                    { name: "Complete sua viagem", label: "Formulário - Complete sua Viagem", type: "link", category: "Produção", url: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkW...", insight: "Formulário de captação para viabilização e rotas de viagens." },
-                    { name: "Complete sua viagem.xlsx - RESPOSTAS", label: "Planilha Respostas - Complete sua Viagem", type: "link", category: "Respostas", url: "https://onedrive.live.com/edit?id=349D41F7A84881F3!s3892e50...", insight: "Planilha consolidada de respostas recebidas do formulário Complete sua Viagem." },
-                    { name: "Anúncie sua Carga", label: "Formulário - Anuncie sua Carga", type: "link", category: "Produção", url: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkW...", insight: "Formulário de captação de ofertas de cargas de embarcadores." },
-                    { name: "Anúncie sua Carga 1.xlsx - RESPOSTAS", label: "Planilha Respostas - Anuncie sua Carga", type: "link", category: "Respostas", url: "https://onedrive.live.com/edit?id=349D41F7A84881F3!sbab73a7...", insight: "Base de dados das ofertas de cargas anunciadas." },
-                    { name: "Cadastro", label: "Formulário - Cadastro Geral", type: "link", category: "Produção", url: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkW...", insight: "Formulário geral de cadastro da plataforma." },
-                    { name: "Cadastro.xlsx - RESPOSTAS", label: "Planilha Respostas - Cadastro Geral", type: "link", category: "Respostas", url: "https://onedrive.live.com/edit?id=349D41F7A84881F3!s57332ee...", insight: "Base com todos os cadastros realizados." },
-                    { name: "Microsoft Forms - Volta Express", label: "MS Forms - Design Institucional", type: "link", category: "Edição", url: "https://forms.office.com/Pages/DesignPageV2.aspx?origin=shel...", insight: "Painel de design do formulário institucional da Volta Express." },
-                    { name: "Anúnciar disponibilidade - Volta Express", label: "MS Forms - Disponibilidade de Frete", type: "link", category: "Edição", url: "https://forms.office.com/Pages/DesignPageV2.aspx?prevorigin...", insight: "Painel de edição do formulário de disponibilidade de frete." },
-                    { name: "Microsoft Forms - Douglas", label: "MS Forms - Ambiente de Rascunho", type: "link", category: "Edição", url: "https://forms.office.com/Pages/DesignPageV2.aspx?m2=1&anal...", insight: "Ambiente de testes e rascunhos no Microsoft Forms." },
-                    { name: "Junte-se a todos nós - CADASTRO - Produção", label: "Formulário Onboarding - Produção", type: "link", category: "Produção", url: "https://forms.office.com/Pages/ResponsePage.aspx?id=fXmzFx...", insight: "Formulário público de onboarding e cadastro em produção." },
-                    { name: "Junte-se a todos nós - CADASTRO - Produção - edição", label: "Edição Forms Onboarding", type: "link", category: "Edição", url: "https://forms.office.com/Pages/DesignPageV2.aspx?origin=Sha...", insight: "Painel de edição da pesquisa de cadastro." },
-                    { name: "Anuncie sua Carga - ANUNCIAR - Produção", label: "Formulário Anúncio de Carga - Produção", type: "link", category: "Produção", url: "https://forms.office.com/Pages/ResponsePage.aspx?id=fXmzFx...", insight: "Formulário final de anúncios de cargas em produção." },
-                    { name: "Anúncie sua Carga - ANUNCIAR - Produção - edição", label: "Edição Forms Anúncio de Carga", type: "link", category: "Edição", url: "https://forms.office.com/Pages/DesignPageV2.aspx?origin=Sha...", insight: "Painel de gerenciamento do formulário de cargas." },
-                    { name: "Anuncie sua carga - ANUNCIAR - v1 - edição", label: "Edição Forms Anúncio de Carga v1", type: "link", category: "Edição", url: "https://forms.office.com/Pages/DesignPageV2.aspx?origin=Sha...", insight: "Versão preliminar (v1) do formulário de cargas." },
-                    { name: "Complete sua viagem - TRANSPORTAR - Produção", label: "Formulário Transportador - Produção", type: "link", category: "Produção", url: "https://forms.office.com/Pages/ResponsePage.aspx?id=fXmzFx...", insight: "Formulário público focado em transportadores/caminhoneiros em produção." },
-                    { name: "Complete sua viagem - TRANSPORTAR - Produção - edição", label: "Edição Forms Transportador", type: "link", category: "Edição", url: "https://forms.office.com/Pages/DesignPageV2.aspx?origin=Neo...", insight: "Edição e ajustes da pesquisa de transportadores." },
-                    { name: "Complete sua viagem - TRANSPORTAR - v1", label: "Formulário Transportador - v1", type: "link", category: "Produção", url: "https://forms.office.com/pages/responsepage.aspx?id=fXmzFxZ...", insight: "Versão 1 da pesquisa de viagem para transportadores." },
-                    { name: "Complete sua viagem - TRANSPORTAR - v1 - edição", label: "Edição Forms Transportador v1", type: "link", category: "Edição", url: "https://forms.office.com/Pages/DesignPageV2.aspx?origin=Sha...", insight: "Edição da versão 1 do formulário de transporte." },
-                    { name: "Encontre caminhoneiros - TRANSPORTADORA - Produção", label: "Formulário Transportadora - Produção", type: "link", category: "Produção", url: "https://forms.office.com/Pages/ResponsePage.aspx?id=fXmzFx...", insight: "Formulário de captação para transportadoras parceiras." },
-                    { name: "Encontre caminhoneiros - TRANSPORTADORA - Produção - edição", label: "Edição Forms Transportadora", type: "link", category: "Edição", url: "https://forms.office.com/Pages/DesignPageV2.aspx?prevorigin...", insight: "Edição do formulário de transportadoras." },
-                    { name: "Encontre caminhoneiros - TRANSPORTADORA - v1", label: "Formulário Transportadora - v1", type: "link", category: "Produção", url: "https://forms.office.com/pages/responsepage.aspx?id=fXmzFxZ...", insight: "Primeira versão da captação de transportadoras." },
-                    { name: "Encontre caminhoneiros - TRANSPORTADORA - v1 - edição", label: "Edição Forms Transportadora v1", type: "link", category: "Edição", url: "https://forms.office.com/Pages/DesignPageV2.aspx?origin=Sha...", insight: "Painel de edição da v1 de transportadoras." },
-                    { name: "Entrevista com Caminhoneiro", label: "Pesquisa Qualitativa com Caminhoneiros", type: "link", category: "Produção", url: "https://forms.office.com/pages/responsepage.aspx?id=fXmzFxZ...", insight: "Formulário de pesquisa qualitativa e entrevistas com motoristas de frete." }
-                ]
-            },
-            {
-                name: "benchmarking-produto",
-                label: "💡 Benchmarking SaaS Logística",
-                type: "folder",
-                path: "benchmarking-produto",
-                children: [
-                    {
-                        name: "Especificação do Modelo de Negócios - Plataforma de Frete SaaS",
-                        label: "Especificação do Modelo de Negócios SaaS",
-                        type: "file",
-                        ext: "doc",
-                        category: "Documento de Produto",
-                        url: "https://docs.google.com/document/d/1Ed-TkNVTAiny1Xiv3xlV9W00PTxt2zCB0k7mBfadyoc/edit?tab=t.0",
-                        insight: "Mapeamento detalhado de regras de negócio, modelo de assinatura, perfis (Embarcador, Caminhoneiro e Admin) e fluxo de fretes."
-                    },
-                    {
-                        name: "Análise de Referência do Ecossistema (Vídeo)",
-                        label: "Análise de Arquitetura Logística em Vídeo",
-                        type: "file",
-                        ext: "video",
-                        url: "https://www.youtube.com/embed/GiCqtnedveg",
-                        category: "Benchmarking Vídeo",
-                        insight: "Vídeo de referência sobre arquitetura de produto e solução de logística."
-                    }
-                ]
-            },
-            {
-                name: "sistemas",
-                label: "⚙️ Infraestrutura e Servidores",
-                type: "folder",
-                path: "sistemas",
-                children: [
-                    {
-                        name: "netlify",
-                        label: "⚡ Painéis e Docs Netlify",
-                        type: "folder",
-                        path: "sistemas/netlify",
-                        children: [
-                            { name: "Deploys | voltaexpressveb | Netlify", label: "Painel de Deploys e Builds Netlify", type: "link", category: "App / Painel", url: "https://app.netlify.com/projects/voltaexpressveb/deploys", insight: "Painel de acompanhamento de deploys e builds do projeto no Netlify." },
-                            { name: "Get started with domains | Netlify Docs", label: "Guia Netlify - Configuração de Domínios", type: "link", category: "Documentação", url: "https://docs.netlify.com/manage/domains/get-started-with-domains/", insight: "Guia oficial de configuração e gerenciamento de domínios." },
-                            { name: "Netlify Docs - hospedar com domínio oficial", label: "Guia Netlify - Domínio Customizado", type: "link", category: "Documentação", url: "https://docs.netlify.com/manage/domains/get-started-with-domains/", insight: "Documentação de apoio para vincular o domínio customizado do projeto." },
-                            { name: "HTTPS (SSL) | Netlify Docs", label: "Guia Netlify - Certificados HTTPS/SSL", type: "link", category: "Documentação", url: "https://docs.netlify.com/manage/domains/secure-domains-with-https/", insight: "Configurações e certificados de segurança HTTPS/SSL para os domínios." },
-                            { name: "Configure an automatic subdomain for deploys", label: "Guia Netlify - Subdomínios de Preview", type: "link", category: "Documentação", url: "https://docs.netlify.com/manage/domains/configure-domains/configure-automatic-subdomains/", insight: "Guia para configuração de subdomínios automáticos de deploy/preview." },
-                            { name: "DNS | voltaexpress | Netlify", label: "Painel de Zona e Registros DNS", type: "link", category: "App / Painel", url: "https://app.netlify.com/teams/voltaexpress/dns/voltaexpress.com.br", insight: "Painel de gestão de zonas e registros de DNS da Volta Express." },
-                            { name: "Billing overview | Netlify Docs", label: "Guia Netlify - Planos e Faturamento", type: "link", category: "Documentação", url: "https://docs.netlify.com/manage/accounts-and-billing/billing/overview/", insight: "Visão geral sobre faturamento, planos e limites de uso da conta." },
-                            { name: "Roles and permissions | Netlify Docs", label: "Guia Netlify - Permissões de Equipe", type: "link", category: "Documentação", url: "https://docs.netlify.com/manage/accounts-and-billing/team-members-and-roles/", insight: "Documentação de controle de acessos e permissões do time no Netlify." },
-                            { name: "Create deploys | Netlify Docs", label: "Guia Netlify - Criação de Deploys", type: "link", category: "Documentação", url: "https://docs.netlify.com/deploy/create-deploys/", insight: "Guia prático sobre formas de criação e gatilhos de deploy." },
-                            { name: "Build configuration overview | Netlify Docs", label: "Guia Netlify - Arquivos netlify.toml", type: "link", category: "Documentação", url: "https://docs.netlify.com/build/configure-builds/overview/", insight: "Especificações para arquivos netlify.toml e configurações de build." }
-                        ]
-                    },
-                    {
-                        name: "godaddy",
-                        label: "🌐 Hospedagem e Construtor GoDaddy",
-                        type: "folder",
-                        path: "sistemas/godaddy",
-                        children: [
-                            {
-                                name: "Criador de Sites | GoDaddy",
-                                label: "GoDaddy - Criador e Construtor de Sites",
-                                type: "link",
-                                category: "Ferramenta / Builder",
-                                url: "https://www.godaddy.com/pt-br/sites/criador-de-sites",
-                                insight: "Plataforma e construtor de páginas/sites da GoDaddy."
-                            },
-                            {
-                                name: "Serviço de Hospedagem | GoDaddy",
-                                label: "GoDaddy - Painel de Hospedagem de Servidores",
-                                type: "link",
-                                category: "Hospedagem / Servidor",
-                                url: "https://www.godaddy.com/pt-br/servico-hospedagem?msockid=0a175630ed6164880d784189ece36523",
-                                insight: "Painel e especificações de serviços de hospedagem GoDaddy."
-                            }
-                        ]
-                    }
-                ]
-            }
         ]
     }
 ];
