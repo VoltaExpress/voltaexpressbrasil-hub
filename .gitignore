@@ -1,0 +1,15 @@
+# B0 — conteúdo interno: fica no disco e no repositório privado, nunca no repositório público
+assets/arquivos/banco-dados/
+assets/arquivos/forms/
+assets/arquivos/parceiros/
+assets/arquivos/pitch/
+assets/arquivos/prototipo/
+assets/arquivos/supabase/
+assets/arquivos/vaga-dev/
+assets/voltaexpressbrasil/live/
+assets/voltaexpressbrasil/qa-infos/
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+.vscode/

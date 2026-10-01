@@ -140,6 +140,7 @@ Adotamos um fluxo rigoroso de ramos no Git para proteção do ambiente de produ�
 
 - [x] **Arquitetura Modular ES6:** Refatoração do script monolítico para a estrutura limpa em `js/` (`config`, `data`, `renderers`, `ui`, `main`).
 - [x] **Mapeamento do Repositório:** Catalogação visual e indexação de 100% dos 250 ativos de negócio em 38 diretórios.
+- [x] **B0 — Proteção de dados:** documentos internos e dados de terceiros retirados do catálogo público.
 - [ ] **Padronização de Nomenclatura:** Refatorar nomes de arquivos legados que contenham espaços ou parênteses para `kebab-case`.
 - [ ] **Otimização de Mídias:** Compactar imagens pesadas em `assets/` convertendo para `.webp`.
 - [ ] **Integração de Raw CDN Linker:** Adicionar na UI do Dashboard um botão de "Copiar URL Raw" para facilitar o uso dos ativos pelos devs no frontend.
@@ -176,21 +177,9 @@ Centraliza a presença oficial da **Volta Express Brasil** nas redes e canais de
 * 💻 **Engenharia:** Repositórios Oficiais no GitHub (`github.com/VoltaExpress`).
 * 📣 **Mídias Digitais:** Instagram (`@voltaexpressbrasil`), YouTube (`@VoltaExpress`), TikTok e Páginas de Interação e Personas no Facebook.
 
-### 2. 📋 Pesquisa de Cliente via Form (`pesquisa-cliente-forms`)
-Catálogo com **23 formulários e bases de dados** no Microsoft Forms e OneDrive, categorizados visualmente por badges coloridas:
-* 🟢 **Ambiente de Produção (Público):** Formulários ativos de captação de rotas, ofertas de carga, cadastros e entrevistas qualitativas com caminhoneiros.
-* 🟡 **Painel de Edição/Design:** Links de gerenciamento e rascunhos de questionários.
-* 📊 **Bases de Respostas (.xlsx):** Planilhas consolidadas no OneDrive para análise contínua do time de Produto e Growth.
-
-### 3. 💡 Benchmarking de Produto (`benchmarking-produto`)
-Análise comparativa e arquitetura de negócios do ecossistema SaaS de logística:
-* 📑 **Especificação Técnica de Requisitos:** Documento formatado em layout executivo cobrindo Objetivos do Produto, Modelo de Monetização por Assinatura, Perfis de Acesso (Embarcador, Motorista e Admin), Fluxos de Cadastro com OTP/Validação e Regras de Negócio de Anúncios. Inclui atalho direto para o [Google Docs Mestre Original](https://docs.google.com/document/d/1Ed-TkNVTAiny1Xiv3xlV9W00PTxt2zCB0k7mBfadyoc/edit?tab=t.0).
-* 🎥 **Análise do Ecossistema em Vídeo:** Player embutido nativamente no Hub para assistir ao vídeo de referência do ecossistema sem sair da aplicação.
-
-### 4. ⚙️ Infraestrutura & Sistemas (`sistemas`)
-Subpastas organizadas para gestão dos provedores de hospedagem, zonas de DNS e construtores:
-* ⚡ **Netlify (`sistemas/netlify`):** Atalhos para o painel de *Deploys/Builds*, Gerenciamento de Registros de DNS (`voltaexpress.com.br`), Certificados SSL e acervo de documentações técnicas oficiais (*netlify.toml*, papéis e permissões).
-* 🌐 **GoDaddy (`sistemas/godaddy`):** Links para o Construtor de Sites e especificações dos servidores de Hospedagem.
+### 2. 🔒 Conteúdo interno (movido para o hub privado — B0, set/2026)
+Pesquisas com clientes (formulários e respostas), benchmarking e requisitos de produto, atas com parceiros, pitch decks, prints de infraestrutura (Supabase, Netlify, GoDaddy), evidências de QA e desafios de contratação **não ficam mais neste repositório público**.
+Motivo: proteção de dados pessoais de terceiros (LGPD) e de informações comerciais. O procedimento está em [docs/B0-PROTECAO-DE-DADOS.md](docs/B0-PROTECAO-DE-DADOS.md).
 
 ---
 

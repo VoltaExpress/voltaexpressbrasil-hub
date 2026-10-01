@@ -18,16 +18,28 @@ export class UIController {
     }
 
     updateTotalCount() {
-        let count = 0;
-        function countFiles(nodes) {
-            nodes.forEach(node => {
-                if (node.type === "file") count++;
-                if (node.children) countFiles(node.children);
-            });
-        }
-        countFiles(fileData);
-        const totalEl = document.getElementById("totalFilesCount");
-        if (totalEl) totalEl.textContent = count;
+        const contar = (nodes) => nodes.reduce(
+            (acc, node) => {
+                if (node.type === "file") acc.arquivos++;
+                if (node.children) {
+                    acc.pastas++;
+                    const filhos = contar(node.children);
+                    acc.arquivos += filhos.arquivos;
+                    acc.pastas += filhos.pastas;
+                }
+                return acc;
+            },
+            { arquivos: 0, pastas: 0 }
+        );
+        const total = contar(fileData);
+        const valores = { total: total.arquivos, pastas: total.pastas };
+        fileData.forEach(secao => {
+            valores[secao.name] = contar(secao.children || []).arquivos;
+        });
+        document.querySelectorAll("[data-kpi]").forEach(el => {
+            const chave = el.getAttribute("data-kpi");
+            if (chave in valores) el.textContent = valores[chave];
+        });
     }
 
     renderTree(filteredData = fileData) {
