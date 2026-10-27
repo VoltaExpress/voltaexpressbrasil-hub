@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Volta Express Brasil — Design tokens (fonte única de cores, tipografia e espaço)
+   Cópia idêntica de voltaexpressbrasil/shared/tokens.css (landing). Alterar nos dois projetos.
+   Contrastes medidos contra branco (WCAG 2.x): ver docs/DESIGN-SYSTEM.md
+   ========================================================================== */
+:root {
+  /* --- Cores da marca --- */
+  --color-primary: #104ac8;        /* azul institucional · 7,41:1 com texto branco */
+  --color-primary-dark: #0b3a9e;   /* hover do azul */
+  --color-brand: #fe5b3d;          /* laranja da marca · só em fundos, ícones e títulos grandes (3,1:1) */
+  --color-brand-strong: #ee4f2c;   /* laranja dos destaques em títulos grandes · 3,2:1 no fundo do hero (mín. 3:1) */
+  --color-brand-text: #c2410c;     /* laranja para texto pequeno · 5,18:1 no branco */
+  --color-brand-soft: #fff1ec;     /* fundo suave laranja */
+  --color-whatsapp: #15803d;       /* verde do WhatsApp escurecido · 5,02:1 com texto branco */
+  --color-whatsapp-dark: #116632;
+
+  /* --- Neutros --- */
+  --color-text: #1e293b;           /* 14,6:1 */
+  --color-text-muted: #475569;     /* 7,58:1 — texto secundário */
+  --color-text-soft: #64748b;      /* 4,76:1 — legendas pequenas, só em fundo branco */
+  --color-border: #e2e8f0;
+  --color-bg: #ffffff;
+  --color-bg-soft: #f8fafc;
+  --color-bg-hero: #f1f1f1;        /* mesmo cinza do fundo dos banners */
+  --color-dark: #1e293b;           /* rodapé e cards escuros */
+  --color-dark-text: #cbd5e1;      /* texto sobre o escuro · 10,4:1 */
+
+  /* --- Tipografia (uma família, 3 pesos) --- */
+  --font-sans: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fs-h1: clamp(2.2rem, 1.4rem + 3.6vw, 3.75rem);
+  --fs-h2: clamp(1.7rem, 1.3rem + 1.6vw, 2.4rem);
+  --fs-h3: 1.2rem;
+  --fs-lead: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);
+  --fs-body: 1rem;
+  --fs-small: 0.9rem;
+
+  /* --- Espaço, forma e sombra --- */
+  --space-section: clamp(64px, 6vw + 24px, 112px);
+  --container: 1200px;
+  --gutter: clamp(16px, 4vw, 32px);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 2px 10px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 12px 30px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 24px 50px rgba(15, 23, 42, 0.14);
+
+  /* --- Interação --- */
+  --tap: 44px;                     /* alvo de toque mínimo (WCAG 2.2 recomenda 44px) */
+  --header-h: 72px;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --t-fast: 0.2s var(--ease);
+  --t-base: 0.35s var(--ease);
+}

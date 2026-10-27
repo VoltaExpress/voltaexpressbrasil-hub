@@ -1,0 +1,217 @@
+<blockquote>
+<p>Atualizada em set/2026, após P1, P1.1, P2, P3, R1, Match v2 e DS1–DS6.</p>
+</blockquote>
+<h2>1. Contexto do negócio</h2>
+<p>Marketplace de frete rodoviário com duas personas que anunciam uma para a outra:
+- <strong>Caminhoneiro</strong> (<code>tipo_usuario = 'C'</code>): anuncia veículo e rota (<code>tipo_anuncio = 'V'</code>) e busca cargas para não rodar vazio.
+- <strong>Empresa</strong> (<code>tipo_usuario = 'E'</code>): anuncia carga (<code>tipo_anuncio = 'C'</code>) e busca veículos.
+A plataforma conecta e registra o interesse; a negociação é direta, pelo WhatsApp.</p>
+<h2>2. Visão geral</h2>
+<pre><code class="language-mermaid">flowchart LR
+  LP[Landing voltaexpressbrasil.com.br&lt;br/&gt;GitHub Pages] --&gt;|Entrar / Cadastrar| APP
+  APP[App React + Vite&lt;br/&gt;Netlify · voltaexpress.com.br] --&gt;|supabase-js + RLS| DB[(Supabase Postgres&lt;br/&gt;+ PostGIS)]
+  APP --&gt;|Auth| AUTH[Supabase Auth]
+  APP --&gt;|fotos| ST[Storage user-photos]
+  APP --&gt;|invoke com login| EF[Edge Function route-distance&lt;br/&gt;CORS restrito + limite]
+  EF --&gt; G[Google Directions]
+  APP --&gt;|Maps JS, chave de navegador| GM[Google Maps]
+  DB --&gt;|pg_cron diário| EXP[expire_anuncios]
+  APP --&gt;|link após interesse| WA[WhatsApp]
+</code></pre>
+<h2>3. Stack</h2>
+<table>
+<thead>
+<tr>
+<th>Camada</th>
+<th>Tecnologia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Front</td>
+<td>React 18, TypeScript, Vite 5, Tailwind, shadcn/ui, React Router 6 (rotas sob demanda), framer-motion</td>
+</tr>
+<tr>
+<td>Back</td>
+<td>Supabase: Postgres + RLS + PostGIS, Auth, Storage, Edge Functions (Deno), pg_cron</td>
+</tr>
+<tr>
+<td>Mapas</td>
+<td>Google Directions (servidor) e Maps JS (navegador)</td>
+</tr>
+<tr>
+<td>Qualidade</td>
+<td>Vitest + Testing Library (13 testes), ESLint, TypeScript</td>
+</tr>
+<tr>
+<td>Hospedagem</td>
+<td>Netlify (app), Supabase (dados), GoDaddy (domínio)</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Módulos do front</h2>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Arquivos</th>
+<th>Responsabilidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rotas</td>
+<td><code>src/App.tsx</code>, <code>components/ProtectedRoute.tsx</code></td>
+<td>Rotas públicas/protegidas, carregamento sob demanda, <code>MotionConfig reducedMotion="user"</code></td>
+</tr>
+<tr>
+<td>Auth</td>
+<td><code>contexts/AuthContext.tsx</code>, páginas de login/cadastro/senha</td>
+<td>Sessão Supabase</td>
+</tr>
+<tr>
+<td>Anúncios</td>
+<td><code>lib/anuncio-service.ts</code>, <code>pages/CriarAnuncio.tsx</code>, <code>pages/Buscar.tsx</code></td>
+<td>Criação transacional com rota, listagem, status, interesse</td>
+</tr>
+<tr>
+<td>Rota</td>
+<td><code>lib/rota-service.ts</code></td>
+<td>Chamada à Edge Function e leitura da resposta</td>
+</tr>
+<tr>
+<td>Match</td>
+<td><code>lib/matching-service.ts</code>, <code>pages/Matching.tsx</code></td>
+<td>Entrada das funções de match, rota digitada, resultado com score</td>
+</tr>
+<tr>
+<td>Painel</td>
+<td><code>pages/Painel.tsx</code></td>
+<td>Indicadores (telemetria) e gestão dos próprios anúncios</td>
+</tr>
+<tr>
+<td>Componentes do anúncio</td>
+<td><code>components/AnuncioCard.tsx</code>, <code>AnuncioDetailDialog.tsx</code>, <code>components/anuncio/*</code></td>
+<td>Card v2, score, motivos, anunciante, botão de interesse</td>
+</tr>
+<tr>
+<td>Formatos</td>
+<td><code>lib/formatos.ts</code></td>
+<td>Datas, pesos, valores, iniciais</td>
+</tr>
+<tr>
+<td>Tokens de design</td>
+<td><code>src/index.css</code>, <code>tailwind.config.ts</code></td>
+<td>Cores da marca (alinhadas à landing) com contraste AA</td>
+</tr>
+</tbody>
+</table>
+<h2>5. Modelo de dados</h2>
+<table>
+<thead>
+<tr>
+<th>Tabela</th>
+<th>Papel</th>
+<th>Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>vt_usuario</code></td>
+<td>Perfil 1:1 com <code>auth.users</code></td>
+<td>Cada usuário lê só o próprio perfil (P1)</td>
+</tr>
+<tr>
+<td><code>vt_veiculo</code> / <code>vt_carroceria</code></td>
+<td>Veículo e carroceria</td>
+<td>Reaproveitado pela placa; leitura de terceiros só para logados (P1.1)</td>
+</tr>
+<tr>
+<td><code>vt_mercadoria</code></td>
+<td>Carga</td>
+<td>+ <code>categoria_carga</code>, <code>exige_refrigeracao</code>, <code>user_id</code></td>
+</tr>
+<tr>
+<td><code>vt_localizacao</code></td>
+<td>Cidade/UF + coordenadas</td>
+<td>Coordenadas preenchidas a partir da rota</td>
+</tr>
+<tr>
+<td><code>vt_anuncio</code></td>
+<td>Anúncio V ou C</td>
+<td>+ <code>rota</code> (PostGIS), <code>distancia_km</code>; status ATIVO/PAUSADO/ENCERRADO/EXPIRADO</td>
+</tr>
+<tr>
+<td><code>vt_compatibilidade</code></td>
+<td>Regra carga × carroceria</td>
+<td>Editável sem deploy</td>
+</tr>
+<tr>
+<td><code>vt_match_config</code></td>
+<td>Pesos e parâmetros do score</td>
+<td>Editável sem deploy</td>
+</tr>
+<tr>
+<td><code>vt_match_evento</code></td>
+<td>Exibições e contatos</td>
+<td>Base de métricas e do painel</td>
+</tr>
+</tbody>
+</table>
+<h2>6. Funções no banco</h2>
+<table>
+<thead>
+<tr>
+<th>Função</th>
+<th>Tipo</th>
+<th>Quem chama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>vt_criar_anuncio(p)</code></td>
+<td>INVOKER (RLS vale)</td>
+<td>Criar anúncio</td>
+</tr>
+<tr>
+<td><code>vt_match_cargas(p)</code> / <code>vt_match_veiculos(p)</code></td>
+<td>DEFINER, só logado</td>
+<td>Matching</td>
+</tr>
+<tr>
+<td><code>vt_registrar_interesse(anuncio, score)</code></td>
+<td>DEFINER, só logado</td>
+<td>Botão "Tenho interesse"</td>
+</tr>
+<tr>
+<td><code>vt_anunciantes(ids)</code></td>
+<td>DEFINER, só logado</td>
+<td>Nome e foto nos cards</td>
+</tr>
+<tr>
+<td><code>vt_meu_painel()</code></td>
+<td>DEFINER, só logado</td>
+<td>Painel</td>
+</tr>
+<tr>
+<td><code>expire_anuncios()</code></td>
+<td>agendada (pg_cron 03:05 UTC)</td>
+<td>Automático</td>
+</tr>
+</tbody>
+</table>
+<h2>7. Fluxos principais</h2>
+<ol>
+<li><strong>Cadastro:</strong> <code>auth.signUp</code> → trigger cria <code>vt_usuario</code>.</li>
+<li><strong>Criar anúncio:</strong> origem/destino preenchidos → <code>route-distance</code> devolve polyline, coordenadas e distância → <code>vt_criar_anuncio</code> grava tudo numa transação.</li>
+<li><strong>Match:</strong> formulário → rota digitada (quando possível) → função de match no banco → resultados com score e motivos → evento <code>exibido</code>.</li>
+<li><strong>Contato:</strong> "Tenho interesse" → <code>vt_registrar_interesse</code> (evento <code>contato</code>) → abre o WhatsApp.</li>
+</ol>
+<h2>8. Segurança</h2>
+<ul>
+<li>RLS em todas as tabelas; dados de contato só por funções que exigem login.</li>
+<li>Edge Functions: CORS só para <code>voltaexpress.com.br</code> e <code>localhost:8080</code> (variável <code>ALLOWED_ORIGINS</code>), login obrigatório, limite de 30 chamadas/min por usuário e validação de entrada (<code>supabase/functions/_shared/seguranca.ts</code>).</li>
+<li>Chave do Google no servidor como segredo; chave do navegador via <code>VITE_GOOGLE_MAPS_BROWSER_KEY</code>, restrita por domínio.</li>
+</ul>
+<h2>9. Limitações conhecidas</h2>
+<p>Ver <a href="ROADMAP.md">ROADMAP.md</a>.</p>

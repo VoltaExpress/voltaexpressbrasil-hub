@@ -1,0 +1,89 @@
+<p>Legenda: ✅ feito (código pronto e testado) · 🔄 depende de você · ⬜ a fazer</p>
+<h2>Princípios</h2>
+<ul>
+<li>Preservar o negócio: duas personas, anúncio V/C, negociação direta via WhatsApp.</li>
+<li>Custo zero ou mínimo: Supabase free + Netlify/GitHub Pages.</li>
+<li>Cada fase entrega valor mensurável e alimenta o Hub.</li>
+</ul>
+<h2>Fase 1 — Segurança e base</h2>
+<ul>
+<li>[x] <strong>P1</strong> — <code>vt_usuario</code> sem leitura pública; contatos por função segura.</li>
+<li>[x] <strong>P1.1</strong> — placa e carroceria de terceiros só para usuários logados.</li>
+<li>[x] <strong>P2</strong> — Edge Functions com CORS restrito, login obrigatório, limite de chamadas e validação; chave do Maps do navegador via <code>.env</code>.</li>
+<li>[x] <strong>P3</strong> — <code>expire_anuncios()</code> agendada no <code>pg_cron</code> (diária).</li>
+<li>[x] <strong>P4/P5</strong> — criação de anúncio numa transação (<code>vt_criar_anuncio</code>) e veículo reaproveitado pela placa.</li>
+<li>[x] <strong>R1</strong> — aba inicial de "Criar anúncio" segue a persona do cadastro (as duas continuam liberadas).</li>
+<li>[x] Testes unitários e de componente (13) + testes SQL do match (13 casos).</li>
+<li>[ ] 🔄 Aplicar as migrações no projeto <strong>dev</strong>, testar com DEMONSTRACAO.md e depois em <strong>produção</strong>.</li>
+<li>[ ] 🔄 Configurar <code>VITE_GOOGLE_MAPS_BROWSER_KEY</code> no Netlify e restringir as chaves no Google Cloud.</li>
+<li>[ ] ⬜ Monitoramento para evitar a pausa do Supabase free (7 dias sem uso).</li>
+<li>[ ] ⬜ Decisão R1 definitiva: restringir o tipo de anúncio pela persona?</li>
+</ul>
+<h2>Fase 2 — Match v2 (o cérebro)</h2>
+<ul>
+<li>[x] PostGIS; rota e coordenadas gravadas na criação do anúncio.</li>
+<li>[x] Categoria da carga, exigência de refrigeração e tabela de compatibilidade.</li>
+<li>[x] <code>vt_match_cargas</code> e <code>vt_match_veiculos</code>: filtros, encaixe na rota no sentido certo, score 0–100 e motivos.</li>
+<li>[x] Sem baixar a base inteira no navegador; nenhuma chamada extra ao Google na busca além da rota digitada.</li>
+<li>[x] <code>vt_match_evento</code> (exibido/contato) e pesos configuráveis.</li>
+<li>[ ] 🔄 Validar a tabela de compatibilidade com a operação.</li>
+<li>[ ] ⬜ Conjunto de pares avaliados pela operação (meta precision@5 ≥ 0,8).</li>
+</ul>
+<h2>Fase 3 — Produto e conversão</h2>
+<ul>
+<li>[x] "Meu painel": indicadores e pausar/reativar/encerrar anúncios.</li>
+<li>[x] Card v2 com score, motivos e anunciante; telefone só após "Tenho interesse".</li>
+<li>[x] Code-splitting por rota (bundle inicial 910 KB → 684 KB) e mapa carregado sob demanda.</li>
+<li>[ ] ⬜ Match proativo com aviso por e-mail.</li>
+<li>[ ] ⬜ Preço sugerido por tipo de veículo/eixos, com referência do piso mínimo da ANTT.</li>
+<li>[ ] ⬜ Perfil verificado (documento e placa).</li>
+</ul>
+<h2>Fase 4 — Dados e diretoria</h2>
+<ul>
+<li>[ ] ⬜ Views de métricas (liquidez, funil, North Star) sobre <code>vt_match_evento</code>.</li>
+<li>[ ] ⬜ Exportação mensal para o Hub (<code>data/metricas-mensais.json</code>).</li>
+<li>[ ] ⬜ Ajuste dos pesos do score com dados reais.</li>
+</ul>
+<h2>Metas de saída</h2>
+<table>
+<thead>
+<tr>
+<th>Indicador</th>
+<th>Antes</th>
+<th>Agora (código)</th>
+<th>Meta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chamadas ao Google por busca</td>
+<td>até 16</td>
+<td>1 (rota digitada)</td>
+<td>0–1</td>
+</tr>
+<tr>
+<td>Resultados no sentido errado</td>
+<td>possíveis</td>
+<td>0 nos testes</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Dados pessoais expostos</td>
+<td>CPF/CNPJ e telefone</td>
+<td>telefone só após interesse</td>
+<td>idem</td>
+</tr>
+<tr>
+<td>Testes</td>
+<td>1 exemplo</td>
+<td>13 front + 13 SQL</td>
+<td>cobertura ≥ 80% do match</td>
+</tr>
+<tr>
+<td>Bundle inicial</td>
+<td>910 KB</td>
+<td>684 KB</td>
+<td>&lt; 500 KB</td>
+</tr>
+</tbody>
+</table>

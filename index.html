@@ -1,284 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volta Express Brasil | Hub Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hub Volta Express | Relatórios, pesquisa e demonstrações</title>
+  <meta name="description" content="Central de evidências da Volta Express Brasil: relatórios, pesquisa, demonstrações, explicações, jornada e marca, cada número com fonte e data." />
+  <meta name="theme-color" content="#104ac8" />
 
-    <!-- Favicons Padrão para Navegadores Desktop -->
-    <link rel="icon" type="image/x-icon" href="public/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" /></noscript>
 
-    <!-- Ícone para iOS (Apple Touch Icon) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+  <link rel="stylesheet" href="./shared/tokens.css?v=7.0.0" />
+  <link rel="stylesheet" href="./style.css?v=7.0.0" />
 
-    <!-- Manifesto PWA / Android -->
-    <link rel="manifest" href="public/site.webmanifest">
-    <meta name="theme-color" content="#0b1120">
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png" />
+  <link rel="manifest" href="./public/site.webmanifest" />
 
-    <!-- Fontes Inter e Fira Code -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Tailwind CSS via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- FontAwesome Ícones e Estilos Locais -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Tema Prism Tomorrow / Dark para destaque de sintaxe em código -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
-    <link rel="stylesheet" href="style.css">
+  <script type="module" src="./js/main.js?v=7.0.0"></script>
 </head>
+<body>
+  <a class="skip-link" href="#app">Pular para o conteúdo</a>
 
-<body class="bg-slate-50 text-slate-800 font-sans antialiased h-screen flex flex-col overflow-hidden">
-
-    <!-- Header Superior -->
-    <header
-        class="bg-slate-900 text-white px-4 md:px-6 py-3 flex items-center justify-between border-b border-slate-800 shadow-md z-30 shrink-0">
-
-        <!-- Lado Esquerdo: Botão Mobile + Logo + Título -->
-        <div class="flex items-center space-x-3">
-            <!-- Botão Hambúrguer (Apenas no Mobile) -->
-            <button id="mobileMenuBtn" aria-label="Abrir Menu"
-                class="md:hidden text-slate-300 hover:text-white p-2 rounded-md bg-slate-800 border border-slate-700 focus:outline-none">
-                <i class="fa-solid fa-bars text-base"></i>
-            </button>
-
-            <!-- Logo Oficial -->
-            <div
-                class="w-9 h-9 md:w-10 md:h-10 bg-slate-800 rounded-lg p-1 flex items-center justify-center border border-slate-700 shadow-sm shrink-0">
-                <img src="assets/favicon-PNG-removebg.png" alt="Volta Express Logo"
-                    class="w-full h-full object-contain">
-            </div>
-
-            <div>
-                <h1 class="text-sm md:text-base font-bold tracking-wide flex items-center gap-2">
-                    <span class="truncate max-w-[140px] sm:max-w-none">Volta Express Brasil | Hub</span>
-                    <span
-                        class="text-[9px] md:text-[10px] bg-blue-500/20 text-blue-300 px-1.5 py-0.5 rounded border border-blue-400/30 font-mono shrink-0">v6.0
-                        MVP</span>
-                </h1>
-                <p class="text-[10px] md:text-xs text-slate-400 hidden sm:block">Hub Dashboard</p>
-            </div>
-        </div>
-
-        <!-- Lado Direito: App Switcher (Rolagem Horizontal no Mobile) -->
-        <div
-            class="flex items-center space-x-2 md:space-x-3 overflow-x-auto no-scrollbar py-1 max-w-[50%] sm:max-w-none">
-            <span
-                class="bg-slate-800 text-slate-300 text-[10px] md:text-xs font-medium px-2.5 py-1.5 rounded-md border border-slate-700 flex items-center gap-1.5 shrink-0">
-                <span class="w-2 h-2 rounded-full bg-orange-500"></span>
-                <span class="hidden sm:inline">BU</span> Logística
-            </span>
-
-            <!-- Projeto 1: Volta Express -->
-            <div class="app-switcher-group flex items-center text-xs overflow-hidden shrink-0">
-                <a href="https://voltaexpress.com.br/" target="_blank"
-                    class="app-switcher-link text-slate-300 px-2.5 py-1.5 flex items-center gap-1.5 text-[11px] md:text-xs">
-                    <i class="fa-solid fa-diagram-project text-blue-400"></i>
-                    <span class="hidden lg:inline">Volta Express</span>
-                </a>
-                <a href="https://github.com/VoltaExpress/voltaexpress" target="_blank"
-                    class="app-switcher-link text-slate-400 px-2 py-1.5 border-l border-slate-700/60"
-                    title="GitHub Repo">
-                    <i class="fa-brands fa-github text-xs"></i>
-                </a>
-            </div>
-
-            <!-- Projeto 2: Volta Express Brasil -->
-            <div class="app-switcher-group flex items-center text-xs overflow-hidden shrink-0">
-                <a href="https://voltaexpressbrasil.com.br/index.html" target="_blank"
-                    class="app-switcher-link text-slate-300 px-2.5 py-1.5 flex items-center gap-1.5 text-[11px] md:text-xs">
-                    <i class="fa-solid fa-diagram-project text-blue-400"></i>
-                    <span class="hidden lg:inline">Volta Express Brasil</span>
-                </a>
-                <a href="https://github.com/VoltaExpress/voltaexpressbrasil" target="_blank"
-                    class="app-switcher-link text-slate-400 px-2 py-1.5 border-l border-slate-700/60"
-                    title="GitHub Repo">
-                    <i class="fa-brands fa-github text-xs"></i>
-                </a>
-            </div>
-
-            <!-- Projeto 3: Hub Volta Express Brasil -->
-            <div class="app-switcher-group flex items-center text-xs overflow-hidden border-blue-500/50 shrink-0">
-                <a href="https://voltaexpress.github.io/voltaexpressbrasil-digital/" target="_blank"
-                    class="app-switcher-link text-blue-300 font-semibold px-2.5 py-1.5 flex items-center gap-1.5 text-[11px] md:text-xs">
-                    <i class="fa-solid fa-diagram-project text-blue-400"></i>
-                    <span class="hidden sm:inline">Hub VEB</span>
-                </a>
-                <a href="https://github.com/VoltaExpress/voltaexpressbrasil-digital" target="_blank"
-                    class="app-switcher-link text-slate-400 px-2 py-1.5 border-l border-slate-700/60"
-                    title="GitHub Repo">
-                    <i class="fa-brands fa-github text-xs"></i>
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Overlay/Backdrop do Mobile -->
-    <div id="mobileOverlay" class="fixed inset-0 bg-slate-950/70 z-30 hidden md:hidden transition-opacity duration-300">
+  <header class="hub-header">
+    <div class="container hub-top">
+      <a class="hub-brand" href="#/">
+        <img src="./midia/voltaexpressbrasil/veb-logo/logo-completa-mini.webp" alt="" width="48" height="32" />
+        <span><strong>Hub Volta Express</strong><span>Relatórios, pesquisa e demonstrações</span></span>
+      </a>
+      <div class="hub-actions">
+        <button class="btn btn-ghost btn-sm" type="button" id="imprimir" aria-label="Imprimir ou salvar em PDF"><i class="bx bx-printer" aria-hidden="true"></i> <span class="ocultar-celular">Imprimir / PDF</span><span class="so-celular" aria-hidden="true">PDF</span></button>
+      </div>
     </div>
+    <nav class="container hub-tabs" aria-label="Seções do Hub">
+      <ul>
+        <li><a href="#/" data-rota="visao-geral"><i class="bx bx-grid-alt" aria-hidden="true"></i> Visão geral</a></li>
+        <li><a href="#/relatorios" data-rota="relatorios"><i class="bx bx-file" aria-hidden="true"></i> Relatórios</a></li>
+        <li><a href="#/pesquisa" data-rota="pesquisa"><i class="bx bx-bar-chart-alt-2" aria-hidden="true"></i> Pesquisa</a></li>
+        <li><a href="#/demonstracoes" data-rota="demonstracoes"><i class="bx bx-play-circle" aria-hidden="true"></i> Demonstrações</a></li>
+        <li><a href="#/explicacoes" data-rota="explicacoes"><i class="bx bx-bulb" aria-hidden="true"></i> Explicações</a></li>
+        <li><a href="#/jornada" data-rota="jornada"><i class="bx bx-git-commit" aria-hidden="true"></i> Jornada</a></li>
+        <li><a href="#/marca" data-rota="marca"><i class="bx bx-palette" aria-hidden="true"></i> Marca</a></li>
+        <li><a href="#/acervo" data-rota="acervo"><i class="bx bx-images" aria-hidden="true"></i> Acervo</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Layout Principal -->
-    <div class="flex flex-1 overflow-hidden relative">
+  <main id="app" class="container" tabindex="-1" aria-live="polite">
+    <noscript>
+      <div class="aviso">O Hub precisa de JavaScript para montar os relatórios a partir dos dados em <code>data/</code>. Os arquivos originais estão em <code>assets/</code> e os textos em <code>data/relatorios/</code>.</div>
+    </noscript>
+    <p class="vazio">Carregando…</p>
+  </main>
 
-        <!-- Sidebar de Navegação de Arquivos (Drawer no Mobile) -->
-        <aside id="sidebar"
-            class="custom-sidebar fixed md:relative inset-y-0 left-0 w-80 max-w-[85vw] md:max-w-none border-r border-slate-800 flex flex-col z-40 md:z-10 -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out shadow-2xl md:shadow-none">
-
-            <!-- Header Mobile da Sidebar -->
-            <div class="p-4 border-b border-slate-800 flex items-center justify-between">
-                <div class="relative flex-1 mr-2">
-                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-500 text-sm"></i>
-                    <input type="text" id="fileSearch" placeholder="Buscar ativo ou insight..."
-                        class="w-full bg-slate-800/80 text-slate-200 text-xs pl-9 pr-3 py-2 rounded-md border border-slate-700 focus:outline-none focus:border-blue-500 transition placeholder:text-slate-500">
-                </div>
-                <button id="closeSidebarBtn" class="md:hidden text-slate-400 hover:text-white p-2">
-                    <i class="fa-solid fa-xmark text-lg"></i>
-                </button>
-            </div>
-
-            <!-- Árvore de Arquivos -->
-            <nav id="treeContainer" class="flex-1 overflow-y-auto p-3 space-y-1 text-xs">
-                <!-- Árvore gerada via JS -->
-            </nav>
-
-            <!-- Footer da Sidebar -->
-            <div
-                class="p-3.5 bg-slate-950/90 border-t border-slate-800 text-slate-400 text-[11px] flex justify-between items-center shrink-0">
-                <span>Ativos Mapeados: <strong id="totalFilesCount" data-kpi="total" class="text-blue-400 font-bold">—</strong></span>
-                <span class="text-slate-500"><span data-kpi="pastas">—</span> Diretórios</span>
-            </div>
-        </aside>
-
-        <!-- Área de Visualização Principal -->
-        <main class="flex-1 flex flex-col bg-slate-50 overflow-hidden w-full">
-
-            <!-- Cabeçalho do Arquivo Selecionado -->
-            <div class="bg-white border-b border-slate-200 px-4 md:px-6 py-3 shadow-sm shrink-0">
-                <div class="flex items-center justify-between mb-1 gap-2">
-                    <div class="flex items-center space-x-2.5 min-w-0">
-                        <span id="fileTypeIcon" class="text-blue-600 text-lg md:text-xl shrink-0"><i
-                                class="fa-solid fa-chart-pie"></i></span>
-                        <h2 id="currentFileName" class="text-sm md:text-base font-bold text-slate-800 truncate">Visão
-                            Geral do Hub</h2>
-                    </div>
-                    <span id="fileCategoryBadge"
-                        class="bg-blue-50 text-blue-700 text-[10px] md:text-xs font-semibold px-2 py-0.5 md:py-1 rounded border border-blue-200/80 shrink-0">
-                        Analytics & Relatório
-                    </span>
-                </div>
-                <p id="currentFilePath" class="text-[11px] md:text-xs text-slate-400 font-mono truncate">/assets</p>
-            </div>
-
-            <!-- Card de Insights do Produto -->
-            <div id="insightCard"
-                class="m-3 md:m-6 mb-0 p-3 md:p-4 insight-callout flex items-start gap-2.5 md:gap-3 shadow-sm shrink-0">
-                <div class="text-blue-600 text-sm md:text-base shrink-0 mt-0.5">
-                    <i class="fa-solid fa-circle-info"></i>
-                </div>
-                <div class="text-[11px] md:text-xs text-slate-700 leading-relaxed min-w-0">
-                    <strong class="font-semibold text-slate-900 block mb-0.5" id="insightTitle">Contexto Estratégico de
-                        Negócio:</strong>
-                    <p id="insightText">Selecione qualquer ativo na barra lateral para inspecionar insumos de marca,
-                        evidências de testes de QA, planilhas de prospecção e mídias do ecossistema Volta Express
-                        Brasil.</p>
-                </div>
-            </div>
-
-            <!-- Visualizador do Conteúdo -->
-            <div id="viewerContainer" class="flex-1 p-3 md:p-6 overflow-y-auto">
-
-                <!-- Painel de Boas-Vindas com Identidade Visual Oficial -->
-                <div id="defaultWelcome" class="h-auto md:h-full flex flex-col space-y-4 md:space-y-6">
-
-                    <!-- Grid de Métricas de Decisão (1 Coluna no Mobile, 2 no Tablet, 4 no Desktop) -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
-                        <div class="kpi-card p-3.5 md:p-4">
-                            <div class="flex items-center justify-between">
-                                <span class="text-xs font-medium text-slate-500">Total de Ativos</span>
-                                <i class="fa-solid fa-folder-tree text-blue-600"></i>
-                            </div>
-                            <p class="text-xl md:text-2xl font-bold text-slate-800 mt-1.5 md:mt-2" data-kpi="total">—</p>
-                            <span class="text-[10px] text-slate-400"><span data-kpi="pastas">—</span> diretórios catalogados</span>
-                        </div>
-
-                        <div class="kpi-card p-3.5 md:p-4">
-                            <div class="flex items-center justify-between">
-                                <span class="text-xs font-medium text-slate-500">Persona Transportador</span>
-                                <img src="assets/logo-volta-express-caminhao.png"
-                                    class="w-5 h-5 md:w-6 md:h-6 object-contain" alt="Caminhão">
-                            </div>
-                            <p class="text-xl md:text-2xl font-bold text-slate-800 mt-1.5 md:mt-2" data-kpi="quero-carregar-transportador">—</p>
-                            <span class="text-[10px] text-slate-400">Ativos do Caminhoneiro</span>
-                        </div>
-
-                        <div class="kpi-card p-3.5 md:p-4">
-                            <div class="flex items-center justify-between">
-                                <span class="text-xs font-medium text-slate-500">Persona Embarcador</span>
-                                <img src="assets/logo-volta-express-cargas.png"
-                                    class="w-5 h-5 md:w-6 md:h-6 object-contain" alt="Cargas">
-                            </div>
-                            <p class="text-xl md:text-2xl font-bold text-slate-800 mt-1.5 md:mt-2" data-kpi="quero-transportar-embarcador">—</p>
-                            <span class="text-[10px] text-slate-400">Ativos de Cargas/Empresas</span>
-                        </div>
-
-                        <div class="kpi-card p-3.5 md:p-4">
-                            <div class="flex items-center justify-between">
-                                <span class="text-xs font-medium text-slate-500">Branding & Mídia</span>
-                                <i class="fa-solid fa-photo-film text-amber-600"></i>
-                            </div>
-                            <p class="text-xl md:text-2xl font-bold text-slate-800 mt-1.5 md:mt-2" data-kpi="voltaexpressbrasil">—</p>
-                            <span class="text-[10px] text-slate-400">Peças visuais e campanhas</span>
-                        </div>
-                    </div>
-
-                    <!-- Card Institucional com Banner da Marca -->
-                    <div
-                        class="bg-white border border-slate-200 rounded-xl p-4 md:p-6 shadow-sm flex-1 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
-                        <div class="text-left space-y-2 md:space-y-3 w-full md:max-w-lg">
-                            <div
-                                class="inline-flex items-center gap-1.5 bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full text-[11px] md:text-xs font-semibold border border-blue-100">
-                                <img src="assets/favicon-PNG-removebg.png" class="w-3.5 h-3.5 object-contain"
-                                    alt="V Logo">
-                                Single Source of Truth
-                            </div>
-                            <h3 class="text-lg md:text-xl font-bold text-slate-900">Hub Digital Volta Express Brasil
-                            </h3>
-                            <p class="text-xs text-slate-600 leading-relaxed">
-                                Plataforma unificada para inspeção de ativos visuais, atas de reuniões, modelos de
-                                persona, mídias de validação e especificações técnicas da BU Logística.
-                            </p>
-                        </div>
-
-                        <div class="w-full md:w-80 shrink-0 mt-2 md:mt-0">
-                            <img src="assets/banner-caixas-caminhao.png" alt="Volta Express Banner"
-                                class="w-full h-auto rounded-lg shadow-sm border border-slate-100 object-contain max-h-48 md:max-h-none mx-auto">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </main>
-
+  <footer class="hub-footer">
+    <div class="container">
+      <p>© 2026 Volta Express Brasil · Dados gerados por <code>scripts/</code> a partir dos 3 projetos.</p>
+      <ul>
+        <li><a href="https://voltaexpressbrasil.com.br/">Landing</a></li>
+        <li><a href="https://voltaexpress.com.br/">Plataforma</a></li>
+        <li><a href="https://github.com/VoltaExpress">GitHub</a></li>
+      </ul>
     </div>
+  </footer>
 
-    <!-- Bibliotecas de Renderização -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-    <!-- Conversor de DOCX para HTML em tempo de execução -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
-
-    <!-- Módulo ES Principal -->
-    <script type="module" src="js/main.js"></script>
+  <dialog class="visualizador" id="visualizador" aria-labelledby="vis-titulo"></dialog>
 </body>
-
 </html>

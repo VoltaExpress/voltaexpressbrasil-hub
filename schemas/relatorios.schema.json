@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Índice de relatórios",
+  "type": "object",
+  "properties": {
+    "gerado_em": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "itens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "projeto": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tipo": {
+            "enum": [
+              "relatorio",
+              "analise",
+              "explicacao"
+            ]
+          },
+          "titulo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fonte": {
+            "type": "string",
+            "minLength": 1
+          },
+          "atualizado": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "arquivo": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "projeto",
+          "tipo",
+          "titulo",
+          "fonte",
+          "atualizado",
+          "arquivo"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "gerado_em",
+    "itens"
+  ],
+  "additionalProperties": true
+}

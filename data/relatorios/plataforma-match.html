@@ -1,0 +1,290 @@
+<h2>1. Objetivo</h2>
+<p>Conectar cada veículo com rota disponível às cargas que cabem no caminho dele, <strong>no sentido certo e na data certa</strong>, ordenadas pelo melhor aproveitamento. Objetivo de negócio: eliminar a viagem vazia (frete de retorno).</p>
+<h2>2. Regras de negócio preservadas</h2>
+<ul>
+<li>Duas personas: caminhoneiro anuncia veículo e rota (<code>V</code>); empresa anuncia carga (<code>C</code>).</li>
+<li>Negociação direta entre as partes, via WhatsApp.</li>
+<li>A plataforma sugere e registra; não intermedeia pagamento.</li>
+</ul>
+<h2>3. Onde está o código</h2>
+<table>
+<thead>
+<tr>
+<th>Peça</th>
+<th>Arquivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Banco (tabelas, funções, regras)</td>
+<td><code>supabase/migrations/20260928120300_m2_match_v2.sql</code></td>
+</tr>
+<tr>
+<td>Criação do anúncio com rota</td>
+<td><code>vt_criar_anuncio(p jsonb)</code> · <code>src/lib/anuncio-service.ts</code></td>
+</tr>
+<tr>
+<td>Match motorista → cargas</td>
+<td><code>vt_match_cargas(p jsonb)</code> · <code>src/lib/matching-service.ts</code></td>
+</tr>
+<tr>
+<td>Match empresa → veículos</td>
+<td><code>vt_match_veiculos(p jsonb)</code> · <code>src/lib/matching-service.ts</code></td>
+</tr>
+<tr>
+<td>Contato com registro</td>
+<td><code>vt_registrar_interesse(p_anuncio, p_score)</code> · <code>src/hooks/use-interesse.ts</code></td>
+</tr>
+<tr>
+<td>Rota (Google)</td>
+<td>Edge Function <code>route-distance</code> · <code>src/lib/rota-service.ts</code></td>
+</tr>
+<tr>
+<td>Tela</td>
+<td><code>src/pages/Matching.tsx</code>, <code>src/components/AnuncioCard.tsx</code></td>
+</tr>
+</tbody>
+</table>
+<h2>4. Modelo de dados (novidades)</h2>
+<table>
+<thead>
+<tr>
+<th>Tabela / coluna</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>vt_anuncio.rota</code> (PostGIS <code>geography LineString</code>) e <code>distancia_km</code></td>
+<td>Rota gravada na criação do anúncio (polyline do Google)</td>
+</tr>
+<tr>
+<td><code>vt_localizacao.latitude/longitude</code></td>
+<td>Agora preenchidas (antes vazias)</td>
+</tr>
+<tr>
+<td><code>vt_mercadoria.categoria_carga</code>, <code>exige_refrigeracao</code></td>
+<td>Exigências da carga</td>
+</tr>
+<tr>
+<td><code>vt_compatibilidade</code></td>
+<td>Categoria de carga × carroceria (regra de negócio editável)</td>
+</tr>
+<tr>
+<td><code>vt_match_config</code></td>
+<td>Pesos do score, raio (30 km), janela (30 dias), referência R$ 6,50/km</td>
+</tr>
+<tr>
+<td><code>vt_match_evento</code></td>
+<td><code>exibido</code> e <code>contato</code> — base do funil e das métricas do Hub</td>
+</tr>
+</tbody>
+</table>
+<h2>5. Etapa 1 — Filtros obrigatórios</h2>
+<ol>
+<li>Anúncio <code>ATIVO</code> e <code>data_fim &gt;= hoje</code>.</li>
+<li>Anúncio de outro usuário.</li>
+<li>Carroceria compatível com a categoria da carga (<code>vt_compatibilidade</code>).</li>
+<li>Refrigeração, quando a carga exige.</li>
+<li>Peso ≤ capacidade de peso; volume ≤ capacidade de volume.</li>
+<li>Janelas de data sobrepostas (sem datas: hoje até +30 dias).</li>
+</ol>
+<h3>Compatibilidade inicial (PROPOSTA — validar com a operação)</h3>
+<table>
+<thead>
+<tr>
+<th>Categoria da carga</th>
+<th>Carrocerias aceitas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carga seca</td>
+<td>Baú, Sider</td>
+</tr>
+<tr>
+<td>Refrigerada</td>
+<td>Baú (com refrigeração)</td>
+</tr>
+<tr>
+<td>Granel sólido</td>
+<td>Graneleiro</td>
+</tr>
+<tr>
+<td>Líquidos</td>
+<td>Tanque</td>
+</tr>
+<tr>
+<td>Máquinas e volumes grandes</td>
+<td>Plataforma</td>
+</tr>
+<tr>
+<td>Veículos</td>
+<td>Cegonha</td>
+</tr>
+<tr>
+<td>Mudança</td>
+<td>Baú, Sider</td>
+</tr>
+</tbody>
+</table>
+<p>Para mudar: editar a tabela <code>vt_compatibilidade</code> no Supabase (Table Editor). Não precisa de deploy.</p>
+<h2>6. Etapa 2 — Encaixe geográfico (três modos)</h2>
+<table>
+<thead>
+<tr>
+<th>Modo</th>
+<th>Quando</th>
+<th>Regra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>rota</strong></td>
+<td>Há rota (Google) e coordenadas</td>
+<td>Origem e destino da carga a até <strong>R km</strong> da rota do veículo, e a origem <strong>antes</strong> do destino na rota (<code>ST_LineLocatePoint</code>)</td>
+</tr>
+<tr>
+<td><strong>cidade</strong></td>
+<td>Sem rota, mas com cidade de origem e de destino</td>
+<td>Mesma cidade de origem e de destino (sem acento, sem maiúsculas)</td>
+</tr>
+<tr>
+<td><strong>parcial / livre</strong></td>
+<td>Só UF, só uma cidade ou nada</td>
+<td>Filtra pelo que foi informado; o score de rota fica neutro</td>
+</tr>
+</tbody>
+</table>
+<h2>7. Etapa 3 — Score (0 a 100)</h2>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Peso</th>
+<th>Cálculo (0 a 1)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desvio</td>
+<td>35</td>
+<td>1 − desvio ÷ (2 × R)</td>
+</tr>
+<tr>
+<td>Aproveitamento da rota</td>
+<td>20</td>
+<td>fração da rota usada pela carga</td>
+</tr>
+<tr>
+<td>Proximidade de data</td>
+<td>15</td>
+<td>1 − dias até a coleta ÷ 30</td>
+</tr>
+<tr>
+<td>Uso de capacidade</td>
+<td>15</td>
+<td>média de peso÷capacidade e volume÷capacidade</td>
+</tr>
+<tr>
+<td>Valor por km</td>
+<td>10</td>
+<td>Cargas: (R$/km ÷ 6,50) ÷ 1,5 · Veículos: 6,50 ÷ (R$/km)</td>
+</tr>
+<tr>
+<td>Anunciante</td>
+<td>5</td>
+<td>perfil com foto = 1; sem foto = 0,6</td>
+</tr>
+</tbody>
+</table>
+<p>Cada resultado traz <strong>motivos</strong> em texto: "desvio de 12 km · usa 37% da sua rota · coleta em 2 dia(s) · 80% da capacidade · R$ 6,14/km".</p>
+<h2>8. Privacidade</h2>
+<ul>
+<li>Funções de match só para usuários logados; visitantes recebem <code>permission denied</code>.</li>
+<li>O telefone não vem no resultado: só é liberado por <code>vt_registrar_interesse</code>, que grava o evento <code>contato</code> (um por pessoa a cada 30 minutos).</li>
+<li><code>vt_anunciantes</code> devolve só nome e foto.</li>
+</ul>
+<h2>9. Resultado dos testes (Postgres 16 + PostGIS 3.4, dados de DEMONSTRACAO.md)</h2>
+<table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>Esperado</th>
+<th>Obtido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carlos JF→SP, com rota</td>
+<td>só C2</td>
+<td>✅ C2 (score 84)</td>
+</tr>
+<tr>
+<td>Carlos JF→SP, sem Google</td>
+<td>só C2</td>
+<td>✅ C2</td>
+</tr>
+<tr>
+<td>Carlos SP→JF (retorno)</td>
+<td>só C3</td>
+<td>✅ C3 (83)</td>
+</tr>
+<tr>
+<td>Marta BH→RJ refrigerado, com rota</td>
+<td>só C1 (JF fica no caminho)</td>
+<td>✅ C1 (72)</td>
+</tr>
+<tr>
+<td>Marta sem cidades</td>
+<td>C1, C2, C3 (C4 incompatível)</td>
+<td>✅ C1 57 · C2 53 · C3 50</td>
+</tr>
+<tr>
+<td>Baú não refrigerado não recebe carga refrigerada</td>
+<td>C2, C3</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Rota Sul busca veículo SP→JF</td>
+<td>só V2 (V1 é sentido contrário)</td>
+<td>✅ V2 (87)</td>
+</tr>
+<tr>
+<td>Serra Verde, carga refrigerada JF→RJ</td>
+<td>só V3</td>
+<td>✅ V3 (68)</td>
+</tr>
+<tr>
+<td>Bobinas de aço (C4)</td>
+<td>nenhum veículo</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Janela em novembro</td>
+<td>nenhum</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Dono não vê o próprio anúncio</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Visitante chama o match</td>
+<td>negado</td>
+<td>✅ <code>permission denied</code></td>
+</tr>
+<tr>
+<td>Mesma placa em dois anúncios</td>
+<td>1 veículo</td>
+<td>✅ reaproveitado</td>
+</tr>
+</tbody>
+</table>
+<h2>10. Próximas evoluções</h2>
+<ul>
+<li>Match proativo: ao criar anúncio, gravar as melhores sugestões e avisar por e-mail.</li>
+<li>Ajustar pesos com dados reais (taxa de contato e de fechamento por faixa de score).</li>
+<li>Precision@5 em conjunto de pares avaliado pela operação (meta ≥ 0,8).</li>
+</ul>
