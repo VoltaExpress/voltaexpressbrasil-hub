@@ -1,0 +1,234 @@
+<blockquote>
+<p>Diagnóstico em set/2026 e execução do plano no mesmo mês. Foco: o match entre as duas personas.</p>
+</blockquote>
+<h2>1. Situação antes</h2>
+<table>
+<thead>
+<tr>
+<th>Camada</th>
+<th>Tecnologia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Front</td>
+<td>React 18, TypeScript, Vite 5, shadcn/ui; Netlify (<code>voltaexpress.com.br</code>)</td>
+</tr>
+<tr>
+<td>Back</td>
+<td>Supabase: Postgres + RLS, Auth, Storage, Edge Functions <code>route-cities</code> e <code>route-distance</code> (Google)</td>
+</tr>
+<tr>
+<td>Personas</td>
+<td>Caminhoneiro (<code>C</code>) anuncia veículo (<code>V</code>); Empresa (<code>E</code>) anuncia carga (<code>C</code>)</td>
+</tr>
+<tr>
+<td>Contato</td>
+<td>WhatsApp direto com o anunciante</td>
+</tr>
+</tbody>
+</table>
+<h2>2. Diagnóstico do match (antes) e o que foi feito</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Problema</th>
+<th>Situação agora</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M1</td>
+<td>Carroceria e refrigeração não filtravam</td>
+<td>✅ Filtros obrigatórios no banco</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>Carga sem exigência de carroceria/refrigeração</td>
+<td>✅ <code>categoria_carga</code>, <code>exige_refrigeracao</code>, <code>vt_compatibilidade</code></td>
+</tr>
+<tr>
+<td>M3</td>
+<td>Regra "origem OU destino na rota"</td>
+<td>✅ Origem <strong>e</strong> destino perto da rota, na ordem certa</td>
+</tr>
+<tr>
+<td>M4</td>
+<td>Datas ignoradas</td>
+<td>✅ Janelas sobrepostas (padrão 30 dias)</td>
+</tr>
+<tr>
+<td>M5</td>
+<td>Sem ranking</td>
+<td>✅ Score 0–100 com motivos</td>
+</tr>
+<tr>
+<td>M6</td>
+<td>Nome exato de cidade + amostragem esparsa</td>
+<td>✅ Geometria PostGIS (raio de 30 km)</td>
+</tr>
+<tr>
+<td>M7</td>
+<td>Lógica invertida na busca da empresa</td>
+<td>✅ Carga comparada com a rota <strong>do veículo</strong></td>
+</tr>
+<tr>
+<td>M8</td>
+<td>Volume ignorado</td>
+<td>✅ Peso e volume</td>
+</tr>
+<tr>
+<td>M9</td>
+<td>Mudança silenciosa de regra se o Google falhasse</td>
+<td>✅ Modos explícitos (rota/cidade) e indicados na tela</td>
+</tr>
+<tr>
+<td>M10</td>
+<td>Até 16 chamadas ao Google e base inteira no navegador</td>
+<td>✅ Rota gravada no anúncio; busca paginada no banco</td>
+</tr>
+<tr>
+<td>M11</td>
+<td>Próprios anúncios e vencidos no resultado</td>
+<td>✅ Excluídos; expiração agendada</td>
+</tr>
+<tr>
+<td>M12</td>
+<td>Nada registrado</td>
+<td>✅ <code>vt_match_evento</code> (exibido/contato) e painel</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Outros pontos</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Área</th>
+<th>Situação agora</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P1</td>
+<td>Dados pessoais públicos em <code>vt_usuario</code></td>
+<td>✅ Corrigido e testado</td>
+</tr>
+<tr>
+<td>P1.1</td>
+<td>Placa pública</td>
+<td>✅ Só para logados</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>Edge Functions abertas</td>
+<td>✅ CORS restrito, login, limite, validação</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>Expiração não agendada</td>
+<td>✅ <code>pg_cron</code> diário</td>
+</tr>
+<tr>
+<td>P4/P5</td>
+<td>Veículo duplicado, inserts sem transação</td>
+<td>✅ <code>vt_criar_anuncio</code></td>
+</tr>
+<tr>
+<td>P6</td>
+<td>Preço fixo por km</td>
+<td>⬜ Fase 3</td>
+</tr>
+<tr>
+<td>P7</td>
+<td>Supabase free pausa</td>
+<td>⬜ Monitoramento</td>
+</tr>
+<tr>
+<td>P8</td>
+<td>Sem testes</td>
+<td>✅ 13 testes front + 13 casos SQL</td>
+</tr>
+<tr>
+<td>P9</td>
+<td>Lockfiles e README</td>
+<td>🔄 README atualizado; remover <code>bun.lock*</code> quando confirmar que usa só npm</td>
+</tr>
+<tr>
+<td>P10</td>
+<td>Bundle grande</td>
+<td>✅ 910 KB → 684 KB (rotas e mapa sob demanda)</td>
+</tr>
+<tr>
+<td>P11</td>
+<td>Sem "meus anúncios"</td>
+<td>✅ Meu painel</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Notas (0–10)</h2>
+<table>
+<thead>
+<tr>
+<th>Indicador</th>
+<th>Antes</th>
+<th>Agora (código, a validar no seu ambiente)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Funcionalidade</td>
+<td>6</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Algoritmo de match</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Segurança e LGPD</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Modelo de dados</td>
+<td>5</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Performance e escala</td>
+<td>4</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Testes</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Métricas e observabilidade</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td>UX/UI</td>
+<td>6</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<h2>5. Verificação feita</h2>
+<ul>
+<li>TypeScript sem erros (antes: 2 erros no <code>Index.tsx</code>); build de produção ok; lint com 2 erros restantes, ambos em componentes gerados do shadcn (antes: 7).</li>
+<li>13 testes Vitest passando.</li>
+<li>Migrações aplicadas do zero num Postgres 16 + PostGIS 3.4 que imita o Supabase; 13 cenários do match com os dados da DEMONSTRACAO.md — todos passaram (ver MATCH.md, seção 9).</li>
+<li>Edge Functions checadas com Deno (tipos e lint) e testadas: origem estranha → 403, sem login → 401.</li>
+<li>Telas de Matching e Meu painel renderizadas em desktop e celular com dados simulados.</li>
+</ul>
+<h2>6. Documentos</h2>
+<ul>
+<li><a href="ARQUITETURA.md">ARQUITETURA.md</a> · <a href="MATCH.md">MATCH.md</a> · <a href="ROADMAP.md">ROADMAP.md</a> · <a href="DESIGN.md">DESIGN.md</a></li>
+<li><a href="AMBIENTE-LOCAL.md">AMBIENTE-LOCAL.md</a> · <a href="DEMONSTRACAO.md">DEMONSTRACAO.md</a> · <a href="DECISOES.md">DECISOES.md</a> · <a href="REFERENCIAS.md">REFERENCIAS.md</a></li>
+</ul>

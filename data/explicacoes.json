@@ -1,0 +1,163 @@
+{
+  "itens": [
+    {
+      "id": "como-funciona-o-match",
+      "titulo": "Como o match escolhe a carga certa para cada caminhão",
+      "resumo": "O match passa por 3 etapas: filtros obrigatórios, encaixe da carga na rota do veículo (no sentido certo) e um score de 0 a 100 que ordena os resultados e explica o porquê.",
+      "fonte": "voltaexpress/docs/MATCH.md (seções 5 a 7)",
+      "etapas": [
+        {
+          "titulo": "1. Filtros obrigatórios",
+          "texto": "Anúncio ativo e não vencido, de outro usuário, carroceria compatível com a carga, refrigeração quando exigida, peso e volume dentro da capacidade e janelas de data sobrepostas."
+        },
+        {
+          "titulo": "2. Encaixe na rota",
+          "texto": "Origem e destino da carga a até 30 km da rota do veículo, com a origem antes do destino. Sem rota calculada, compara as cidades."
+        },
+        {
+          "titulo": "3. Score de 0 a 100",
+          "texto": "Soma ponderada de 6 critérios. Cada resultado mostra os motivos, por exemplo: \"desvio de 12 km · usa 37% da sua rota · coleta em 2 dias\"."
+        }
+      ],
+      "pesos": [
+        {
+          "rotulo": "Desvio da rota",
+          "valor": 35
+        },
+        {
+          "rotulo": "Aproveitamento da rota",
+          "valor": 20
+        },
+        {
+          "rotulo": "Proximidade da data",
+          "valor": 15
+        },
+        {
+          "rotulo": "Uso da capacidade",
+          "valor": 15
+        },
+        {
+          "rotulo": "Valor por km",
+          "valor": 10
+        },
+        {
+          "rotulo": "Perfil do anunciante",
+          "valor": 5
+        }
+      ]
+    },
+    {
+      "id": "tipos-de-caminhao",
+      "titulo": "Tipos de caminhão: quanto cada um leva",
+      "resumo": "Referência de capacidade usada no produto. A carreta leva até 13 vezes o peso do caminhão 3/4 e mais de 3 vezes o volume.",
+      "fonte": "Infográfico de referência de uma empresa de mudanças (arquivo interno, não publicado); valores não validados com a operação",
+      "tabela": [
+        {
+          "tipo": "Caminhão 3/4",
+          "peso_t": 2.5,
+          "volume_m3": 29
+        },
+        {
+          "tipo": "Toco",
+          "peso_t": 5,
+          "volume_m3": 44
+        },
+        {
+          "tipo": "Truck",
+          "peso_t": 11,
+          "volume_m3": 58
+        },
+        {
+          "tipo": "Carreta simples (5 eixos)",
+          "peso_t": 25,
+          "volume_m3": 97
+        },
+        {
+          "tipo": "Carreta eixo estendido",
+          "peso_t": 33,
+          "volume_m3": 97
+        }
+      ]
+    },
+    {
+      "id": "carga-e-carroceria",
+      "titulo": "Que carroceria leva cada tipo de carga",
+      "resumo": "A compatibilidade entre categoria de carga e carroceria é o primeiro filtro do match. A tabela ainda é uma proposta, a validar com a operação.",
+      "fonte": "voltaexpress/docs/MATCH.md (seção 5, compatibilidade inicial)",
+      "compatibilidade": [
+        {
+          "carga": "Carga seca",
+          "carrocerias": "Baú, Sider"
+        },
+        {
+          "carga": "Refrigerada",
+          "carrocerias": "Baú com refrigeração"
+        },
+        {
+          "carga": "Granel sólido",
+          "carrocerias": "Graneleiro"
+        },
+        {
+          "carga": "Líquidos",
+          "carrocerias": "Tanque"
+        },
+        {
+          "carga": "Máquinas e volumes grandes",
+          "carrocerias": "Plataforma"
+        },
+        {
+          "carga": "Veículos",
+          "carrocerias": "Cegonha"
+        },
+        {
+          "carga": "Mudança",
+          "carrocerias": "Baú, Sider"
+        }
+      ]
+    },
+    {
+      "id": "north-star-e-funil",
+      "titulo": "O que medir: North Star e funil",
+      "resumo": "A métrica que resume o valor entregue é \"fretes de retorno conectados por mês\". O funil mostra onde as pessoas desistem no caminho até ela. Os dados virão da plataforma (tabela vt_match_evento).",
+      "fonte": "voltaexpressbrasil-hub/docs/PLANO-DE-ACAO.md (bloco B4) e voltaexpress/docs/ARQUITETURA.md",
+      "funil": [
+        "Visita à landing",
+        "Escolha da persona",
+        "Clique em cadastro ou WhatsApp",
+        "Cadastro na plataforma",
+        "Anúncio publicado",
+        "Match exibido",
+        "Contato feito (\"Tenho interesse\")",
+        "Frete fechado"
+      ]
+    },
+    {
+      "id": "como-ler-os-indicadores",
+      "titulo": "Como ler os indicadores de qualidade da landing",
+      "resumo": "Os números da página Visão geral seguem padrões públicos do Google (Core Web Vitals) e do W3C (WCAG 2.2).",
+      "fonte": "web.dev/articles/vitals e w3.org/TR/WCAG22",
+      "glossario": [
+        {
+          "termo": "LCP",
+          "texto": "Tempo até o maior elemento da tela aparecer. Bom: até 2,5 s."
+        },
+        {
+          "termo": "Primeira pintura (FCP)",
+          "texto": "Tempo até qualquer conteúdo aparecer. Bom: até 1,8 s."
+        },
+        {
+          "termo": "CLS",
+          "texto": "Quanto o layout pula enquanto carrega. Bom: até 0,1."
+        },
+        {
+          "termo": "Contraste",
+          "texto": "Diferença de luminância entre texto e fundo. Mínimo 4,5:1 para texto normal e 3:1 para texto grande."
+        },
+        {
+          "termo": "Alvo de toque",
+          "texto": "Tamanho da área clicável. Mínimo de 24 × 24 px pela WCAG 2.2; 44 px é o recomendado para o polegar."
+        }
+      ]
+    }
+  ]
+}

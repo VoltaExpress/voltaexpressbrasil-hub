@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Catálogo público do Hub",
+  "type": "object",
+  "properties": {
+    "resumo": {
+      "type": "object",
+      "properties": {
+        "gerado_em": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "duplicados": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "gerado_em",
+        "total",
+        "duplicados"
+      ],
+      "additionalProperties": true
+    },
+    "itens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "titulo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "resumo": {
+            "type": "string"
+          },
+          "formato": {
+            "enum": [
+              "imagem",
+              "video",
+              "codigo",
+              "documento",
+              "planilha",
+              "texto"
+            ]
+          },
+          "finalidade": {
+            "enum": [
+              "relatorio",
+              "dashboard",
+              "demonstracao",
+              "pesquisa",
+              "analise",
+              "explicacao",
+              "marca"
+            ]
+          },
+          "persona": {
+            "enum": [
+              "caminhoneiro",
+              "embarcador",
+              "institucional"
+            ]
+          },
+          "fonte": {
+            "type": "string",
+            "minLength": 1
+          },
+          "data": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "arquivo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "id",
+          "titulo",
+          "formato",
+          "finalidade",
+          "persona",
+          "fonte",
+          "data",
+          "arquivo"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "titulo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https://"
+          },
+          "tipo": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "titulo",
+          "url"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "resumo",
+    "itens",
+    "links"
+  ],
+  "additionalProperties": true
+}

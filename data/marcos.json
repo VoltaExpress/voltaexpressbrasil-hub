@@ -1,0 +1,79 @@
+[
+  {
+    "data": "2024-03-20",
+    "projeto": "Landing",
+    "titulo": "Primeiro commit da landing",
+    "descricao": "Início do repositório voltaexpressbrasil, que hoje publica a home e as duas landings.",
+    "fonte": "git log do repositório voltaexpressbrasil (commit 2c4497c)"
+  },
+  {
+    "data": "2024-09-14",
+    "projeto": "Pesquisa",
+    "titulo": "Formulários de interesse exportados",
+    "descricao": "Embarcadores e caminhoneiros responderam aos formulários de interesse; 42 respostas entram na pesquisa agregada.",
+    "fonte": "Metadados das planilhas exportadas do Microsoft Forms (repositório privado); resultado em data/pesquisa.json"
+  },
+  {
+    "data": "2024-11-17",
+    "projeto": "Plataforma",
+    "titulo": "Vídeo da versão 4.2",
+    "descricao": "Gravação de navegação da versão 4.2, com mapa de rotas. O arquivo foi recebido por WhatsApp nessa data.",
+    "fonte": "Nome do arquivo VID-20241117-WA0026.mp4 (idêntico a volta-express-v4.2.mp4, mesmo hash)"
+  },
+  {
+    "data": "2025-09-04",
+    "projeto": "Landing",
+    "titulo": "Versão 5: login e cadastro no Quero Carregar",
+    "descricao": "Login e cadastro com localStorage e implantação no Google Apps Script.",
+    "fonte": "README da landing, seção \"Versão 5\""
+  },
+  {
+    "data": "2026-02-09",
+    "projeto": "Plataforma",
+    "titulo": "Banco de dados da plataforma no Supabase",
+    "descricao": "Primeira migração: tabelas de usuário, veículo, carga, localização e anúncio, com RLS.",
+    "fonte": "voltaexpress/supabase/migrations/20260209231304_*.sql (commit 68b892f)"
+  },
+  {
+    "data": "2026-05-27",
+    "projeto": "Hub",
+    "titulo": "Primeiro commit do Hub",
+    "descricao": "Início do repositório de ativos e documentação da Volta Express.",
+    "fonte": "git log do repositório voltaexpressbrasil-hub (commit 45619a7)"
+  },
+  {
+    "data": "2026-09-28",
+    "projeto": "Plataforma",
+    "titulo": "Match v2 e proteção de dados",
+    "descricao": "Match no banco com PostGIS, score de 0 a 100 com motivos, telefone só após interesse e expiração diária dos anúncios.",
+    "fonte": "voltaexpress/supabase/migrations/20260928120*.sql e docs/MATCH.md"
+  },
+  {
+    "data": "2026-10-01",
+    "projeto": "Landing",
+    "titulo": "Imagens em WebP",
+    "descricao": "Peso das imagens do Quero Transportar caiu de ~45 MB para ~330 KB.",
+    "fonte": "voltaexpressbrasil, commit 0f8279a e docs/RELATORIO.md"
+  },
+  {
+    "data": "2026-10-01",
+    "projeto": "Hub",
+    "titulo": "Catálogo público sem dados pessoais (B0.1)",
+    "descricao": "Formulários, pitch, atas e prints internos saíram do catálogo público.",
+    "fonte": "voltaexpressbrasil-hub, commit a4bdee9 e docs/B0-PROTECAO-DE-DADOS.md"
+  },
+  {
+    "data": "2026-10-26",
+    "projeto": "Landing",
+    "titulo": "Landing v7: design system e conversão",
+    "descricao": "0 caminhos de conversão quebrados, 0 falhas de contraste e CSS 55% menor nas 3 páginas.",
+    "fonte": "voltaexpressbrasil/CHANGELOG.md e docs/RELATORIO.md"
+  },
+  {
+    "data": "2026-10-27",
+    "projeto": "Hub",
+    "titulo": "Hub v7: central de evidências",
+    "descricao": "O Hub passa de navegador de arquivos a relatórios, pesquisa, demonstrações, explicações, jornada e marca, com dados gerados por script.",
+    "fonte": "voltaexpressbrasil-hub/CHANGELOG.md"
+  }
+]

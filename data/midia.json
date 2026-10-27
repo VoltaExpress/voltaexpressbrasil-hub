@@ -1,0 +1,3754 @@
+{
+  "assets/arquivos/qa-v5/v5-fluxo.png": {
+    "largura": 1133,
+    "altura": 753,
+    "bytes_original": 73003,
+    "mini": {
+      "arquivo": "midia/arquivos/qa-v5/v5-fluxo-mini.webp",
+      "largura": 480,
+      "altura": 319,
+      "bytes": 9260
+    },
+    "grande": {
+      "arquivo": "midia/arquivos/qa-v5/v5-fluxo-grande.webp",
+      "largura": 1133,
+      "altura": 753,
+      "bytes": 26324
+    },
+    "sha1": "5dfdfb0d6e9e2b3bed331b0a584c41b82f763437"
+  },
+  "assets/arquivos/qa-v5/v5-funcionalidades.png": {
+    "largura": 1302,
+    "altura": 660,
+    "bytes_original": 176926,
+    "mini": {
+      "arquivo": "midia/arquivos/qa-v5/v5-funcionalidades-mini.webp",
+      "largura": 480,
+      "altura": 243,
+      "bytes": 11860
+    },
+    "grande": {
+      "arquivo": "midia/arquivos/qa-v5/v5-funcionalidades-grande.webp",
+      "largura": 1302,
+      "altura": 660,
+      "bytes": 43230
+    },
+    "sha1": "aed3b17970634172abea24ca7a4770f95008c98a"
+  },
+  "assets/banner-caixas-caminhao.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 1706478,
+    "mini": {
+      "arquivo": "midia/banner-caixas-caminhao-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 8460
+    },
+    "grande": {
+      "arquivo": "midia/banner-caixas-caminhao-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 48920
+    },
+    "sha1": "2e4454d4e4129af86ffb83b75ec52f7c0282abd4"
+  },
+  "assets/favicon-PNG-removebg.png": {
+    "largura": 177,
+    "altura": 207,
+    "bytes_original": 21505,
+    "mini": {
+      "arquivo": "midia/favicon-png-removebg-mini.webp",
+      "largura": 177,
+      "altura": 207,
+      "bytes": 4160
+    },
+    "grande": {
+      "arquivo": "midia/favicon-png-removebg-grande.webp",
+      "largura": 177,
+      "altura": 207,
+      "bytes": 4160
+    },
+    "sha1": "83e8fcb1ab84a80ca3afb84a036e03660381fb4c"
+  },
+  "assets/favicon-PNG.png": {
+    "largura": 177,
+    "altura": 207,
+    "bytes_original": 18130,
+    "mini": {
+      "arquivo": "midia/favicon-png-mini.webp",
+      "largura": 177,
+      "altura": 207,
+      "bytes": 1518
+    },
+    "grande": {
+      "arquivo": "midia/favicon-png-grande.webp",
+      "largura": 177,
+      "altura": 207,
+      "bytes": 1518
+    },
+    "sha1": "39e1442142a67a46ce13480b87d472d0b6d1f47b"
+  },
+  "assets/logo-volta-express-caminhao.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2165938,
+    "mini": {
+      "arquivo": "midia/logo-volta-express-caminhao-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 11574
+    },
+    "grande": {
+      "arquivo": "midia/logo-volta-express-caminhao-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 59064
+    },
+    "sha1": "29af544f7446cdeaf6787ce3d17ce5b23682ca6c"
+  },
+  "assets/logo-volta-express-cargas.png": {
+    "largura": 1044,
+    "altura": 831,
+    "bytes_original": 906635,
+    "mini": {
+      "arquivo": "midia/logo-volta-express-cargas-mini.webp",
+      "largura": 480,
+      "altura": 382,
+      "bytes": 14782
+    },
+    "grande": {
+      "arquivo": "midia/logo-volta-express-cargas-grande.webp",
+      "largura": 1044,
+      "altura": 831,
+      "bytes": 46082
+    },
+    "sha1": "ff0646d52ff8fc25c72a2a0b07044c6c766c4a1e"
+  },
+  "assets/logo-volta-express.png": {
+    "largura": 1133,
+    "altura": 753,
+    "bytes_original": 1149868,
+    "mini": {
+      "arquivo": "midia/logo-volta-express-mini.webp",
+      "largura": 480,
+      "altura": 319,
+      "bytes": 20220
+    },
+    "grande": {
+      "arquivo": "midia/logo-volta-express-grande.webp",
+      "largura": 1133,
+      "altura": 753,
+      "bytes": 59096
+    },
+    "sha1": "1b7bb29e0971ee50b2aa60ff5cefe76e86f3303f"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-1.JPG": {
+    "largura": 621,
+    "altura": 373,
+    "bytes_original": 41582,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-1-mini.webp",
+      "largura": 480,
+      "altura": 288,
+      "bytes": 17264
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-1-grande.webp",
+      "largura": 621,
+      "altura": 373,
+      "bytes": 24084
+    },
+    "sha1": "8134c09bc72651c2dbc029a4a5f75a170631aeff"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-2-Hi-Way da Iveco.jpg": {
+    "largura": 1280,
+    "altura": 960,
+    "bytes_original": 333046,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-2-hi-way-da-iveco-mini.webp",
+      "largura": 480,
+      "altura": 360,
+      "bytes": 16308
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-2-hi-way-da-iveco-grande.webp",
+      "largura": 1280,
+      "altura": 960,
+      "bytes": 68540
+    },
+    "sha1": "caab9a8f5a63521926e025801a79cd3766a0b794"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-3-Mercedes-Benz L 1111.jpg": {
+    "largura": 1798,
+    "altura": 1200,
+    "bytes_original": 159748,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-3-mercedes-benz-l-1111-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 15074
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-3-mercedes-benz-l-1111-grande.webp",
+      "largura": 1600,
+      "altura": 1068,
+      "bytes": 86428
+    },
+    "sha1": "24b0c0a43d39f1e74ea377060b88f9b818e3c609"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-4-VW-Titan-19330.jpg": {
+    "largura": 653,
+    "altura": 411,
+    "bytes_original": 73591,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-4-vw-titan-19330-mini.webp",
+      "largura": 480,
+      "altura": 302,
+      "bytes": 14908
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-4-vw-titan-19330-grande.webp",
+      "largura": 653,
+      "altura": 411,
+      "bytes": 23836
+    },
+    "sha1": "b0c8175ccd7c9e991ed453bea575a9ce34d97122"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-5-W990 da Kenworth.jpg": {
+    "largura": 2000,
+    "altura": 1125,
+    "bytes_original": 348984,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-5-w990-da-kenworth-mini.webp",
+      "largura": 480,
+      "altura": 270,
+      "bytes": 18796
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-5-w990-da-kenworth-grande.webp",
+      "largura": 1600,
+      "altura": 900,
+      "bytes": 207032
+    },
+    "sha1": "19fe099eae62309b77f7681ad5edbd93d2bcea8b"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-6.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2209228,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-6-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 14186
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-6-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 94744
+    },
+    "sha1": "1f027e57702b187f222d9d3bb2b028f33245c158"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-7.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2197268,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-7-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 12018
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-7-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 89788
+    },
+    "sha1": "28c0cf0a908797de73b55fcd5fa1a6d6b494a984"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-8.jpg": {
+    "largura": 1024,
+    "altura": 768,
+    "bytes_original": 216880,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-8-mini.webp",
+      "largura": 480,
+      "altura": 360,
+      "bytes": 31970
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-8-grande.webp",
+      "largura": 1024,
+      "altura": 768,
+      "bytes": 124572
+    },
+    "sha1": "416e2f9022bb3f6dcbe2f0fd7e36b6ec3fea9c82"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-9.jpg": {
+    "largura": 1600,
+    "altura": 1067,
+    "bytes_original": 359638,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-9-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 19346
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-9-grande.webp",
+      "largura": 1600,
+      "altura": 1067,
+      "bytes": 146328
+    },
+    "sha1": "16e40d8bde013d30584c67f11b9aeae468187857"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/caminhao-1.jpg": {
+    "largura": 600,
+    "altura": 373,
+    "bytes_original": 38826,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/caminhao-1-mini.webp",
+      "largura": 480,
+      "altura": 298,
+      "bytes": 14902
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/caminhao-1-grande.webp",
+      "largura": 600,
+      "altura": 373,
+      "bytes": 21802
+    },
+    "sha1": "89ffdfaf873e5690e01c18baa1b9b12655102afd"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/caminhao-2.jpg": {
+    "largura": 472,
+    "altura": 480,
+    "bytes_original": 33110,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/caminhao-2-mini.webp",
+      "largura": 472,
+      "altura": 480,
+      "bytes": 31264
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/caminhao-2-grande.webp",
+      "largura": 472,
+      "altura": 480,
+      "bytes": 31264
+    },
+    "sha1": "36091753c67a3dd85f5bad1c97543fb5bda3918e"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/caminhao-3.jpg": {
+    "largura": 640,
+    "altura": 480,
+    "bytes_original": 63960,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/caminhao-3-mini.webp",
+      "largura": 480,
+      "altura": 360,
+      "bytes": 33116
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/caminhao-3-grande.webp",
+      "largura": 640,
+      "altura": 480,
+      "bytes": 59672
+    },
+    "sha1": "50e9a73ab9a9f579789aeda0664cbed86554b640"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/caminhao-medio-1.jpg": {
+    "largura": 640,
+    "altura": 383,
+    "bytes_original": 51446,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/caminhao-medio-1-mini.webp",
+      "largura": 480,
+      "altura": 287,
+      "bytes": 28030
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/caminhao-medio-1-grande.webp",
+      "largura": 640,
+      "altura": 383,
+      "bytes": 48316
+    },
+    "sha1": "ca34514dfae7ed7f99565718c67d71a4ce59f388"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/carreta-1.jpg": {
+    "largura": 1000,
+    "altura": 674,
+    "bytes_original": 124684,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/carreta-1-mini.webp",
+      "largura": 480,
+      "altura": 324,
+      "bytes": 32428
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/carreta-1-grande.webp",
+      "largura": 1000,
+      "altura": 674,
+      "bytes": 118138
+    },
+    "sha1": "6fa269bab1323b4495a6af0a4af5a59cd56dca87"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/carreta-2.jpg": {
+    "largura": 1000,
+    "altura": 667,
+    "bytes_original": 104692,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/carreta-2-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 26186
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/carreta-2-grande.webp",
+      "largura": 1000,
+      "altura": 667,
+      "bytes": 84428
+    },
+    "sha1": "239964e7b254363a28581fad5dbcb91d0f9337a3"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/carreta-3.jpg": {
+    "largura": 1000,
+    "altura": 625,
+    "bytes_original": 399628,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/carreta-3-mini.webp",
+      "largura": 480,
+      "altura": 300,
+      "bytes": 15324
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/carreta-3-grande.webp",
+      "largura": 1000,
+      "altura": 625,
+      "bytes": 48830
+    },
+    "sha1": "91a85eed6f7523321b30330e2835f1f0de7affaa"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/depositions-3.jpg": {
+    "largura": 600,
+    "altura": 400,
+    "bytes_original": 29626,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/depositions-3-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 13192
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/depositions-3-grande.webp",
+      "largura": 600,
+      "altura": 400,
+      "bytes": 21504
+    },
+    "sha1": "2b073ab3d272ec1dbdc5c3314bde3a91ae03194a"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-1.webp": {
+    "largura": 356,
+    "altura": 480,
+    "bytes_original": 28978,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-1-mini.webp",
+      "largura": 356,
+      "altura": 480,
+      "bytes": 26650
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-1-grande.webp",
+      "largura": 356,
+      "altura": 480,
+      "bytes": 26650
+    },
+    "sha1": "521b2c64e4ccfcb66675f64dc20972f630624127"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-2.webp": {
+    "largura": 270,
+    "altura": 480,
+    "bytes_original": 20686,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-2-mini.webp",
+      "largura": 270,
+      "altura": 480,
+      "bytes": 18448
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-2-grande.webp",
+      "largura": 270,
+      "altura": 480,
+      "bytes": 18448
+    },
+    "sha1": "f1ce1a6a10b8a1bfd4e0ec33742e67dcda7d32da"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-3.webp": {
+    "largura": 640,
+    "altura": 480,
+    "bytes_original": 32230,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-3-mini.webp",
+      "largura": 480,
+      "altura": 360,
+      "bytes": 17856
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-3-grande.webp",
+      "largura": 640,
+      "altura": 480,
+      "bytes": 29128
+    },
+    "sha1": "f8b6c6fbb17e82817479e28e526b0ff8d5e3c12c"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-4.jpeg": {
+    "largura": 142,
+    "altura": 169,
+    "bytes_original": 15015,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-4-mini.webp",
+      "largura": 142,
+      "altura": 169,
+      "bytes": 6960
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-4-grande.webp",
+      "largura": 142,
+      "altura": 169,
+      "bytes": 6960
+    },
+    "sha1": "e72cf261d44aea1e5f3995fd90c0373f2c9e3a3f"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-5.webp": {
+    "largura": 640,
+    "altura": 480,
+    "bytes_original": 63440,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-5-mini.webp",
+      "largura": 480,
+      "altura": 360,
+      "bytes": 30242
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-5-grande.webp",
+      "largura": 640,
+      "altura": 480,
+      "bytes": 58212
+    },
+    "sha1": "5d483d8fc83985b2bebb0494d4c3ab2b10761a50"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/logistic-2.jpg": {
+    "largura": 500,
+    "altura": 250,
+    "bytes_original": 24877,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/logistic-2-mini.webp",
+      "largura": 480,
+      "altura": 240,
+      "bytes": 19620
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/logistic-2-grande.webp",
+      "largura": 500,
+      "altura": 250,
+      "bytes": 22308
+    },
+    "sha1": "4c16bf1548018bc440ad2ae2e5f572d6eab978ea"
+  },
+  "assets/quero-carregar-transportador/anunciar-caminhao/meu-caminhao-1.jpg": {
+    "largura": 300,
+    "altura": 168,
+    "bytes_original": 8597,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/meu-caminhao-1-mini.webp",
+      "largura": 300,
+      "altura": 168,
+      "bytes": 8292
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/anunciar-caminhao/meu-caminhao-1-grande.webp",
+      "largura": 300,
+      "altura": 168,
+      "bytes": 8292
+    },
+    "sha1": "623fecad108db485106e1af29d691430183bfef4"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/banner-caixas.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 1673215,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/banner-caixas-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 4050
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/banner-caixas-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 21386
+    },
+    "sha1": "e5e7a865d387654027963125357c678966fc8b9f"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/caixas.png": {
+    "largura": 1044,
+    "altura": 831,
+    "bytes_original": 906635,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/caixas-mini.webp",
+      "largura": 480,
+      "altura": 382,
+      "bytes": 14782
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/caixas-grande.webp",
+      "largura": 1044,
+      "altura": 831,
+      "bytes": 46082
+    },
+    "sha1": "ff0646d52ff8fc25c72a2a0b07044c6c766c4a1e"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/caminhao-caixas-1.jpg": {
+    "largura": 736,
+    "altura": 920,
+    "bytes_original": 97661,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/caminhao-caixas-1-mini.webp",
+      "largura": 480,
+      "altura": 600,
+      "bytes": 26440
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/caminhao-caixas-1-grande.webp",
+      "largura": 736,
+      "altura": 920,
+      "bytes": 53028
+    },
+    "sha1": "889e12e4466aba05838c19bae281dd1d6a714cf9"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/caminhao-caixas-2.jpg": {
+    "largura": 736,
+    "altura": 1308,
+    "bytes_original": 127022,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/caminhao-caixas-2-mini.webp",
+      "largura": 480,
+      "altura": 853,
+      "bytes": 34080
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/caminhao-caixas-2-grande.webp",
+      "largura": 736,
+      "altura": 1308,
+      "bytes": 67834
+    },
+    "sha1": "1c7ae90cac91265c9ff08dceb655da27d5dc0643"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/caminhao-caixas-3.jpg": {
+    "largura": 736,
+    "altura": 1308,
+    "bytes_original": 187215,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/caminhao-caixas-3-mini.webp",
+      "largura": 480,
+      "altura": 853,
+      "bytes": 61712
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/caminhao-caixas-3-grande.webp",
+      "largura": 736,
+      "altura": 1308,
+      "bytes": 135458
+    },
+    "sha1": "6a0842b0761fbe810dbe7a4085daac80ab1299df"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/caminhao-caixas-4.jpg": {
+    "largura": 736,
+    "altura": 981,
+    "bytes_original": 123793,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/caminhao-caixas-4-mini.webp",
+      "largura": 480,
+      "altura": 640,
+      "bytes": 39422
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/caminhao-caixas-4-grande.webp",
+      "largura": 736,
+      "altura": 981,
+      "bytes": 78000
+    },
+    "sha1": "471cb40ceb294b15283026fdfd4413f6bbb8a68c"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/caminhao-caixas-5.jpg": {
+    "largura": 736,
+    "altura": 981,
+    "bytes_original": 87366,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/caminhao-caixas-5-mini.webp",
+      "largura": 480,
+      "altura": 640,
+      "bytes": 25482
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/caminhao-caixas-5-grande.webp",
+      "largura": 736,
+      "altura": 981,
+      "bytes": 47464
+    },
+    "sha1": "2603152300a0bc789bed9f1ccd6c618f951c367a"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/deposito-1.jpg": {
+    "largura": 736,
+    "altura": 1104,
+    "bytes_original": 166120,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/deposito-1-mini.webp",
+      "largura": 480,
+      "altura": 720,
+      "bytes": 58146
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/deposito-1-grande.webp",
+      "largura": 736,
+      "altura": 1104,
+      "bytes": 108624
+    },
+    "sha1": "4322ebab62e4c07a541b1e8a27cb5a82bd0ff21c"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/deposito-2.jpg": {
+    "largura": 598,
+    "altura": 900,
+    "bytes_original": 86280,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/deposito-2-mini.webp",
+      "largura": 480,
+      "altura": 722,
+      "bytes": 37276
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/deposito-2-grande.webp",
+      "largura": 598,
+      "altura": 900,
+      "bytes": 52686
+    },
+    "sha1": "048d66df06d5ce55e4392fdfa7d81df95542a46e"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/deposito-3.jpg": {
+    "largura": 736,
+    "altura": 980,
+    "bytes_original": 190926,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/deposito-3-mini.webp",
+      "largura": 480,
+      "altura": 639,
+      "bytes": 72112
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/deposito-3-grande.webp",
+      "largura": 736,
+      "altura": 980,
+      "bytes": 148136
+    },
+    "sha1": "d7c933c216135be6a31a34199f7b656f072a2773"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/deposito-4.jpg": {
+    "largura": 736,
+    "altura": 981,
+    "bytes_original": 102097,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/deposito-4-mini.webp",
+      "largura": 480,
+      "altura": 640,
+      "bytes": 30894
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/deposito-4-grande.webp",
+      "largura": 736,
+      "altura": 981,
+      "bytes": 57854
+    },
+    "sha1": "00cceffece16ca58bec264b5d468a10cc0360fac"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/estoque-1.jpg": {
+    "largura": 1365,
+    "altura": 768,
+    "bytes_original": 107409,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/estoque-1-mini.webp",
+      "largura": 480,
+      "altura": 270,
+      "bytes": 26630
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/estoque-1-grande.webp",
+      "largura": 1365,
+      "altura": 768,
+      "bytes": 104252
+    },
+    "sha1": "a8d13833f05c07a535ea4fd575f3c7046a39bc2a"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/estoque-2.jpg": {
+    "largura": 620,
+    "altura": 345,
+    "bytes_original": 47524,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/estoque-2-mini.webp",
+      "largura": 480,
+      "altura": 267,
+      "bytes": 26654
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/estoque-2-grande.webp",
+      "largura": 620,
+      "altura": 345,
+      "bytes": 44022
+    },
+    "sha1": "0add921e49922e74c5eace424ba43757dff49a30"
+  },
+  "assets/quero-carregar-transportador/buscar-carga/estrada.jpg": {
+    "largura": 1024,
+    "altura": 682,
+    "bytes_original": 175983,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/estrada-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 32850
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/buscar-carga/estrada-grande.webp",
+      "largura": 1024,
+      "altura": 682,
+      "bytes": 102872
+    },
+    "sha1": "dc2cc6393f813c6c208450abefa6ed4b987e2431"
+  },
+  "assets/quero-carregar-transportador/marca-transportador/android-chrome-192x192.png": {
+    "largura": 192,
+    "altura": 192,
+    "bytes_original": 34921,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/marca-transportador/android-chrome-192x192-mini.webp",
+      "largura": 192,
+      "altura": 192,
+      "bytes": 4322
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/marca-transportador/android-chrome-192x192-grande.webp",
+      "largura": 192,
+      "altura": 192,
+      "bytes": 4322
+    },
+    "sha1": "fdf7415e49a64ebbd58b99d988f3463dc2eed6fa"
+  },
+  "assets/quero-carregar-transportador/marca-transportador/android-chrome-512x512.png": {
+    "largura": 512,
+    "altura": 512,
+    "bytes_original": 257762,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/marca-transportador/android-chrome-512x512-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 17884
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/marca-transportador/android-chrome-512x512-grande.webp",
+      "largura": 512,
+      "altura": 512,
+      "bytes": 17884
+    },
+    "sha1": "fc9649f5e56f89114023655eb0ae0bdfc7e6a363"
+  },
+  "assets/quero-carregar-transportador/marca-transportador/apple-touch-icon.png": {
+    "largura": 180,
+    "altura": 180,
+    "bytes_original": 31475,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/marca-transportador/apple-touch-icon-mini.webp",
+      "largura": 180,
+      "altura": 180,
+      "bytes": 3928
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/marca-transportador/apple-touch-icon-grande.webp",
+      "largura": 180,
+      "altura": 180,
+      "bytes": 3928
+    },
+    "sha1": "fe9e87a9e1a24a4b3f27e813721efb683dae0fdf"
+  },
+  "assets/quero-carregar-transportador/marca-transportador/favicon-16x16.png": {
+    "largura": 16,
+    "altura": 16,
+    "bytes_original": 686,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/marca-transportador/favicon-16x16-mini.webp",
+      "largura": 16,
+      "altura": 16,
+      "bytes": 292
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/marca-transportador/favicon-16x16-grande.webp",
+      "largura": 16,
+      "altura": 16,
+      "bytes": 292
+    },
+    "sha1": "3f0851a729bcff9c26f9774edcf0f6c0cbe9e82f"
+  },
+  "assets/quero-carregar-transportador/marca-transportador/favicon-32x32.png": {
+    "largura": 32,
+    "altura": 32,
+    "bytes_original": 1774,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/marca-transportador/favicon-32x32-mini.webp",
+      "largura": 32,
+      "altura": 32,
+      "bytes": 538
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/marca-transportador/favicon-32x32-grande.webp",
+      "largura": 32,
+      "altura": 32,
+      "bytes": 538
+    },
+    "sha1": "fc4df21a22b5836a2588a94f55d2d058a4f26e7e"
+  },
+  "assets/quero-carregar-transportador/marca-transportador/favicon.png": {
+    "largura": 1044,
+    "altura": 831,
+    "bytes_original": 906635,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/marca-transportador/favicon-mini.webp",
+      "largura": 480,
+      "altura": 382,
+      "bytes": 14782
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/marca-transportador/favicon-grande.webp",
+      "largura": 1044,
+      "altura": 831,
+      "bytes": 46082
+    },
+    "sha1": "ff0646d52ff8fc25c72a2a0b07044c6c766c4a1e"
+  },
+  "assets/quero-carregar-transportador/persona/caminhoneiro-1.jpeg": {
+    "largura": 1371,
+    "altura": 720,
+    "bytes_original": 122859,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-1-mini.webp",
+      "largura": 480,
+      "altura": 252,
+      "bytes": 21920
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-1-grande.webp",
+      "largura": 1371,
+      "altura": 720,
+      "bytes": 80944
+    },
+    "sha1": "45a1f3ab7e38decf48502df13c322c1856df6954"
+  },
+  "assets/quero-carregar-transportador/persona/caminhoneiro-10.JPG": {
+    "largura": 579,
+    "altura": 393,
+    "bytes_original": 28410,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-10-mini.webp",
+      "largura": 480,
+      "altura": 326,
+      "bytes": 11244
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-10-grande.webp",
+      "largura": 579,
+      "altura": 393,
+      "bytes": 14776
+    },
+    "sha1": "4fb46d962e5b64f89ea8b9986f6bf9f6f8130ca2"
+  },
+  "assets/quero-carregar-transportador/persona/caminhoneiro-2.jpg": {
+    "largura": 1260,
+    "altura": 835,
+    "bytes_original": 185775,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-2-mini.webp",
+      "largura": 480,
+      "altura": 318,
+      "bytes": 22478
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-2-grande.webp",
+      "largura": 1260,
+      "altura": 835,
+      "bytes": 85810
+    },
+    "sha1": "adb53df908d44b3c023a713570b28add0f3708e8"
+  },
+  "assets/quero-carregar-transportador/persona/caminhoneiro-3.jpeg": {
+    "largura": 1280,
+    "altura": 720,
+    "bytes_original": 91096,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-3-mini.webp",
+      "largura": 480,
+      "altura": 270,
+      "bytes": 15212
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-3-grande.webp",
+      "largura": 1280,
+      "altura": 720,
+      "bytes": 54490
+    },
+    "sha1": "a94d15e4e1055e17306b11352ee963c192320239"
+  },
+  "assets/quero-carregar-transportador/persona/caminhoneiro-4.png": {
+    "largura": 1500,
+    "altura": 1001,
+    "bytes_original": 2577313,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-4-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 19258
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-4-grande.webp",
+      "largura": 1500,
+      "altura": 1001,
+      "bytes": 82966
+    },
+    "sha1": "a9e25cc5590a57d38f7d06af8933417faec100e6"
+  },
+  "assets/quero-carregar-transportador/persona/caminhoneiro-5.png": {
+    "largura": 1280,
+    "altura": 720,
+    "bytes_original": 1305179,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-5-mini.webp",
+      "largura": 480,
+      "altura": 270,
+      "bytes": 15546
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-5-grande.webp",
+      "largura": 1280,
+      "altura": 720,
+      "bytes": 59592
+    },
+    "sha1": "ce246be857a63a26f8332367fd54782ff45e5551"
+  },
+  "assets/quero-carregar-transportador/persona/caminhoneiro-6.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2543033,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-6-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 13474
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-6-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 108394
+    },
+    "sha1": "008e09a3ee1885307544a484a38673690f730494"
+  },
+  "assets/quero-carregar-transportador/persona/caminhoneiro-7.png": {
+    "largura": 1024,
+    "altura": 1536,
+    "bytes_original": 2339245,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-7-mini.webp",
+      "largura": 480,
+      "altura": 720,
+      "bytes": 24996
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-7-grande.webp",
+      "largura": 1024,
+      "altura": 1536,
+      "bytes": 93234
+    },
+    "sha1": "d4e87b175bd204cab539403461139a6913eefd3c"
+  },
+  "assets/quero-carregar-transportador/persona/caminhoneiro-8.png": {
+    "largura": 1024,
+    "altura": 1536,
+    "bytes_original": 2547598,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-8-mini.webp",
+      "largura": 480,
+      "altura": 720,
+      "bytes": 27112
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-8-grande.webp",
+      "largura": 1024,
+      "altura": 1536,
+      "bytes": 146526
+    },
+    "sha1": "66f4516f17e7c8962617e59fabd66f697e4023d6"
+  },
+  "assets/quero-carregar-transportador/persona/caminhoneiro-9.JPG": {
+    "largura": 574,
+    "altura": 392,
+    "bytes_original": 33319,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-9-mini.webp",
+      "largura": 480,
+      "altura": 328,
+      "bytes": 14232
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/persona/caminhoneiro-9-grande.webp",
+      "largura": 574,
+      "altura": 392,
+      "bytes": 18030
+    },
+    "sha1": "465f915d2f7eaba14447a0e91784ef0ba4a84c98"
+  },
+  "assets/quero-carregar-transportador/vantagem/vantagem-1.png": {
+    "largura": 2048,
+    "altura": 2048,
+    "bytes_original": 4713794,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/vantagem/vantagem-1-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 25218
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/vantagem/vantagem-1-grande.webp",
+      "largura": 1600,
+      "altura": 1600,
+      "bytes": 119592
+    },
+    "sha1": "5d6aa29fc92c419f9b4215c26929c37b2027e292"
+  },
+  "assets/quero-carregar-transportador/vantagem/vantagem-2.png": {
+    "largura": 2048,
+    "altura": 2048,
+    "bytes_original": 4443754,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/vantagem/vantagem-2-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 18618
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/vantagem/vantagem-2-grande.webp",
+      "largura": 1600,
+      "altura": 1600,
+      "bytes": 121102
+    },
+    "sha1": "4d7561274bf6a0244af8c2387bd4a0c26725b151"
+  },
+  "assets/quero-carregar-transportador/vantagem/vantagem-3.png": {
+    "largura": 2048,
+    "altura": 2048,
+    "bytes_original": 4129881,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/vantagem/vantagem-3-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 14268
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/vantagem/vantagem-3-grande.webp",
+      "largura": 1600,
+      "altura": 1600,
+      "bytes": 63916
+    },
+    "sha1": "57e36e6a602d908b132ff528ebeca7bea6f0ac66"
+  },
+  "assets/quero-carregar-transportador/vantagem/vantagem-4.png": {
+    "largura": 2048,
+    "altura": 2048,
+    "bytes_original": 4730210,
+    "mini": {
+      "arquivo": "midia/quero-carregar-transportador/vantagem/vantagem-4-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 17960
+    },
+    "grande": {
+      "arquivo": "midia/quero-carregar-transportador/vantagem/vantagem-4-grande.webp",
+      "largura": 1600,
+      "altura": 1600,
+      "bytes": 104434
+    },
+    "sha1": "29a1c4a5fb66923dcd180f46c01503d35ddf3d1c"
+  },
+  "assets/quero-transportar-embarcador/anunciar-carga/anuncio-Cargas.jpg": {
+    "largura": 920,
+    "altura": 668,
+    "bytes_original": 91780,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/anuncio-cargas-mini.webp",
+      "largura": 480,
+      "altura": 349,
+      "bytes": 20282
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/anuncio-cargas-grande.webp",
+      "largura": 920,
+      "altura": 668,
+      "bytes": 49326
+    },
+    "sha1": "63995fe71e00f91e5327dcb595b97cca517cabe3"
+  },
+  "assets/quero-transportar-embarcador/anunciar-carga/objetos-1.webp": {
+    "largura": 360,
+    "altura": 480,
+    "bytes_original": 27804,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/objetos-1-mini.webp",
+      "largura": 360,
+      "altura": 480,
+      "bytes": 25616
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/objetos-1-grande.webp",
+      "largura": 360,
+      "altura": 480,
+      "bytes": 25616
+    },
+    "sha1": "70f62721590a9cb393eefb50d620e8c0a57590ce"
+  },
+  "assets/quero-transportar-embarcador/anunciar-carga/objetos-2.webp": {
+    "largura": 640,
+    "altura": 480,
+    "bytes_original": 17594,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/objetos-2-mini.webp",
+      "largura": 480,
+      "altura": 360,
+      "bytes": 9456
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/objetos-2-grande.webp",
+      "largura": 640,
+      "altura": 480,
+      "bytes": 15498
+    },
+    "sha1": "6b98acfd31d85c746745e9155d9215a1b0f74048"
+  },
+  "assets/quero-transportar-embarcador/anunciar-carga/objetos-3.webp": {
+    "largura": 360,
+    "altura": 480,
+    "bytes_original": 8700,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/objetos-3-mini.webp",
+      "largura": 360,
+      "altura": 480,
+      "bytes": 7764
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/objetos-3-grande.webp",
+      "largura": 360,
+      "altura": 480,
+      "bytes": 7764
+    },
+    "sha1": "5254cdd61306b9921280364b34951ed6a1562870"
+  },
+  "assets/quero-transportar-embarcador/anunciar-carga/objetos-4.webp": {
+    "largura": 360,
+    "altura": 480,
+    "bytes_original": 28786,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/objetos-4-mini.webp",
+      "largura": 360,
+      "altura": 480,
+      "bytes": 27206
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/objetos-4-grande.webp",
+      "largura": 360,
+      "altura": 480,
+      "bytes": 27206
+    },
+    "sha1": "aa8dcc2d9a28f57dff8364544d7679c75fa3dafa"
+  },
+  "assets/quero-transportar-embarcador/anunciar-carga/objetos-5.webp": {
+    "largura": 222,
+    "altura": 311,
+    "bytes_original": 62010,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/objetos-5-mini.webp",
+      "largura": 222,
+      "altura": 311,
+      "bytes": 9192
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/objetos-5-grande.webp",
+      "largura": 222,
+      "altura": 311,
+      "bytes": 9192
+    },
+    "sha1": "ee4091dc395128bbbf0dad9a89ce875cf3b500da"
+  },
+  "assets/quero-transportar-embarcador/anunciar-carga/objetos-6.webp": {
+    "largura": 640,
+    "altura": 302,
+    "bytes_original": 20604,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/objetos-6-mini.webp",
+      "largura": 480,
+      "altura": 226,
+      "bytes": 13562
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/objetos-6-grande.webp",
+      "largura": 640,
+      "altura": 302,
+      "bytes": 19518
+    },
+    "sha1": "0e38d5d7de48f11ecf925cc8578cf2c051a5a247"
+  },
+  "assets/quero-transportar-embarcador/anunciar-carga/tenis-nike-2.jpg": {
+    "largura": 204,
+    "altura": 247,
+    "bytes_original": 9647,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/tenis-nike-2-mini.webp",
+      "largura": 204,
+      "altura": 247,
+      "bytes": 10460
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/tenis-nike-2-grande.webp",
+      "largura": 204,
+      "altura": 247,
+      "bytes": 10460
+    },
+    "sha1": "c151b5632884682f156fb44c3dff564a7f9a9c7e"
+  },
+  "assets/quero-transportar-embarcador/anunciar-carga/tenis-nike.jpg": {
+    "largura": 225,
+    "altura": 225,
+    "bytes_original": 8675,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/tenis-nike-mini.webp",
+      "largura": 225,
+      "altura": 225,
+      "bytes": 8442
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/anunciar-carga/tenis-nike-grande.webp",
+      "largura": 225,
+      "altura": 225,
+      "bytes": 8442
+    },
+    "sha1": "1db2492b10dc125f6ac56620dcfe0c9a64aa3167"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/banner-caminhao.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 1747496,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/banner-caminhao-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 5730
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/banner-caminhao-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 38648
+    },
+    "sha1": "e721d0cd9022d879edc8697ee88ffb2c84474da8"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-amarelo-8.jpg": {
+    "largura": 2078,
+    "altura": 2049,
+    "bytes_original": 910821,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-amarelo-8-mini.webp",
+      "largura": 480,
+      "altura": 473,
+      "bytes": 21266
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-amarelo-8-grande.webp",
+      "largura": 1600,
+      "altura": 1578,
+      "bytes": 121214
+    },
+    "sha1": "d060b800344f8d01922f641b4154e5ee9bddbb4d"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-1.jpg": {
+    "largura": 400,
+    "altura": 532,
+    "bytes_original": 88368,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-1-mini.webp",
+      "largura": 400,
+      "altura": 532,
+      "bytes": 32156
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-1-grande.webp",
+      "largura": 400,
+      "altura": 532,
+      "bytes": 32156
+    },
+    "sha1": "540fda32654ba0a94da0428dc9a43662db26d0ca"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-10.jpg": {
+    "largura": 466,
+    "altura": 458,
+    "bytes_original": 56583,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-10-mini.webp",
+      "largura": 466,
+      "altura": 458,
+      "bytes": 17236
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-10-grande.webp",
+      "largura": 466,
+      "altura": 458,
+      "bytes": 17236
+    },
+    "sha1": "83f83c918029dc79c8dcd0a8cfe4c37af265f742"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-6.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2209228,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-6-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 14186
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-6-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 94744
+    },
+    "sha1": "1f027e57702b187f222d9d3bb2b028f33245c158"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-branco-12.jpg": {
+    "largura": 344,
+    "altura": 386,
+    "bytes_original": 38158,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-branco-12-mini.webp",
+      "largura": 344,
+      "altura": 386,
+      "bytes": 10874
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-branco-12-grande.webp",
+      "largura": 344,
+      "altura": 386,
+      "bytes": 10874
+    },
+    "sha1": "4b088a61c61995ce59e43ddf599af6d6a33ff24b"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-container-11.jpg": {
+    "largura": 611,
+    "altura": 479,
+    "bytes_original": 109374,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-container-11-mini.webp",
+      "largura": 480,
+      "altura": 376,
+      "bytes": 24944
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-container-11-grande.webp",
+      "largura": 611,
+      "altura": 479,
+      "bytes": 37130
+    },
+    "sha1": "3d4185040cfb906c5dfe31b9a4a7c263634e4eb7"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-frota-4.jpg": {
+    "largura": 1024,
+    "altura": 682,
+    "bytes_original": 157333,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-frota-4-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 29904
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-frota-4-grande.webp",
+      "largura": 1024,
+      "altura": 682,
+      "bytes": 91728
+    },
+    "sha1": "7f461a65f869084e4e7df3ee9d89b8c639fe22cd"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-frota-frigorifico-2.jpg": {
+    "largura": 1862,
+    "altura": 1259,
+    "bytes_original": 738512,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-frota-frigorifico-2-mini.webp",
+      "largura": 480,
+      "altura": 325,
+      "bytes": 24032
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-frota-frigorifico-2-grande.webp",
+      "largura": 1600,
+      "altura": 1082,
+      "bytes": 183380
+    },
+    "sha1": "11600a3d0c952375924bbcc8f589deea389212cc"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-laranja-3.jpg": {
+    "largura": 537,
+    "altura": 423,
+    "bytes_original": 62103,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-laranja-3-mini.webp",
+      "largura": 480,
+      "altura": 378,
+      "bytes": 15640
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-laranja-3-grande.webp",
+      "largura": 537,
+      "altura": 423,
+      "bytes": 18746
+    },
+    "sha1": "30ed5d236ee13c38ea385234a1786f421b474c84"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-no-centro-de-distribuicao (2).jpg": {
+    "largura": 5464,
+    "altura": 3640,
+    "bytes_original": 4589310,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-no-centro-de-distribuicao-2-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 24224
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-no-centro-de-distribuicao-2-grande.webp",
+      "largura": 1600,
+      "altura": 1066,
+      "bytes": 166506
+    },
+    "sha1": "38def02b02576cc4c9f088e852d8377aaa5ef3e7"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-no-centro-de-distribuicao (3).jpg": {
+    "largura": 1024,
+    "altura": 704,
+    "bytes_original": 81793,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-no-centro-de-distribuicao-3-mini.webp",
+      "largura": 480,
+      "altura": 330,
+      "bytes": 13032
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-no-centro-de-distribuicao-3-grande.webp",
+      "largura": 1024,
+      "altura": 704,
+      "bytes": 35674
+    },
+    "sha1": "cc62204d75846f5ae1c8ddc66c46aff9045b5ab3"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-no-centro-de-distribuicao.jpg": {
+    "largura": 1024,
+    "altura": 768,
+    "bytes_original": 111367,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-no-centro-de-distribuicao-mini.webp",
+      "largura": 480,
+      "altura": 360,
+      "bytes": 19636
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-no-centro-de-distribuicao-grande.webp",
+      "largura": 1024,
+      "altura": 768,
+      "bytes": 50858
+    },
+    "sha1": "131906ba4bd61d2da41ed8b145d9818dcb131da1"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-no-deposito.jpg": {
+    "largura": 5464,
+    "altura": 3640,
+    "bytes_original": 5377417,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-no-deposito-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 27056
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-no-deposito-grande.webp",
+      "largura": 1600,
+      "altura": 1066,
+      "bytes": 184020
+    },
+    "sha1": "d5454a2fd326e949989d023d6b2188f33f9053c2"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-preto-5.jpg": {
+    "largura": 1857,
+    "altura": 1730,
+    "bytes_original": 673789,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-preto-5-mini.webp",
+      "largura": 480,
+      "altura": 447,
+      "bytes": 22902
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-preto-5-grande.webp",
+      "largura": 1600,
+      "altura": 1491,
+      "bytes": 121690
+    },
+    "sha1": "fecb65c2c93b8ccac730eb006968e1cdd3ff38b3"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-verde-7.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2197268,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-verde-7-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 12018
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-verde-7-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 89788
+    },
+    "sha1": "28c0cf0a908797de73b55fcd5fa1a6d6b494a984"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-verde-9.jpg": {
+    "largura": 498,
+    "altura": 434,
+    "bytes_original": 64910,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-verde-9-mini.webp",
+      "largura": 480,
+      "altura": 418,
+      "bytes": 18424
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-verde-9-grande.webp",
+      "largura": 498,
+      "altura": 434,
+      "bytes": 20118
+    },
+    "sha1": "4b6d2455a382e6c48d8c7c99545cad3c96d8dd34"
+  },
+  "assets/quero-transportar-embarcador/buscar-caminhao/caminhao.png": {
+    "largura": 1024,
+    "altura": 569,
+    "bytes_original": 844572,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-mini.webp",
+      "largura": 480,
+      "altura": 267,
+      "bytes": 20352
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/buscar-caminhao/caminhao-grande.webp",
+      "largura": 1024,
+      "altura": 569,
+      "bytes": 59940
+    },
+    "sha1": "10ed94a3593ec571bcf0cfffe4a7e58fa0ce3e12"
+  },
+  "assets/quero-transportar-embarcador/marca-embarcador/android-chrome-192x192.png": {
+    "largura": 192,
+    "altura": 192,
+    "bytes_original": 52764,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/marca-embarcador/android-chrome-192x192-mini.webp",
+      "largura": 192,
+      "altura": 192,
+      "bytes": 7162
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/marca-embarcador/android-chrome-192x192-grande.webp",
+      "largura": 192,
+      "altura": 192,
+      "bytes": 7162
+    },
+    "sha1": "6d23b6d43376bbf5a23043066d71225df6a48081"
+  },
+  "assets/quero-transportar-embarcador/marca-embarcador/android-chrome-512x512.png": {
+    "largura": 512,
+    "altura": 512,
+    "bytes_original": 354082,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/marca-embarcador/android-chrome-512x512-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 30098
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/marca-embarcador/android-chrome-512x512-grande.webp",
+      "largura": 512,
+      "altura": 512,
+      "bytes": 30760
+    },
+    "sha1": "26a1d4070ca935b26807c554d8473bc7dd0911e9"
+  },
+  "assets/quero-transportar-embarcador/marca-embarcador/apple-touch-icon.png": {
+    "largura": 180,
+    "altura": 180,
+    "bytes_original": 47467,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/marca-embarcador/apple-touch-icon-mini.webp",
+      "largura": 180,
+      "altura": 180,
+      "bytes": 6540
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/marca-embarcador/apple-touch-icon-grande.webp",
+      "largura": 180,
+      "altura": 180,
+      "bytes": 6540
+    },
+    "sha1": "a5b5a85422e629e0c99769b0559a138433b3b6ca"
+  },
+  "assets/quero-transportar-embarcador/marca-embarcador/favicon-16x16.png": {
+    "largura": 16,
+    "altura": 16,
+    "bytes_original": 857,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/marca-embarcador/favicon-16x16-mini.webp",
+      "largura": 16,
+      "altura": 16,
+      "bytes": 288
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/marca-embarcador/favicon-16x16-grande.webp",
+      "largura": 16,
+      "altura": 16,
+      "bytes": 288
+    },
+    "sha1": "495218f9c86ee125d59f9f79cf9c8360bf465993"
+  },
+  "assets/quero-transportar-embarcador/marca-embarcador/favicon-32x32.png": {
+    "largura": 32,
+    "altura": 32,
+    "bytes_original": 2430,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/marca-embarcador/favicon-32x32-mini.webp",
+      "largura": 32,
+      "altura": 32,
+      "bytes": 664
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/marca-embarcador/favicon-32x32-grande.webp",
+      "largura": 32,
+      "altura": 32,
+      "bytes": 664
+    },
+    "sha1": "0cadcb53d2b3d3a870d455f07d4fd5b5ee3279a1"
+  },
+  "assets/quero-transportar-embarcador/marca-embarcador/favicon.png": {
+    "largura": 1024,
+    "altura": 569,
+    "bytes_original": 844572,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/marca-embarcador/favicon-mini.webp",
+      "largura": 480,
+      "altura": 267,
+      "bytes": 20352
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/marca-embarcador/favicon-grande.webp",
+      "largura": 1024,
+      "altura": 569,
+      "bytes": 59940
+    },
+    "sha1": "10ed94a3593ec571bcf0cfffe4a7e58fa0ce3e12"
+  },
+  "assets/quero-transportar-embarcador/persona-embarcador/ana-lucia.png": {
+    "largura": 2048,
+    "altura": 2048,
+    "bytes_original": 5448946,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/persona-embarcador/ana-lucia-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 21458
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/persona-embarcador/ana-lucia-grande.webp",
+      "largura": 1600,
+      "altura": 1600,
+      "bytes": 134194
+    },
+    "sha1": "6044bb66afd056592842ee2c565377cb5f3af248"
+  },
+  "assets/quero-transportar-embarcador/persona-embarcador/marcos-viana.png": {
+    "largura": 2048,
+    "altura": 2048,
+    "bytes_original": 6321590,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/persona-embarcador/marcos-viana-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 23834
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/persona-embarcador/marcos-viana-grande.webp",
+      "largura": 1600,
+      "altura": 1600,
+      "bytes": 158372
+    },
+    "sha1": "3e46000e1fbeba3b69a6a6c632197ba94891e50c"
+  },
+  "assets/quero-transportar-embarcador/persona-embarcador/maria-braga.png": {
+    "largura": 2048,
+    "altura": 2048,
+    "bytes_original": 5990736,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/persona-embarcador/maria-braga-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 19736
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/persona-embarcador/maria-braga-grande.webp",
+      "largura": 1600,
+      "altura": 1600,
+      "bytes": 165116
+    },
+    "sha1": "a11f63fe1304f31b4166c13beb0dc3f6617a3095"
+  },
+  "assets/quero-transportar-embarcador/persona-embarcador/roberto-mattos.jpg": {
+    "largura": 740,
+    "altura": 493,
+    "bytes_original": 46146,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/persona-embarcador/roberto-mattos-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 24778
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/persona-embarcador/roberto-mattos-grande.webp",
+      "largura": 740,
+      "altura": 493,
+      "bytes": 43128
+    },
+    "sha1": "50a54f225d6f64b741ee34eed11c9dae61012e21"
+  },
+  "assets/quero-transportar-embarcador/persona-embarcador/roberto-mattos.png": {
+    "largura": 740,
+    "altura": 493,
+    "bytes_original": 904112,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/persona-embarcador/roberto-mattos-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 25496
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/persona-embarcador/roberto-mattos-grande.webp",
+      "largura": 740,
+      "altura": 493,
+      "bytes": 44198
+    },
+    "sha1": "923fa0a37f4c5b8cf5e7dedd21771ac0ec07ccc1"
+  },
+  "assets/quero-transportar-embarcador/persona-embarcador/sofia-guedes.png": {
+    "largura": 2048,
+    "altura": 2048,
+    "bytes_original": 4636044,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/persona-embarcador/sofia-guedes-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 15574
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/persona-embarcador/sofia-guedes-grande.webp",
+      "largura": 1600,
+      "altura": 1600,
+      "bytes": 81502
+    },
+    "sha1": "606c8a5290eded3e2c96d95d3e776235726c747b"
+  },
+  "assets/quero-transportar-embarcador/vantagem-embarcador/vantagem-1.png": {
+    "largura": 2048,
+    "altura": 2048,
+    "bytes_original": 5057082,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/vantagem-embarcador/vantagem-1-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 30002
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/vantagem-embarcador/vantagem-1-grande.webp",
+      "largura": 1600,
+      "altura": 1600,
+      "bytes": 158946
+    },
+    "sha1": "5fdf80e0d4cae4b2c8906c91a515814e1ea4a9d7"
+  },
+  "assets/quero-transportar-embarcador/vantagem-embarcador/vantagem-2.png": {
+    "largura": 2048,
+    "altura": 2048,
+    "bytes_original": 4644468,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/vantagem-embarcador/vantagem-2-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 20812
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/vantagem-embarcador/vantagem-2-grande.webp",
+      "largura": 1600,
+      "altura": 1600,
+      "bytes": 116506
+    },
+    "sha1": "ef682bed462087cc20aadd16b509ee7fc5cce8c1"
+  },
+  "assets/quero-transportar-embarcador/vantagem-embarcador/vantagem-3.png": {
+    "largura": 2048,
+    "altura": 2048,
+    "bytes_original": 4085813,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/vantagem-embarcador/vantagem-3-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 20880
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/vantagem-embarcador/vantagem-3-grande.webp",
+      "largura": 1600,
+      "altura": 1600,
+      "bytes": 95830
+    },
+    "sha1": "bb7d07e10bf7d6d1eab35af1044ea01e69594943"
+  },
+  "assets/quero-transportar-embarcador/vantagem-embarcador/vantagem-4.png": {
+    "largura": 2048,
+    "altura": 2048,
+    "bytes_original": 4176631,
+    "mini": {
+      "arquivo": "midia/quero-transportar-embarcador/vantagem-embarcador/vantagem-4-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 15844
+    },
+    "grande": {
+      "arquivo": "midia/quero-transportar-embarcador/vantagem-embarcador/vantagem-4-grande.webp",
+      "largura": 1600,
+      "altura": 1600,
+      "bytes": 87046
+    },
+    "sha1": "e82108f201589daaa7c2e6809313625bdff6c0ff"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/Car Website – 1@2x.png": {
+    "largura": 2560,
+    "altura": 1440,
+    "bytes_original": 1197283,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car-website-1-2x-mini.webp",
+      "largura": 480,
+      "altura": 270,
+      "bytes": 7368
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car-website-1-2x-grande.webp",
+      "largura": 1600,
+      "altura": 900,
+      "bytes": 44836
+    },
+    "sha1": "179132d538cd35a788e52596d897a71793fd66d9"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/about.png": {
+    "largura": 1850,
+    "altura": 1097,
+    "bytes_original": 2134087,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/about-mini.webp",
+      "largura": 480,
+      "altura": 285,
+      "bytes": 31172
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/about-grande.webp",
+      "largura": 1600,
+      "altura": 949,
+      "bytes": 186086
+    },
+    "sha1": "3058bf6200632ad5cc390db92e209d8a4b81d778"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/car1.jpg": {
+    "largura": 640,
+    "altura": 427,
+    "bytes_original": 99580,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car1-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 40666
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car1-grande.webp",
+      "largura": 640,
+      "altura": 427,
+      "bytes": 64284
+    },
+    "sha1": "bf43fc46ef469d6bd30ee181e46a4c356da6edae"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/car2.jpg": {
+    "largura": 640,
+    "altura": 427,
+    "bytes_original": 95769,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car2-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 38126
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car2-grande.webp",
+      "largura": 640,
+      "altura": 427,
+      "bytes": 63066
+    },
+    "sha1": "28070b758dde96eb9810b1afea1e6bb52d8b8b7e"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/car3.jpg": {
+    "largura": 640,
+    "altura": 465,
+    "bytes_original": 57949,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car3-mini.webp",
+      "largura": 480,
+      "altura": 349,
+      "bytes": 17448
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car3-grande.webp",
+      "largura": 640,
+      "altura": 465,
+      "bytes": 27252
+    },
+    "sha1": "80cf73a2a69661c128e47820abf6469c5fc9cc2d"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/car4.jpg": {
+    "largura": 640,
+    "altura": 427,
+    "bytes_original": 70134,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car4-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 11932
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car4-grande.webp",
+      "largura": 640,
+      "altura": 427,
+      "bytes": 17912
+    },
+    "sha1": "d87a38c0497fb8f299ccc98369dd994f91c370a7"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/car5.jpg": {
+    "largura": 640,
+    "altura": 427,
+    "bytes_original": 96532,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car5-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 37796
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car5-grande.webp",
+      "largura": 640,
+      "altura": 427,
+      "bytes": 61650
+    },
+    "sha1": "658633227b93f8329761763c381dea3c4ec6d844"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/car6.jpg": {
+    "largura": 640,
+    "altura": 427,
+    "bytes_original": 64208,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car6-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 22344
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/car6-grande.webp",
+      "largura": 640,
+      "altura": 427,
+      "bytes": 32812
+    },
+    "sha1": "66ff63488a2bb000f0177aae096e2c6594f692c8"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/fruit-1.jpeg": {
+    "largura": 640,
+    "altura": 800,
+    "bytes_original": 49126,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-1-mini.webp",
+      "largura": 480,
+      "altura": 600,
+      "bytes": 18044
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-1-grande.webp",
+      "largura": 640,
+      "altura": 800,
+      "bytes": 26468
+    },
+    "sha1": "85c45e171dbd5ee06f795b1a755ef6d773781b25"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/fruit-2.jpeg": {
+    "largura": 640,
+    "altura": 800,
+    "bytes_original": 12925,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-2-mini.webp",
+      "largura": 480,
+      "altura": 600,
+      "bytes": 5180
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-2-grande.webp",
+      "largura": 640,
+      "altura": 800,
+      "bytes": 7556
+    },
+    "sha1": "9e1b0afc69e1d14a4d4190a82d27aaf299920d8a"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/fruit-3.jpeg": {
+    "largura": 640,
+    "altura": 800,
+    "bytes_original": 16429,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-3-mini.webp",
+      "largura": 480,
+      "altura": 600,
+      "bytes": 5372
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-3-grande.webp",
+      "largura": 640,
+      "altura": 800,
+      "bytes": 8242
+    },
+    "sha1": "af2dde434d2c1c4fbe1147561f64ff8477f24511"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/fruit-4.jpeg": {
+    "largura": 640,
+    "altura": 427,
+    "bytes_original": 7123,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-4-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 2348
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-4-grande.webp",
+      "largura": 640,
+      "altura": 427,
+      "bytes": 3574
+    },
+    "sha1": "8743a7af852fa40bdbe6d548049998f341836ce3"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/fruit-5.jpeg": {
+    "largura": 640,
+    "altura": 480,
+    "bytes_original": 10074,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-5-mini.webp",
+      "largura": 480,
+      "altura": 360,
+      "bytes": 3602
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-5-grande.webp",
+      "largura": 640,
+      "altura": 480,
+      "bytes": 5396
+    },
+    "sha1": "1681638aa7306e670f8beecd3d4d0f54c40824e2"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/fruit-6.jpeg": {
+    "largura": 640,
+    "altura": 640,
+    "bytes_original": 6938,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-6-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 2368
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-6-grande.webp",
+      "largura": 640,
+      "altura": 640,
+      "bytes": 3696
+    },
+    "sha1": "868a25baacd5d05a3c6f145f3e06a449ee2f78c2"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/fruit-7.jpeg": {
+    "largura": 640,
+    "altura": 896,
+    "bytes_original": 14335,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-7-mini.webp",
+      "largura": 480,
+      "altura": 672,
+      "bytes": 4606
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-7-grande.webp",
+      "largura": 640,
+      "altura": 896,
+      "bytes": 6800
+    },
+    "sha1": "898e92886dfab2c13c41c6a106653315d734a3e8"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/fruit-8.jpeg": {
+    "largura": 640,
+    "altura": 960,
+    "bytes_original": 23349,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-8-mini.webp",
+      "largura": 480,
+      "altura": 720,
+      "bytes": 8622
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/fruit-8-grande.webp",
+      "largura": 640,
+      "altura": 960,
+      "bytes": 13454
+    },
+    "sha1": "5b17be4fd5eb63108c3e344b2a3613cf5eff8720"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/ios.png": {
+    "largura": 498,
+    "altura": 167,
+    "bytes_original": 4714,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/ios-mini.webp",
+      "largura": 480,
+      "altura": 161,
+      "bytes": 6332
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/ios-grande.webp",
+      "largura": 498,
+      "altura": 167,
+      "bytes": 6776
+    },
+    "sha1": "b0291754fcbbd70bd543aabfc05aaee41c6bcc26"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/jeep.png": {
+    "largura": 512,
+    "altura": 512,
+    "bytes_original": 20307,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/jeep-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 12854
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/jeep-grande.webp",
+      "largura": 512,
+      "altura": 512,
+      "bytes": 9596
+    },
+    "sha1": "32253eda243c1222021035e17b8e0c714fe7a113"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/play.png": {
+    "largura": 512,
+    "altura": 164,
+    "bytes_original": 22046,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/play-mini.webp",
+      "largura": 480,
+      "altura": 154,
+      "bytes": 4996
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/play-grande.webp",
+      "largura": 512,
+      "altura": 164,
+      "bytes": 5144
+    },
+    "sha1": "6b5e99dd3162f6f6f33ee7dbb0775a1946bc63cd"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/rev1.jpg": {
+    "largura": 640,
+    "altura": 960,
+    "bytes_original": 59371,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/rev1-mini.webp",
+      "largura": 480,
+      "altura": 720,
+      "bytes": 14344
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/rev1-grande.webp",
+      "largura": 640,
+      "altura": 960,
+      "bytes": 20298
+    },
+    "sha1": "0136991fb454e133643657fa5c5c468d3d4fa931"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/rev2.jpg": {
+    "largura": 640,
+    "altura": 956,
+    "bytes_original": 67187,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/rev2-mini.webp",
+      "largura": 480,
+      "altura": 717,
+      "bytes": 14796
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/rev2-grande.webp",
+      "largura": 640,
+      "altura": 956,
+      "bytes": 21622
+    },
+    "sha1": "022dc65721d32a760466757b7874a8717148d9ee"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/arts/rev3.jpg": {
+    "largura": 640,
+    "altura": 959,
+    "bytes_original": 92249,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/rev3-mini.webp",
+      "largura": 480,
+      "altura": 719,
+      "bytes": 19064
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/arts/rev3-grande.webp",
+      "largura": 640,
+      "altura": 959,
+      "bytes": 30580
+    },
+    "sha1": "4f0cdaac67f3af70686c7030cb6a5cfb3045281f"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/cozinha-gourmet.png": {
+    "largura": 848,
+    "altura": 1068,
+    "bytes_original": 1178243,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/cozinha-gourmet-mini.webp",
+      "largura": 480,
+      "altura": 605,
+      "bytes": 23978
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/cozinha-gourmet-grande.webp",
+      "largura": 848,
+      "altura": 1068,
+      "bytes": 53390
+    },
+    "sha1": "c1897ff8ae9b53cb0cac4b94aeea8caae8c81320"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/cozinha.png": {
+    "largura": 854,
+    "altura": 1074,
+    "bytes_original": 759060,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/cozinha-mini.webp",
+      "largura": 480,
+      "altura": 604,
+      "bytes": 18592
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/cozinha-grande.webp",
+      "largura": 854,
+      "altura": 1074,
+      "bytes": 38002
+    },
+    "sha1": "d729ac948ce4335430a02608ce6cf3f6eb138974"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/criacao-1.png": {
+    "largura": 2048,
+    "altura": 2048,
+    "bytes_original": 4239437,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/criacao-1-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 20600
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/criacao-1-grande.webp",
+      "largura": 1600,
+      "altura": 1600,
+      "bytes": 98446
+    },
+    "sha1": "7f6cc3925b7f7b8a87d6d57b2b245c388744ace5"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/homem-ao-smartphone.png": {
+    "largura": 856,
+    "altura": 1068,
+    "bytes_original": 1062197,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/homem-ao-smartphone-mini.webp",
+      "largura": 480,
+      "altura": 599,
+      "bytes": 22822
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/homem-ao-smartphone-grande.webp",
+      "largura": 856,
+      "altura": 1068,
+      "bytes": 55784
+    },
+    "sha1": "fe6e3cb61ecb0f7cc6d4f3eae1c4ae9bffb6f94c"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/mulher-ao-smartphone-na-sala.png": {
+    "largura": 848,
+    "altura": 1070,
+    "bytes_original": 987491,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/mulher-ao-smartphone-na-sala-mini.webp",
+      "largura": 480,
+      "altura": 606,
+      "bytes": 23106
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/mulher-ao-smartphone-na-sala-grande.webp",
+      "largura": 848,
+      "altura": 1070,
+      "bytes": 51694
+    },
+    "sha1": "3b79d3ec3db1d5c329f8023edc96f2f2d067449e"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/mulher-ao-smartphone.png": {
+    "largura": 852,
+    "altura": 1074,
+    "bytes_original": 673723,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/mulher-ao-smartphone-mini.webp",
+      "largura": 480,
+      "altura": 605,
+      "bytes": 22870
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/mulher-ao-smartphone-grande.webp",
+      "largura": 852,
+      "altura": 1074,
+      "bytes": 48332
+    },
+    "sha1": "9dabecf371a3e49f946f1b25ba5e81995c55e56c"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/quarto.png": {
+    "largura": 860,
+    "altura": 1072,
+    "bytes_original": 965855,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/quarto-mini.webp",
+      "largura": 480,
+      "altura": 598,
+      "bytes": 17998
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/quarto-grande.webp",
+      "largura": 860,
+      "altura": 1072,
+      "bytes": 38736
+    },
+    "sha1": "c927ae3a9eff3bde64819f2f214baf2ba5db6e1b"
+  },
+  "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/quatro-cards.png": {
+    "largura": 2540,
+    "altura": 628,
+    "bytes_original": 1735333,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/quatro-cards-mini.webp",
+      "largura": 480,
+      "altura": 119,
+      "bytes": 13828
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/inspiracoes/mkt-campanhas/quatro-cards-grande.webp",
+      "largura": 1600,
+      "altura": 396,
+      "bytes": 63628
+    },
+    "sha1": "59934864f7ce202327b16eda910a4212419ce2ff"
+  },
+  "assets/voltaexpressbrasil/midias/videos/release volta-express.mp4": {
+    "bytes_original": 19265051,
+    "largura": 848,
+    "altura": 480,
+    "duracao_s": 86,
+    "capa": {
+      "arquivo": "midia/voltaexpressbrasil/midias/videos/release-volta-express-capa.webp",
+      "bytes": 8332
+    },
+    "sha1": "4c67455aff3bf63b46bed837e4c6c558ab23c088"
+  },
+  "assets/voltaexpressbrasil/midias/videos/volta express VID-20241117-WA0026.mp4": {
+    "bytes_original": 16157248,
+    "largura": 1280,
+    "altura": 720,
+    "duracao_s": 240,
+    "capa": {
+      "arquivo": "midia/voltaexpressbrasil/midias/videos/volta-express-vid-20241117-wa0026-capa.webp",
+      "bytes": 7440
+    },
+    "sha1": "71707e90b9ff8a80177ff154f692ad945fd719a9"
+  },
+  "assets/voltaexpressbrasil/midias/videos/volta-express-banner.png": {
+    "largura": 1647,
+    "altura": 1040,
+    "bytes_original": 748407,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/midias/videos/volta-express-banner-mini.webp",
+      "largura": 480,
+      "altura": 303,
+      "bytes": 15490
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/midias/videos/volta-express-banner-grande.webp",
+      "largura": 1600,
+      "altura": 1010,
+      "bytes": 99040
+    },
+    "sha1": "ae0118416dfe2204837df5283b34bd78e0e595ce"
+  },
+  "assets/voltaexpressbrasil/midias/videos/volta-express-mapa.mp4": {
+    "bytes_original": 19824958,
+    "largura": 402,
+    "altura": 850,
+    "duracao_s": 144,
+    "capa": {
+      "arquivo": "midia/voltaexpressbrasil/midias/videos/volta-express-mapa-capa.webp",
+      "bytes": 167924
+    },
+    "sha1": "cedfc49a71971c4f790b5d36c7c7381349ba6ddb"
+  },
+  "assets/voltaexpressbrasil/midias/videos/volta-express-v4.2.mp4": {
+    "bytes_original": 16157248,
+    "largura": 1280,
+    "altura": 720,
+    "duracao_s": 240,
+    "capa": {
+      "arquivo": "midia/voltaexpressbrasil/midias/videos/volta-express-v4-2-capa.webp",
+      "bytes": 7440
+    },
+    "sha1": "71707e90b9ff8a80177ff154f692ad945fd719a9"
+  },
+  "assets/voltaexpressbrasil/qa-refs/imagem.png": {
+    "largura": 1662,
+    "altura": 1009,
+    "bytes_original": 868182,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/qa-refs/imagem-mini.webp",
+      "largura": 480,
+      "altura": 291,
+      "bytes": 14170
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/qa-refs/imagem-grande.webp",
+      "largura": 1600,
+      "altura": 971,
+      "bytes": 90990
+    },
+    "sha1": "9685378c0173efc529492e7d8747bdb19225f650"
+  },
+  "assets/voltaexpressbrasil/qa-refs/tamanhos-caminhoes-mudancas.jpg": {
+    "largura": 488,
+    "altura": 348,
+    "bytes_original": 34505,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/qa-refs/tamanhos-caminhoes-mudancas-mini.webp",
+      "largura": 480,
+      "altura": 342,
+      "bytes": 16218
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/qa-refs/tamanhos-caminhoes-mudancas-grande.webp",
+      "largura": 488,
+      "altura": 348,
+      "bytes": 17224
+    },
+    "sha1": "6cdd6fb49792124e9bb466c580c30a4a689999aa"
+  },
+  "assets/voltaexpressbrasil/veb-assets/banner-caixas-caminhao.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 1706478,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-assets/banner-caixas-caminhao-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 8460
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-assets/banner-caixas-caminhao-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 48920
+    },
+    "sha1": "2e4454d4e4129af86ffb83b75ec52f7c0282abd4"
+  },
+  "assets/voltaexpressbrasil/veb-assets/favicon-PNG-removebg.png": {
+    "largura": 177,
+    "altura": 207,
+    "bytes_original": 21505,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-assets/favicon-png-removebg-mini.webp",
+      "largura": 177,
+      "altura": 207,
+      "bytes": 4160
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-assets/favicon-png-removebg-grande.webp",
+      "largura": 177,
+      "altura": 207,
+      "bytes": 4160
+    },
+    "sha1": "83e8fcb1ab84a80ca3afb84a036e03660381fb4c"
+  },
+  "assets/voltaexpressbrasil/veb-assets/favicon-PNG.png": {
+    "largura": 177,
+    "altura": 207,
+    "bytes_original": 18130,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-assets/favicon-png-mini.webp",
+      "largura": 177,
+      "altura": 207,
+      "bytes": 1518
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-assets/favicon-png-grande.webp",
+      "largura": 177,
+      "altura": 207,
+      "bytes": 1518
+    },
+    "sha1": "39e1442142a67a46ce13480b87d472d0b6d1f47b"
+  },
+  "assets/voltaexpressbrasil/veb-assets/logo-volta-express-caminhao.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2165938,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-assets/logo-volta-express-caminhao-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 11574
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-assets/logo-volta-express-caminhao-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 59064
+    },
+    "sha1": "29af544f7446cdeaf6787ce3d17ce5b23682ca6c"
+  },
+  "assets/voltaexpressbrasil/veb-assets/logo-volta-express-cargas.png": {
+    "largura": 1044,
+    "altura": 831,
+    "bytes_original": 906635,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-assets/logo-volta-express-cargas-mini.webp",
+      "largura": 480,
+      "altura": 382,
+      "bytes": 14782
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-assets/logo-volta-express-cargas-grande.webp",
+      "largura": 1044,
+      "altura": 831,
+      "bytes": 46082
+    },
+    "sha1": "ff0646d52ff8fc25c72a2a0b07044c6c766c4a1e"
+  },
+  "assets/voltaexpressbrasil/veb-assets/logo-volta-express.png": {
+    "largura": 1133,
+    "altura": 753,
+    "bytes_original": 1149868,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-assets/logo-volta-express-mini.webp",
+      "largura": 480,
+      "altura": 319,
+      "bytes": 20220
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-assets/logo-volta-express-grande.webp",
+      "largura": 1133,
+      "altura": 753,
+      "bytes": 59096
+    },
+    "sha1": "1b7bb29e0971ee50b2aa60ff5cefe76e86f3303f"
+  },
+  "assets/voltaexpressbrasil/veb-logo/banner-caixas-caminhao-logo.png": {
+    "largura": 1133,
+    "altura": 753,
+    "bytes_original": 1149868,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/banner-caixas-caminhao-logo-mini.webp",
+      "largura": 480,
+      "altura": 319,
+      "bytes": 20220
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/banner-caixas-caminhao-logo-grande.webp",
+      "largura": 1133,
+      "altura": 753,
+      "bytes": 59096
+    },
+    "sha1": "1b7bb29e0971ee50b2aa60ff5cefe76e86f3303f"
+  },
+  "assets/voltaexpressbrasil/veb-logo/caixas.png": {
+    "largura": 1044,
+    "altura": 831,
+    "bytes_original": 906635,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/caixas-mini.webp",
+      "largura": 480,
+      "altura": 382,
+      "bytes": 14782
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/caixas-grande.webp",
+      "largura": 1044,
+      "altura": 831,
+      "bytes": 46082
+    },
+    "sha1": "ff0646d52ff8fc25c72a2a0b07044c6c766c4a1e"
+  },
+  "assets/voltaexpressbrasil/veb-logo/caminhao.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2165938,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/caminhao-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 11574
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/caminhao-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 59064
+    },
+    "sha1": "29af544f7446cdeaf6787ce3d17ce5b23682ca6c"
+  },
+  "assets/voltaexpressbrasil/veb-logo/favicon-PNG-removebg.png": {
+    "largura": 177,
+    "altura": 207,
+    "bytes_original": 21505,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/favicon-png-removebg-mini.webp",
+      "largura": 177,
+      "altura": 207,
+      "bytes": 4160
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/favicon-png-removebg-grande.webp",
+      "largura": 177,
+      "altura": 207,
+      "bytes": 4160
+    },
+    "sha1": "83e8fcb1ab84a80ca3afb84a036e03660381fb4c"
+  },
+  "assets/voltaexpressbrasil/veb-logo/favicon-PNG.png": {
+    "largura": 177,
+    "altura": 207,
+    "bytes_original": 18130,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/favicon-png-mini.webp",
+      "largura": 177,
+      "altura": 207,
+      "bytes": 1518
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/favicon-png-grande.webp",
+      "largura": 177,
+      "altura": 207,
+      "bytes": 1518
+    },
+    "sha1": "39e1442142a67a46ce13480b87d472d0b6d1f47b"
+  },
+  "assets/voltaexpressbrasil/veb-logo/logo-completa.png": {
+    "largura": 504,
+    "altura": 495,
+    "bytes_original": 73795,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/logo-completa-mini.webp",
+      "largura": 480,
+      "altura": 471,
+      "bytes": 22118
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/logo-completa-grande.webp",
+      "largura": 504,
+      "altura": 495,
+      "bytes": 19168
+    },
+    "sha1": "d92ca146216571fd7c8e179a4ebc0a2e6e985961"
+  },
+  "assets/voltaexpressbrasil/veb-logo/volta-express-brasil.jpg": {
+    "largura": 1133,
+    "altura": 753,
+    "bytes_original": 1149868,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/volta-express-brasil-mini.webp",
+      "largura": 480,
+      "altura": 319,
+      "bytes": 20220
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/volta-express-brasil-grande.webp",
+      "largura": 1133,
+      "altura": 753,
+      "bytes": 59096
+    },
+    "sha1": "1b7bb29e0971ee50b2aa60ff5cefe76e86f3303f"
+  },
+  "assets/voltaexpressbrasil/veb-logo/volta-express-brasil.png": {
+    "largura": 1037,
+    "altura": 690,
+    "bytes_original": 978002,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/volta-express-brasil-mini.webp",
+      "largura": 480,
+      "altura": 319,
+      "bytes": 11752
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-logo/volta-express-brasil-grande.webp",
+      "largura": 1037,
+      "altura": 690,
+      "bytes": 32402
+    },
+    "sha1": "aaf88615f07fc02a6c2b1cb73c1f39b563b7ec92"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/1. Transportar a um clique (1).png": {
+    "largura": 1200,
+    "altura": 1200,
+    "bytes_original": 1261666,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/1-transportar-a-um-clique-1-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 17544
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/1-transportar-a-um-clique-1-grande.webp",
+      "largura": 1200,
+      "altura": 1200,
+      "bytes": 65394
+    },
+    "sha1": "9e3dd951b9a8bae6b056c4fab34409cdefa4f544"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/1. Transportar a um clique.png": {
+    "largura": 1200,
+    "altura": 1200,
+    "bytes_original": 1261666,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/1-transportar-a-um-clique-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 17544
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/1-transportar-a-um-clique-grande.webp",
+      "largura": 1200,
+      "altura": 1200,
+      "bytes": 65394
+    },
+    "sha1": "9e3dd951b9a8bae6b056c4fab34409cdefa4f544"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/1. Whatsapp - oportunidade de frete -  Fundo Amarelo.png": {
+    "largura": 1200,
+    "altura": 1200,
+    "bytes_original": 541378,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/1-whatsapp-oportunidade-de-frete-fundo-amarelo-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 24074
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/1-whatsapp-oportunidade-de-frete-fundo-amarelo-grande.webp",
+      "largura": 1200,
+      "altura": 1200,
+      "bytes": 70746
+    },
+    "sha1": "234dedbb256ea1170ea209865b531d26ec4245c7"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/1.Transportar a um clique.png": {
+    "largura": 1200,
+    "altura": 1200,
+    "bytes_original": 1493058,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/1-transportar-a-um-clique-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 26452
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/1-transportar-a-um-clique-grande.webp",
+      "largura": 1200,
+      "altura": 1200,
+      "bytes": 93306
+    },
+    "sha1": "9416cc5cb05cfb983f374329888d13e3f32453ce"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/2. Logo - Volta Express - Modelo Novo.png": {
+    "largura": 600,
+    "altura": 600,
+    "bytes_original": 35721,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/2-logo-volta-express-modelo-novo-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 7350
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/2-logo-volta-express-modelo-novo-grande.webp",
+      "largura": 600,
+      "altura": 600,
+      "bytes": 9688
+    },
+    "sha1": "445493875886f8390d681d737a56044ae645bcd3"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/2. Whatsapp - oportunidade de frete - Fundo Branco.png": {
+    "largura": 1200,
+    "altura": 1200,
+    "bytes_original": 526170,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/2-whatsapp-oportunidade-de-frete-fundo-branco-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 21410
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/2-whatsapp-oportunidade-de-frete-fundo-branco-grande.webp",
+      "largura": 1200,
+      "altura": 1200,
+      "bytes": 61916
+    },
+    "sha1": "24a48083030c0a5d42dd06ccec914c0f29d299b7"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/3. Logo - Volta Express - Modelo Novo.png": {
+    "largura": 600,
+    "altura": 600,
+    "bytes_original": 36532,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/3-logo-volta-express-modelo-novo-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 7344
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/3-logo-volta-express-modelo-novo-grande.webp",
+      "largura": 600,
+      "altura": 600,
+      "bytes": 9308
+    },
+    "sha1": "212b9319a2a4f23920bf6734353e9231abebd186"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/3. Whatsapp - oportunidade de frete - Fundo claro.png": {
+    "largura": 1200,
+    "altura": 1200,
+    "bytes_original": 1027627,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/3-whatsapp-oportunidade-de-frete-fundo-claro-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 35980
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/3-whatsapp-oportunidade-de-frete-fundo-claro-grande.webp",
+      "largura": 1200,
+      "altura": 1200,
+      "bytes": 102812
+    },
+    "sha1": "fa380e8a9a24d9fad5315e197ff17aceb25ef881"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/4. Logo - Volta Express - Modelo Novo.png": {
+    "largura": 600,
+    "altura": 600,
+    "bytes_original": 41106,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/4-logo-volta-express-modelo-novo-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 8126
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/4-logo-volta-express-modelo-novo-grande.webp",
+      "largura": 600,
+      "altura": 600,
+      "bytes": 10744
+    },
+    "sha1": "58dc8caabba00b160816a8ef0fb2426dfddde6f1"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/4. Whatsapp - oportunidade de frete - Fundo preto.png": {
+    "largura": 1200,
+    "altura": 1200,
+    "bytes_original": 531508,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/4-whatsapp-oportunidade-de-frete-fundo-preto-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 19594
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/4-whatsapp-oportunidade-de-frete-fundo-preto-grande.webp",
+      "largura": 1200,
+      "altura": 1200,
+      "bytes": 58416
+    },
+    "sha1": "4a3700ee3ef7394e2393cfa916ee2ca892284e5b"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/5. Logo - Volta Express - Modelo Novo (1).png": {
+    "largura": 600,
+    "altura": 600,
+    "bytes_original": 40664,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/5-logo-volta-express-modelo-novo-1-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 8132
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/5-logo-volta-express-modelo-novo-1-grande.webp",
+      "largura": 600,
+      "altura": 600,
+      "bytes": 10730
+    },
+    "sha1": "3ef61d530f4d85dae3d29e1edbd7b4775948a4e5"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/5. Logo - Volta Express - Modelo Novo.png": {
+    "largura": 600,
+    "altura": 600,
+    "bytes_original": 40664,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/5-logo-volta-express-modelo-novo-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 8132
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/5-logo-volta-express-modelo-novo-grande.webp",
+      "largura": 600,
+      "altura": 600,
+      "bytes": 10730
+    },
+    "sha1": "3ef61d530f4d85dae3d29e1edbd7b4775948a4e5"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/5. Whatsapp - oportunidade de frete - Original.png": {
+    "largura": 1200,
+    "altura": 1200,
+    "bytes_original": 821523,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/5-whatsapp-oportunidade-de-frete-original-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 31804
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/5-whatsapp-oportunidade-de-frete-original-grande.webp",
+      "largura": 1200,
+      "altura": 1200,
+      "bytes": 92228
+    },
+    "sha1": "0386e05d8ca03856fea9f66ee402d6cbc0b7c77c"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/depositions-4.jpg": {
+    "largura": 1200,
+    "altura": 720,
+    "bytes_original": 63924,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/depositions-4-mini.webp",
+      "largura": 480,
+      "altura": 288,
+      "bytes": 16082
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/depositions-4-grande.webp",
+      "largura": 1200,
+      "altura": 720,
+      "bytes": 44160
+    },
+    "sha1": "f9b0b551c0a1819dab7e9ad04355b0e9fe91f64d"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/logo-1.png": {
+    "largura": 800,
+    "altura": 600,
+    "bytes_original": 40112,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/logo-1-mini.webp",
+      "largura": 480,
+      "altura": 360,
+      "bytes": 5078
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/logo-1-grande.webp",
+      "largura": 800,
+      "altura": 600,
+      "bytes": 9154
+    },
+    "sha1": "73a3284e2e0d1eaa32aeae81c8afa60d5e24d368"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/users-1.jpg": {
+    "largura": 1080,
+    "altura": 720,
+    "bytes_original": 42608,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/users-1-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 16040
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/users-1-grande.webp",
+      "largura": 1080,
+      "altura": 720,
+      "bytes": 42858
+    },
+    "sha1": "97ab612fde3f37b03d8100992208dba3da1ad844"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-1/users-2.jpg": {
+    "largura": 1200,
+    "altura": 720,
+    "bytes_original": 63924,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/users-2-mini.webp",
+      "largura": 480,
+      "altura": 288,
+      "bytes": 16082
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-1/users-2-grande.webp",
+      "largura": 1200,
+      "altura": 720,
+      "bytes": 44160
+    },
+    "sha1": "f9b0b551c0a1819dab7e9ad04355b0e9fe91f64d"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-2/carreta-2.jpeg": {
+    "largura": 1280,
+    "altura": 720,
+    "bytes_original": 68332,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-2/carreta-2-mini.webp",
+      "largura": 480,
+      "altura": 270,
+      "bytes": 9842
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-2/carreta-2-grande.webp",
+      "largura": 1280,
+      "altura": 720,
+      "bytes": 38650
+    },
+    "sha1": "8fa943363e9583b128abb708247a4c9bffd4f992"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-2/volta-express-brasil-dg.jpeg": {
+    "largura": 1024,
+    "altura": 1536,
+    "bytes_original": 472651,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-2/volta-express-brasil-dg-mini.webp",
+      "largura": 480,
+      "altura": 720,
+      "bytes": 61756
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-2/volta-express-brasil-dg-grande.webp",
+      "largura": 1024,
+      "altura": 1536,
+      "bytes": 177604
+    },
+    "sha1": "f71284a9bcc06a832ac7e80663f4c6ab5578e9eb"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-2/volta-express-brasil-dt.jpeg": {
+    "largura": 1024,
+    "altura": 1536,
+    "bytes_original": 474287,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-2/volta-express-brasil-dt-mini.webp",
+      "largura": 480,
+      "altura": 720,
+      "bytes": 59922
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-2/volta-express-brasil-dt-grande.webp",
+      "largura": 1024,
+      "altura": 1536,
+      "bytes": 180092
+    },
+    "sha1": "e13931942ca17eb56c41e7467786ade2c2d3bd94"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-2/volta-express-brasil-gm-off.jpeg": {
+    "largura": 1024,
+    "altura": 1536,
+    "bytes_original": 470295,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-2/volta-express-brasil-gm-off-mini.webp",
+      "largura": 480,
+      "altura": 720,
+      "bytes": 62664
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-2/volta-express-brasil-gm-off-grande.webp",
+      "largura": 1024,
+      "altura": 1536,
+      "bytes": 175354
+    },
+    "sha1": "f0e0062f9b48388dd0cb22559df488cd526ba3bd"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-2/volta-express-fluxo.png": {
+    "largura": 1133,
+    "altura": 753,
+    "bytes_original": 73003,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-2/volta-express-fluxo-mini.webp",
+      "largura": 480,
+      "altura": 319,
+      "bytes": 9260
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-2/volta-express-fluxo-grande.webp",
+      "largura": 1133,
+      "altura": 753,
+      "bytes": 26324
+    },
+    "sha1": "5dfdfb0d6e9e2b3bed331b0a584c41b82f763437"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-cabine-1.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2470137,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-cabine-1-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 15570
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-cabine-1-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 114436
+    },
+    "sha1": "cf025517f205baab7e0f6bfaad57017dd678c172"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-caminhao-1.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2255852,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-caminhao-1-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 9116
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-caminhao-1-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 46604
+    },
+    "sha1": "f079af6b3fa004bfe27fdf171cd06266a7dd3498"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-caminhao-2.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2289627,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-caminhao-2-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 8710
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-caminhao-2-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 52688
+    },
+    "sha1": "4eb849360b88f09adc85b7d024325a510df68234"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-estrada-1.jpg": {
+    "largura": 5472,
+    "altura": 3648,
+    "bytes_original": 3004639,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-estrada-1-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 22306
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-estrada-1-grande.webp",
+      "largura": 1600,
+      "altura": 1067,
+      "bytes": 199442
+    },
+    "sha1": "daae9218048bfcdcb7cba84b2398e331df859c8e"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-estrada-2.jpg": {
+    "largura": 5590,
+    "altura": 3727,
+    "bytes_original": 4437842,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-estrada-2-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 20726
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-estrada-2-grande.webp",
+      "largura": 1600,
+      "altura": 1067,
+      "bytes": 303268
+    },
+    "sha1": "19587fd34ca6ec249503c2878bf1b194f83c9324"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-mapa-1.png": {
+    "largura": 1024,
+    "altura": 1536,
+    "bytes_original": 2659549,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-mapa-1-mini.webp",
+      "largura": 480,
+      "altura": 720,
+      "bytes": 31158
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-mapa-1-grande.webp",
+      "largura": 1024,
+      "altura": 1536,
+      "bytes": 108522
+    },
+    "sha1": "7c8874e39ae34f09c5c6ea4d5d99e8735e724ba4"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-mapa-2.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 3021332,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-mapa-2-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 16976
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-mapa-2-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 157906
+    },
+    "sha1": "6a83b836332944154efe5cb16bd22a7100cdf634"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-mapa-3.png": {
+    "largura": 1024,
+    "altura": 1024,
+    "bytes_original": 1948351,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-mapa-3-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 18276
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-mapa-3-grande.webp",
+      "largura": 1024,
+      "altura": 1024,
+      "bytes": 104122
+    },
+    "sha1": "c2f50a8d3ef94b85bcfd57b5d19e2f3300afb380"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-opcoes_de_frete-1.png": {
+    "largura": 1024,
+    "altura": 1536,
+    "bytes_original": 2505444,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-opcoes-de-frete-1-mini.webp",
+      "largura": 480,
+      "altura": 720,
+      "bytes": 40852
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-opcoes-de-frete-1-grande.webp",
+      "largura": 1024,
+      "altura": 1536,
+      "bytes": 157628
+    },
+    "sha1": "109867aa86c91e98d4dc250bfb804b112f4bf302"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-opcoes_de_frete-2.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2046314,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-opcoes-de-frete-2-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 12940
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-opcoes-de-frete-2-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 63286
+    },
+    "sha1": "48c975bd4794cc07193522bffb09f6276595e779"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-opcoes_de_frete-3.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2118478,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-opcoes-de-frete-3-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 13080
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-opcoes-de-frete-3-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 73570
+    },
+    "sha1": "e6fd5ee3cd613fce7e4449634748117bc09884a6"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-opcoes_de_frete-4.png": {
+    "largura": 1024,
+    "altura": 1536,
+    "bytes_original": 2945512,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-opcoes-de-frete-4-mini.webp",
+      "largura": 480,
+      "altura": 720,
+      "bytes": 29100
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-opcoes-de-frete-4-grande.webp",
+      "largura": 1024,
+      "altura": 1536,
+      "bytes": 148542
+    },
+    "sha1": "c4860023c73c3481941c54e71f518bbeb1c50c7f"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-opcoes_de_frete-5.png": {
+    "largura": 1024,
+    "altura": 1536,
+    "bytes_original": 2848045,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-opcoes-de-frete-5-mini.webp",
+      "largura": 480,
+      "altura": 720,
+      "bytes": 22544
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-opcoes-de-frete-5-grande.webp",
+      "largura": 1024,
+      "altura": 1536,
+      "bytes": 127752
+    },
+    "sha1": "7082e5d29c81e9ce8d40b762966408fd9f4c4d43"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-painel-1.jpg": {
+    "largura": 2048,
+    "altura": 1152,
+    "bytes_original": 274617,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-painel-1-mini.webp",
+      "largura": 480,
+      "altura": 270,
+      "bytes": 15038
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-painel-1-grande.webp",
+      "largura": 1600,
+      "altura": 900,
+      "bytes": 85882
+    },
+    "sha1": "4ba15bc0c3f6d5b92b3174d7c54358bb479cf4aa"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-parceiro-1.png": {
+    "largura": 1536,
+    "altura": 1024,
+    "bytes_original": 2546847,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-parceiro-1-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 14382
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-parceiro-1-grande.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "bytes": 85192
+    },
+    "sha1": "e1cafa85b82163e58812856c472c60b4ec7b6ac8"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-parceiro-2.png": {
+    "largura": 1024,
+    "altura": 1024,
+    "bytes_original": 1897531,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-parceiro-2-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 17364
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-parceiro-2-grande.webp",
+      "largura": 1024,
+      "altura": 1024,
+      "bytes": 91858
+    },
+    "sha1": "bf45e4b625c08f599064c45fced7859984d724cb"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-porto-1.jpg": {
+    "largura": 1024,
+    "altura": 683,
+    "bytes_original": 120252,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-porto-1-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 18638
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/volta-express-porto-1-grande.webp",
+      "largura": 1024,
+      "altura": 683,
+      "bytes": 63796
+    },
+    "sha1": "7c7b9653f5ecb19859efd6e09020a22c0a947269"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/caminhao-na-mecanica.jpg": {
+    "largura": 1024,
+    "altura": 682,
+    "bytes_original": 110007,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/caminhao-na-mecanica-mini.webp",
+      "largura": 480,
+      "altura": 320,
+      "bytes": 22160
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/caminhao-na-mecanica-grande.webp",
+      "largura": 1024,
+      "altura": 682,
+      "bytes": 55506
+    },
+    "sha1": "a7f850a83db86069b41ab72014e15d1e25ee64be"
+  },
+  "assets/voltaexpressbrasil/veb-mkt-3/caminhao-no-tunel.jpg": {
+    "largura": 5976,
+    "altura": 3992,
+    "bytes_original": 2478480,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/caminhao-no-tunel-mini.webp",
+      "largura": 480,
+      "altura": 321,
+      "bytes": 13266
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-mkt-3/caminhao-no-tunel-grande.webp",
+      "largura": 1600,
+      "altura": 1069,
+      "bytes": 63390
+    },
+    "sha1": "3b1a408ed22f1c6c308a82d4ebf2077474f23d69"
+  },
+  "assets/voltaexpressbrasil/veb-painel/carreta-1.png": {
+    "largura": 1024,
+    "altura": 1024,
+    "bytes_original": 200011,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-painel/carreta-1-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 37454
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-painel/carreta-1-grande.webp",
+      "largura": 1024,
+      "altura": 1024,
+      "bytes": 131342
+    },
+    "sha1": "f2653533b79402d6f377ca31b6d3e30dfc69f526"
+  },
+  "assets/voltaexpressbrasil/veb-painel/carreta-2.png": {
+    "largura": 1024,
+    "altura": 1024,
+    "bytes_original": 262481,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-painel/carreta-2-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 53224
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-painel/carreta-2-grande.webp",
+      "largura": 1024,
+      "altura": 1024,
+      "bytes": 193822
+    },
+    "sha1": "ff50f7fc6333a57e9a2fd576b5e1a9f0a220154f"
+  },
+  "assets/voltaexpressbrasil/veb-painel/carreta-3.jpg": {
+    "largura": 1000,
+    "altura": 625,
+    "bytes_original": 399628,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-painel/carreta-3-mini.webp",
+      "largura": 480,
+      "altura": 300,
+      "bytes": 15324
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-painel/carreta-3-grande.webp",
+      "largura": 1000,
+      "altura": 625,
+      "bytes": 48830
+    },
+    "sha1": "91a85eed6f7523321b30330e2835f1f0de7affaa"
+  },
+  "assets/voltaexpressbrasil/veb-public/android-chrome-192x192.png": {
+    "largura": 192,
+    "altura": 192,
+    "bytes_original": 50866,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-public/android-chrome-192x192-mini.webp",
+      "largura": 192,
+      "altura": 192,
+      "bytes": 6926
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-public/android-chrome-192x192-grande.webp",
+      "largura": 192,
+      "altura": 192,
+      "bytes": 6926
+    },
+    "sha1": "0c74770f2391e13b6775b69cadbed2da7797469a"
+  },
+  "assets/voltaexpressbrasil/veb-public/android-chrome-512x512.png": {
+    "largura": 512,
+    "altura": 512,
+    "bytes_original": 341700,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-public/android-chrome-512x512-mini.webp",
+      "largura": 480,
+      "altura": 480,
+      "bytes": 26480
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-public/android-chrome-512x512-grande.webp",
+      "largura": 512,
+      "altura": 512,
+      "bytes": 26572
+    },
+    "sha1": "cb0487d54b5bfdf38492f851d4389270ed351c4c"
+  },
+  "assets/voltaexpressbrasil/veb-public/apple-touch-icon.png": {
+    "largura": 180,
+    "altura": 180,
+    "bytes_original": 45691,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-public/apple-touch-icon-mini.webp",
+      "largura": 180,
+      "altura": 180,
+      "bytes": 6370
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-public/apple-touch-icon-grande.webp",
+      "largura": 180,
+      "altura": 180,
+      "bytes": 6370
+    },
+    "sha1": "d99b9113d5aed21619dd90bd10de9f7dfa8f042b"
+  },
+  "assets/voltaexpressbrasil/veb-public/favicon-16x16.png": {
+    "largura": 16,
+    "altura": 16,
+    "bytes_original": 891,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-public/favicon-16x16-mini.webp",
+      "largura": 16,
+      "altura": 16,
+      "bytes": 320
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-public/favicon-16x16-grande.webp",
+      "largura": 16,
+      "altura": 16,
+      "bytes": 320
+    },
+    "sha1": "3840454181f942f83140e7b0a32f2ebc81ec8e31"
+  },
+  "assets/voltaexpressbrasil/veb-public/favicon-32x32.png": {
+    "largura": 32,
+    "altura": 32,
+    "bytes_original": 2485,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-public/favicon-32x32-mini.webp",
+      "largura": 32,
+      "altura": 32,
+      "bytes": 708
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-public/favicon-32x32-grande.webp",
+      "largura": 32,
+      "altura": 32,
+      "bytes": 708
+    },
+    "sha1": "6cc8733d2a110022c90deb56d4cbcf7e2fea2704"
+  },
+  "assets/voltaexpressbrasil/veb-public/favicon.png": {
+    "largura": 1133,
+    "altura": 753,
+    "bytes_original": 1149868,
+    "mini": {
+      "arquivo": "midia/voltaexpressbrasil/veb-public/favicon-mini.webp",
+      "largura": 480,
+      "altura": 319,
+      "bytes": 20220
+    },
+    "grande": {
+      "arquivo": "midia/voltaexpressbrasil/veb-public/favicon-grande.webp",
+      "largura": 1133,
+      "altura": 753,
+      "bytes": 59096
+    },
+    "sha1": "1b7bb29e0971ee50b2aa60ff5cefe76e86f3303f"
+  }
+}

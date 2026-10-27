@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Explicações estruturadas",
+  "type": "object",
+  "properties": {
+    "itens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "titulo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "resumo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fonte": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "titulo",
+          "resumo",
+          "fonte"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "itens"
+  ],
+  "additionalProperties": true
+}

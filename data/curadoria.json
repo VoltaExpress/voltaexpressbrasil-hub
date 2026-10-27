@@ -1,0 +1,1026 @@
+{
+  "_leia": "Arquivo editado à mão. pastas = regras por prefixo; arquivos = ajustes por arquivo (titulo, resumo, data, finalidade, persona, publico:false, youtube); links = canais oficiais. Depois de editar: python scripts/gerar_catalogo.py",
+  "pastas": {
+    "assets": {
+      "finalidade": "marca",
+      "persona": "institucional",
+      "colecao": "Marca"
+    },
+    "assets/voltaexpressbrasil/inspiracoes": {
+      "finalidade": "pesquisa",
+      "colecao": "Referências de mercado",
+      "fonte": "Pesquisa de referências visuais e de produto",
+      "publico": false,
+      "motivo": "Peças de terceiros (layouts, fotos e componentes de outras marcas) usadas como referência interna; publicar sugeriria autoria e não comprova nada sobre a Volta Express"
+    },
+    "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas": {
+      "finalidade": "marca",
+      "colecao": "Campanhas"
+    },
+    "assets/voltaexpressbrasil/midias": {
+      "finalidade": "demonstracao",
+      "colecao": "Vídeos e demonstrações"
+    },
+    "assets/voltaexpressbrasil/qa-refs": {
+      "finalidade": "explicacao",
+      "colecao": "Referências técnicas"
+    },
+    "assets/voltaexpressbrasil/veb-assets": {
+      "finalidade": "marca",
+      "colecao": "Ativos complementares"
+    },
+    "assets/voltaexpressbrasil/veb-logo": {
+      "finalidade": "marca",
+      "colecao": "Logotipos"
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1": {
+      "finalidade": "marca",
+      "colecao": "Campanha MKT 01"
+    },
+    "assets/voltaexpressbrasil/veb-mkt-2": {
+      "finalidade": "marca",
+      "colecao": "Campanha MKT 02"
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3": {
+      "finalidade": "marca",
+      "colecao": "Frotas e rodovias"
+    },
+    "assets/voltaexpressbrasil/veb-painel": {
+      "finalidade": "dashboard",
+      "colecao": "Imagens do painel"
+    },
+    "assets/voltaexpressbrasil/veb-public": {
+      "finalidade": "marca",
+      "colecao": "Ícones e favicons"
+    },
+    "assets/quero-carregar-transportador": {
+      "persona": "caminhoneiro",
+      "finalidade": "marca",
+      "colecao": "Persona caminhoneiro"
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao": {
+      "finalidade": "demonstracao",
+      "colecao": "Fluxo: anunciar caminhão"
+    },
+    "assets/quero-carregar-transportador/buscar-carga": {
+      "finalidade": "demonstracao",
+      "colecao": "Fluxo: buscar carga"
+    },
+    "assets/quero-transportar-embarcador": {
+      "persona": "embarcador",
+      "finalidade": "marca",
+      "colecao": "Persona embarcador"
+    },
+    "assets/quero-transportar-embarcador/anunciar-carga": {
+      "finalidade": "demonstracao",
+      "colecao": "Fluxo: anunciar carga"
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao": {
+      "finalidade": "demonstracao",
+      "colecao": "Fluxo: buscar caminhão"
+    },
+    "assets/arquivos/json-dados": {
+      "finalidade": "demonstracao",
+      "colecao": "Código dos protótipos (v4)",
+      "fonte": "Protótipo React da versão 4"
+    },
+    "assets/arquivos/qa-v5": {
+      "finalidade": "demonstracao",
+      "colecao": "Fluxos da versão 5",
+      "fonte": "Rascunhos de fluxo da v5 (2025)"
+    }
+  },
+  "arquivos": {
+    "assets/arquivos/json-dados/Blog.js": {
+      "titulo": "Componente React - Blog",
+      "resumo": "Componente React da central de conteúdos e artigos."
+    },
+    "assets/arquivos/json-dados/Checkout.js": {
+      "titulo": "Componente React - Checkout",
+      "resumo": "Componente do fluxo de checkout e contratação de frete."
+    },
+    "assets/arquivos/json-dados/FeaturedPost.js": {
+      "titulo": "Componente React - Post Destaque",
+      "resumo": "Componente de exibição de postagens destacadas."
+    },
+    "assets/arquivos/json-dados/Footer.js": {
+      "titulo": "Componente React - Rodapé",
+      "resumo": "Componente do rodapé institucional."
+    },
+    "assets/arquivos/json-dados/Header.js": {
+      "titulo": "Componente React - Cabeçalho",
+      "resumo": "Componente de cabeçalho e navegação superior."
+    },
+    "assets/arquivos/json-dados/MainFeaturedPost.js": {
+      "titulo": "Componente React - Dobra Principal",
+      "resumo": "Componente da dobra principal da aplicação."
+    },
+    "assets/arquivos/json-dados/MapsC.js": {
+      "titulo": "Componente React - Mapa Embarcador",
+      "resumo": "Componente do mapa interativo focado no Embarcador (Cargador)."
+    },
+    "assets/arquivos/json-dados/MapsT.js": {
+      "titulo": "Componente React - Mapa Motorista",
+      "resumo": "Componente do mapa interativo focado no Caminhoneiro (Transportador)."
+    },
+    "assets/arquivos/json-dados/MapsW.js": {
+      "titulo": "Componente React - Mapa Auxiliar",
+      "resumo": "Componente auxiliar de mapas e integrações."
+    },
+    "assets/arquivos/json-dados/SecundFeaturedPost.js": {
+      "titulo": "Componente React - Destaque Secundário",
+      "resumo": "Componente de destaque secundário de telas."
+    },
+    "assets/arquivos/json-dados/ThirthFeaturedPost.js": {
+      "titulo": "Componente React - Destaque Terciário",
+      "resumo": "Componente de destaque terciário de telas."
+    },
+    "assets/arquivos/json-dados/form.css": {
+      "titulo": "Estilos Globais de Formulário",
+      "resumo": "Estilos customizados para estilização dos formulários."
+    },
+    "assets/arquivos/qa-v5/v5-fluxo.png": {
+      "titulo": "Fluxo de telas da versão 5",
+      "resumo": "Home → escolha da persona → login e cadastro → mapa de cargas ou de caminhões."
+    },
+    "assets/arquivos/qa-v5/v5-funcionalidades.png": {
+      "titulo": "Funcionalidades da versão 5",
+      "resumo": "Mapa das seções de cada persona (como carregar, encontrar carga, vantagens) e dos formulários de anúncio e cadastro."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-1.jpg": {
+      "titulo": "Interface de Anúncio de Frota",
+      "resumo": "Interface e elementos visuais do fluxo de oferta de veículos."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-2-Hi-Way da Iveco.jpg": {
+      "titulo": "Caminhão Iveco Hi-Way",
+      "resumo": "Modelo de caminhão Iveco Hi-Way para seleção no anúncio de frota."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-3-Mercedes-Benz L 1111.jpg": {
+      "titulo": "Caminhão Mercedes-Benz L 1111",
+      "resumo": "Modelo clássico Mercedes-Benz L 1111 para cadastro no sistema."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-4-VW-Titan-19330.jpg": {
+      "titulo": "Caminhão VW Titan 19330",
+      "resumo": "Modelo Volkswagen Titan 19330 para especificação de frete."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-5-W990 da Kenworth.jpg": {
+      "titulo": "Caminhão Kenworth W990",
+      "resumo": "Modelo Kenworth W990 para opções de veículos pesados."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-6.png": {
+      "titulo": "Formulário de Cadastro de Veículo 01",
+      "resumo": "Elemento de interface do formulário de anúncio de caminhão."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-7.png": {
+      "titulo": "Formulário de Cadastro de Veículo 02",
+      "resumo": "Variação gráfica para o fluxo de cadastro do transportador."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-8.jpg": {
+      "titulo": "Foto Temática - Veículo Rodoviário 01",
+      "resumo": "Fotografia temática de veículo rodoviário para anúncio."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-9.jpg": {
+      "titulo": "Foto Temática - Veículo Rodoviário 02",
+      "resumo": "Foto complementar de caminhão para composição da frota."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/caminhao-1.jpg": {
+      "titulo": "Vitrine de Veículo 01",
+      "resumo": "Ativo visual de caminhão para vitrine de veículos."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/caminhao-2.jpg": {
+      "titulo": "Vitrine de Veículo 02",
+      "resumo": "Imagem de suporte para perfil de frota comercial."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/caminhao-3.jpg": {
+      "titulo": "Vitrine de Veículo 03",
+      "resumo": "Fotografia de veículo de transporte para seleção."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/caminhao-medio-1.jpg": {
+      "titulo": "Veículo de Médio Porte (3/4)",
+      "resumo": "Opção de veículo de médio porte para frete urbano e regional."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/carreta-1.jpg": {
+      "titulo": "Carreta Pesada 01",
+      "resumo": "Modelo de carreta pesada para frete de grande volume."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/carreta-2.jpg": {
+      "titulo": "Carreta Articulada 02",
+      "resumo": "Imagem promocional de carreta articulada."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/carreta-3.jpg": {
+      "titulo": "Carreta Longa Distância 03",
+      "resumo": "Fotografia de carreta de longa distância."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/depositions-3.jpg": {
+      "titulo": "Depoimento Caminhoneiro",
+      "resumo": "Ativo de prova social e depoimento de caminhoneiro."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-1.webp": {
+      "titulo": "Utilitário Leve 01",
+      "resumo": "Opção de veículo utilitário para pequenos fretes."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-2.webp": {
+      "titulo": "Utilitário Leve 02",
+      "resumo": "Ativo visual para categoria de transporte leve."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-3.webp": {
+      "titulo": "Utilitário Leve 03",
+      "resumo": "Elemento gráfico de suporte para fretes de pequeno porte."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-4.jpeg": {
+      "titulo": "Utilitário Comercial Leve 04",
+      "resumo": "Foto complementar de utilitário comercial leve."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/frete-pequeno-5.webp": {
+      "titulo": "Utilitário Leve 05",
+      "resumo": "Ativo em formato leve para catálogo de fretes pequenos."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/logistic-2.jpg": {
+      "titulo": "Operação e Logística Rodoviária",
+      "resumo": "Foto temática de operação e logística rodoviária."
+    },
+    "assets/quero-carregar-transportador/anunciar-caminhao/meu-caminhao-1.jpg": {
+      "titulo": "Perfil do Veículo no Painel",
+      "resumo": "Foto de perfil do veículo para painel do motorista."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/banner-caixas.png": {
+      "titulo": "Banner Cargas Disponíveis",
+      "resumo": "Banner promocional da vitrine de cargas disponíveis."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/caixas.png": {
+      "titulo": "Filtro Rápido de Categorias",
+      "resumo": "Ilustração de mercadorias para filtro rápido de categorias."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/caminhao-caixas-1.jpg": {
+      "titulo": "Embarque de Mercadorias 01",
+      "resumo": "Imagem de veículo carregado com caixas e mercadorias."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/caminhao-caixas-2.jpg": {
+      "titulo": "Embarque de Mercadorias 02",
+      "resumo": "Variação de foto de caminhão em processo de carga."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/caminhao-caixas-3.jpg": {
+      "titulo": "Frete Fracionado",
+      "resumo": "Ativo visual de transporte de frete fracionado."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/caminhao-caixas-4.jpg": {
+      "titulo": "Composição de Cargas na Vitrine",
+      "resumo": "Fotografia de composição de veículo para vitrine de fretes."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/caminhao-caixas-5.jpg": {
+      "titulo": "Carga Pronta para Embarque",
+      "resumo": "Imagem demonstrativa de carga pronta para embarque."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/deposito-1.jpg": {
+      "titulo": "Centro de Distribuição 01",
+      "resumo": "Fotografia de centro de distribuição e depósito."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/deposito-2.jpg": {
+      "titulo": "Logística de Armazenamento 02",
+      "resumo": "Visão interna de pátio e logística de armazenamento."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/deposito-3.jpg": {
+      "titulo": "Galpão Logístico 03",
+      "resumo": "Ativo de suporte visual para localização de fretes em galpões."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/deposito-4.jpg": {
+      "titulo": "Centro de Transbordo 04",
+      "resumo": "Imagem de operações logísticas em centro de transbordo."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/estoque-1.jpg": {
+      "titulo": "Mercadorias Aguardando Frete 01",
+      "resumo": "Ativo visual de mercadorias em estoque aguardando transporte."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/estoque-2.jpg": {
+      "titulo": "Paletes e Produtos Armazenados 02",
+      "resumo": "Fotografia de paletes e produtos armazenados."
+    },
+    "assets/quero-carregar-transportador/buscar-carga/estrada.jpg": {
+      "titulo": "Visão Geral de Rotas Rodoviárias",
+      "resumo": "Fotografia panorâmica de rodovia para compor a busca de rotas."
+    },
+    "assets/quero-carregar-transportador/marca-transportador/android-chrome-192x192.png": {
+      "titulo": "Atalhos PWA Android (192x192)",
+      "resumo": "Ativo visual PWA e ícones de atalho móvel (Android/iOS)."
+    },
+    "assets/quero-carregar-transportador/marca-transportador/android-chrome-512x512.png": {
+      "titulo": "Atalhos PWA Android (512x512)",
+      "resumo": "Ativo visual PWA e ícones de atalho móvel (Android/iOS)."
+    },
+    "assets/quero-carregar-transportador/marca-transportador/apple-touch-icon.png": {
+      "titulo": "Ícone Touch iOS",
+      "resumo": "Ativo visual PWA e ícones de atalho móvel (Android/iOS)."
+    },
+    "assets/quero-carregar-transportador/marca-transportador/favicon-16x16.png": {
+      "titulo": "Favicon 16x16",
+      "resumo": "Ícone oficial e favicons para navegador do módulo Quero Carregar."
+    },
+    "assets/quero-carregar-transportador/marca-transportador/favicon-32x32.png": {
+      "titulo": "Favicon 32x32",
+      "resumo": "Ícone oficial e favicons para navegador do módulo Quero Carregar."
+    },
+    "assets/quero-carregar-transportador/marca-transportador/favicon.ico": {
+      "titulo": "Favicon Quero Carregar (ICO)",
+      "resumo": "Ícone oficial e favicons para navegador do módulo Quero Carregar."
+    },
+    "assets/quero-carregar-transportador/marca-transportador/favicon.png": {
+      "titulo": "Favicon Quero Carregar (PNG)",
+      "resumo": "Ícone oficial e favicons para navegador do módulo Quero Carregar."
+    },
+    "assets/quero-carregar-transportador/persona/caminhoneiro-1.jpeg": {
+      "titulo": "Persona Motorista 01",
+      "resumo": "Ativo visual da persona Motorista Autônomo nº 1 para depoimentos e cards."
+    },
+    "assets/quero-carregar-transportador/persona/caminhoneiro-10.jpg": {
+      "titulo": "Persona Motorista 10",
+      "resumo": "Ativo visual da persona Motorista Autônomo nº 10 para depoimentos e cards."
+    },
+    "assets/quero-carregar-transportador/persona/caminhoneiro-2.jpg": {
+      "titulo": "Persona Motorista 02",
+      "resumo": "Ativo visual da persona Motorista Autônomo nº 2 para depoimentos e cards."
+    },
+    "assets/quero-carregar-transportador/persona/caminhoneiro-3.jpeg": {
+      "titulo": "Persona Motorista 03",
+      "resumo": "Ativo visual da persona Motorista Autônomo nº 3 para depoimentos e cards."
+    },
+    "assets/quero-carregar-transportador/persona/caminhoneiro-4.png": {
+      "titulo": "Persona Motorista 04",
+      "resumo": "Ativo visual da persona Motorista Autônomo nº 4 para depoimentos e cards."
+    },
+    "assets/quero-carregar-transportador/persona/caminhoneiro-5.png": {
+      "titulo": "Persona Motorista 05",
+      "resumo": "Ativo visual da persona Motorista Autônomo nº 5 para depoimentos e cards."
+    },
+    "assets/quero-carregar-transportador/persona/caminhoneiro-6.png": {
+      "titulo": "Persona Motorista 06",
+      "resumo": "Ativo visual da persona Motorista Autônomo nº 6 para depoimentos e cards."
+    },
+    "assets/quero-carregar-transportador/persona/caminhoneiro-7.png": {
+      "titulo": "Persona Motorista 07",
+      "resumo": "Ativo visual da persona Motorista Autônomo nº 7 para depoimentos e cards."
+    },
+    "assets/quero-carregar-transportador/persona/caminhoneiro-8.png": {
+      "titulo": "Persona Motorista 08",
+      "resumo": "Ativo visual da persona Motorista Autônomo nº 8 para depoimentos e cards."
+    },
+    "assets/quero-carregar-transportador/persona/caminhoneiro-9.jpg": {
+      "titulo": "Persona Motorista 09",
+      "resumo": "Ativo visual da persona Motorista Autônomo nº 9 para depoimentos e cards."
+    },
+    "assets/quero-carregar-transportador/vantagem/vantagem-1.png": {
+      "titulo": "Vantagem 01 - Retorno Garantido",
+      "resumo": "Ativo gráfico da 1ª vantagem competitiva para a persona Caminhoneiro."
+    },
+    "assets/quero-carregar-transportador/vantagem/vantagem-2.png": {
+      "titulo": "Vantagem 02 - Sem Intermediários",
+      "resumo": "Ativo gráfico da 2ª vantagem competitiva para a persona Caminhoneiro."
+    },
+    "assets/quero-carregar-transportador/vantagem/vantagem-3.png": {
+      "titulo": "Vantagem 03 - Pagamento Rápido",
+      "resumo": "Ativo gráfico da 3ª vantagem competitiva para a persona Caminhoneiro."
+    },
+    "assets/quero-carregar-transportador/vantagem/vantagem-4.png": {
+      "titulo": "Vantagem 04 - Rotas Inteligentes",
+      "resumo": "Ativo gráfico da 4ª vantagem competitiva para a persona Caminhoneiro."
+    },
+    "assets/quero-transportar-embarcador/anunciar-carga/anuncio-Cargas.jpg": {
+      "titulo": "Tela de Cadastro de Cargas",
+      "resumo": "Interface da tela de cadastro e publicação de cargas pelo Embarcador."
+    },
+    "assets/quero-transportar-embarcador/anunciar-carga/objetos-1.webp": {
+      "titulo": "Categoria de Mercadoria 01",
+      "resumo": "Ícone e imagem de categoria de objeto/produto nº 1 a ser embarcado."
+    },
+    "assets/quero-transportar-embarcador/anunciar-carga/objetos-2.webp": {
+      "titulo": "Categoria de Mercadoria 02",
+      "resumo": "Ícone e imagem de categoria de objeto/produto nº 2 a ser embarcado."
+    },
+    "assets/quero-transportar-embarcador/anunciar-carga/objetos-3.webp": {
+      "titulo": "Categoria de Mercadoria 03",
+      "resumo": "Ícone e imagem de categoria de objeto/produto nº 3 a ser embarcado."
+    },
+    "assets/quero-transportar-embarcador/anunciar-carga/objetos-4.webp": {
+      "titulo": "Categoria de Mercadoria 04",
+      "resumo": "Ícone e imagem de categoria de objeto/produto nº 4 a ser embarcado."
+    },
+    "assets/quero-transportar-embarcador/anunciar-carga/objetos-5.webp": {
+      "titulo": "Categoria de Mercadoria 05",
+      "resumo": "Ícone e imagem de categoria de objeto/produto nº 5 a ser embarcado."
+    },
+    "assets/quero-transportar-embarcador/anunciar-carga/objetos-6.webp": {
+      "titulo": "Categoria de Mercadoria 06",
+      "resumo": "Ícone e imagem de categoria de objeto/produto nº 6 a ser embarcado."
+    },
+    "assets/quero-transportar-embarcador/anunciar-carga/tenis-nike-2.jpg": {
+      "titulo": "Exemplo Frete Fracionado 02",
+      "resumo": "Visão complementar de mercadoria para validação da persona Embarcador."
+    },
+    "assets/quero-transportar-embarcador/anunciar-carga/tenis-nike.jpg": {
+      "titulo": "Exemplo Frete Fracionado 01",
+      "resumo": "Exemplo prático de mercadoria fracionada (Tênis Nike) cadastrada para frete."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/banner-caminhao.png": {
+      "titulo": "Banner Busca de Veículos Verificados",
+      "resumo": "Banner promocional da busca de veículos verificados."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-amarelo-8.jpg": {
+      "titulo": "Veículo Disponível - Amarelo",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-1.jpg": {
+      "titulo": "Veículo Disponível - Azul 01",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-10.jpg": {
+      "titulo": "Veículo Disponível - Azul 03",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-6.png": {
+      "titulo": "Veículo Disponível - Azul 02",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-branco-12.jpg": {
+      "titulo": "Veículo Disponível - Branco",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-container-11.jpg": {
+      "titulo": "Veículo Porta-Contêiner",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-frota-4.jpg": {
+      "titulo": "Frota Comercial",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-frota-frigorifico-2.jpg": {
+      "titulo": "Veículo Frigorífico / Refrigerado",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-laranja-3.jpg": {
+      "titulo": "Veículo Disponível - Laranja",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-no-centro-de-distribuicao (2).jpg": {
+      "titulo": "Veículo em Pátio de CD 01",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-no-centro-de-distribuicao (3).jpg": {
+      "titulo": "Veículo em Pátio de CD 02",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-no-centro-de-distribuicao.jpg": {
+      "titulo": "Veículo em Pátio de CD 03",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-no-deposito.jpg": {
+      "titulo": "Veículo em Galpão / Depósito",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-preto-5.jpg": {
+      "titulo": "Veículo Disponível - Preto",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-verde-7.png": {
+      "titulo": "Veículo Disponível - Verde 01",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-verde-9.jpg": {
+      "titulo": "Veículo Disponível - Verde 02",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao.png": {
+      "titulo": "Frota Disponível (Ícone Gráfico)",
+      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
+    },
+    "assets/quero-transportar-embarcador/marca-embarcador/android-chrome-192x192.png": {
+      "titulo": "Atalhos PWA Android (192x192)",
+      "resumo": "Ativo visual PWA e ícones de atalho móvel (Android/iOS)."
+    },
+    "assets/quero-transportar-embarcador/marca-embarcador/android-chrome-512x512.png": {
+      "titulo": "Atalhos PWA Android (512x512)",
+      "resumo": "Ativo visual PWA e ícones de atalho móvel (Android/iOS)."
+    },
+    "assets/quero-transportar-embarcador/marca-embarcador/apple-touch-icon.png": {
+      "titulo": "Ícone Touch iOS",
+      "resumo": "Ativo visual PWA e ícones de atalho móvel (Android/iOS)."
+    },
+    "assets/quero-transportar-embarcador/marca-embarcador/favicon-16x16.png": {
+      "titulo": "Favicon 16x16",
+      "resumo": "Ícone oficial e favicons de navegador do módulo Quero Transportar."
+    },
+    "assets/quero-transportar-embarcador/marca-embarcador/favicon-32x32.png": {
+      "titulo": "Favicon 32x32",
+      "resumo": "Ícone oficial e favicons de navegador do módulo Quero Transportar."
+    },
+    "assets/quero-transportar-embarcador/marca-embarcador/favicon.ico": {
+      "titulo": "Favicon Quero Transportar (ICO)",
+      "resumo": "Ícone oficial e favicons de navegador do módulo Quero Transportar."
+    },
+    "assets/quero-transportar-embarcador/marca-embarcador/favicon.png": {
+      "titulo": "Favicon Quero Transportar (PNG)",
+      "resumo": "Ícone oficial e favicons de navegador do módulo Quero Transportar."
+    },
+    "assets/quero-transportar-embarcador/persona-embarcador/ana-lucia.png": {
+      "titulo": "Persona Embarcador - Ana Lúcia",
+      "resumo": "Avatar e perfil da persona Embarcador (Ana Lúcia)."
+    },
+    "assets/quero-transportar-embarcador/persona-embarcador/marcos-viana.png": {
+      "titulo": "Persona Embarcador - Marcos Viana",
+      "resumo": "Avatar e perfil da persona Embarcador (Marcos Viana)."
+    },
+    "assets/quero-transportar-embarcador/persona-embarcador/maria-braga.png": {
+      "titulo": "Persona Embarcador - Maria Braga",
+      "resumo": "Avatar e perfil da persona Embarcador (Maria Braga)."
+    },
+    "assets/quero-transportar-embarcador/persona-embarcador/roberto-mattos.jpg": {
+      "titulo": "Persona Embarcador - Roberto Mattos (JPG)",
+      "resumo": "Avatar e perfil da persona Embarcador (Roberto Mattos JPG)."
+    },
+    "assets/quero-transportar-embarcador/persona-embarcador/roberto-mattos.png": {
+      "titulo": "Persona Embarcador - Roberto Mattos (PNG)",
+      "resumo": "Avatar e perfil da persona Embarcador (Roberto Mattos PNG)."
+    },
+    "assets/quero-transportar-embarcador/persona-embarcador/sofia-guedes.png": {
+      "titulo": "Persona Embarcador - Sofia Guedes",
+      "resumo": "Avatar e perfil da persona Embarcador (Sofia Guedes)."
+    },
+    "assets/quero-transportar-embarcador/vantagem-embarcador/vantagem-1.PNG": {
+      "titulo": "Vantagem 01 - Frotas Verificadas",
+      "resumo": "Ativo gráfico da 1ª vantagem competitiva para o Embarcador."
+    },
+    "assets/quero-transportar-embarcador/vantagem-embarcador/vantagem-2.PNG": {
+      "titulo": "Vantagem 02 - Cotações em Tempo Real",
+      "resumo": "Ativo gráfico da 2ª vantagem competitiva para o Embarcador."
+    },
+    "assets/quero-transportar-embarcador/vantagem-embarcador/vantagem-3.PNG": {
+      "titulo": "Vantagem 03 - Rastreamento e Segurança",
+      "resumo": "Ativo gráfico da 3ª vantagem competitiva para o Embarcador."
+    },
+    "assets/quero-transportar-embarcador/vantagem-embarcador/vantagem-4.PNG": {
+      "titulo": "Vantagem 04 - Gestão de Contratos",
+      "resumo": "Ativo gráfico da 4ª vantagem competitiva para o Embarcador."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/Car Website – 1@2x.png": {
+      "titulo": "Design UI/UX - Plataforma de Fretes",
+      "resumo": "Referência de design UI/UX de plataformas de transporte."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/about.png": {
+      "titulo": "Layout Sobre - Referência UI",
+      "resumo": "Layout de referência para a seção Sobre do ecossistema."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/car1.jpg": {
+      "titulo": "Veículo Comercial 01",
+      "resumo": "Foto de veículo comercial para composição visual nº 1."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/car2.jpg": {
+      "titulo": "Veículo Comercial 02",
+      "resumo": "Foto de veículo comercial para composição visual nº 2."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/car3.jpg": {
+      "titulo": "Veículo Comercial 03",
+      "resumo": "Foto de veículo comercial para composição visual nº 3."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/car4.jpg": {
+      "titulo": "Veículo Comercial 04",
+      "resumo": "Foto de veículo comercial para composição visual nº 4."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/car5.jpg": {
+      "titulo": "Veículo Comercial 05",
+      "resumo": "Foto de veículo comercial para composição visual nº 5."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/car6.jpg": {
+      "titulo": "Veículo Comercial 06",
+      "resumo": "Foto de veículo comercial para composição visual nº 6."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/fruit-1.jpeg": {
+      "titulo": "Carga Agrícola 01",
+      "resumo": "Imagem de teste de anúncio de cargas agrícolas/hortifrúti nº 1."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/fruit-2.jpeg": {
+      "titulo": "Carga Agrícola 02",
+      "resumo": "Imagem de teste de anúncio de cargas agrícolas/hortifrúti nº 2."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/fruit-3.jpeg": {
+      "titulo": "Carga Agrícola 03",
+      "resumo": "Imagem de teste de anúncio de cargas agrícolas/hortifrúti nº 3."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/fruit-4.jpeg": {
+      "titulo": "Carga Agrícola 04",
+      "resumo": "Imagem de teste de anúncio de cargas agrícolas/hortifrúti nº 4."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/fruit-5.jpeg": {
+      "titulo": "Carga Agrícola 05",
+      "resumo": "Imagem de teste de anúncio de cargas agrícolas/hortifrúti nº 5."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/fruit-6.jpeg": {
+      "titulo": "Carga Agrícola 06",
+      "resumo": "Imagem de teste de anúncio de cargas agrícolas/hortifrúti nº 6."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/fruit-7.jpeg": {
+      "titulo": "Carga Agrícola 07",
+      "resumo": "Imagem de teste de anúncio de cargas agrícolas/hortifrúti nº 7."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/fruit-8.jpeg": {
+      "titulo": "Carga Agrícola 08",
+      "resumo": "Imagem de teste de anúncio de cargas agrícolas/hortifrúti nº 8."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/ios.png": {
+      "titulo": "Componente UI - iOS",
+      "resumo": "Referência de componente de design do ecossistema iOS."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/jeep.png": {
+      "titulo": "Veículo Utilitário Leve",
+      "resumo": "Imagem de veículo utilitário leve."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/play.png": {
+      "titulo": "Ícone Mídia Player",
+      "resumo": "Ícone de ação de mídia."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/rev1.jpg": {
+      "titulo": "Layout de Referência 01",
+      "resumo": "Referência complementar de layout nº 1."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/rev2.jpg": {
+      "titulo": "Layout de Referência 02",
+      "resumo": "Referência complementar de layout nº 2."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/arts/rev3.jpg": {
+      "titulo": "Layout de Referência 03",
+      "resumo": "Referência complementar de layout nº 3."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/cozinha-gourmet.png": {
+      "titulo": "Frete de Interiores - Cozinha Gourmet",
+      "resumo": "Ativo visual complementar para fretes de interiores."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/cozinha.png": {
+      "titulo": "Mudança Residencial - Cozinha",
+      "resumo": "Ativo visual para campanhas de mudança residencial."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/criacao-1.png": {
+      "titulo": "Arte Conceitual Publicitária",
+      "resumo": "Arte conceitual de campanha publicitária."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/homem-ao-smartphone.png": {
+      "titulo": "Uso do App - Perfil Masculino",
+      "resumo": "Foto de banco de imagem de usuário interagindo com o aplicativo."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/mulher-ao-smartphone-na-sala.png": {
+      "titulo": "Agendamento de Frete Residencial",
+      "resumo": "Foto promocional de agendamento de frete."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/mulher-ao-smartphone.png": {
+      "titulo": "Uso do App - Perfil Feminino",
+      "resumo": "Foto temática para marketing de contratação de fretes."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/quarto.png": {
+      "titulo": "Mudança Residencial - Quarto",
+      "resumo": "Ativo visual de fretes residenciais."
+    },
+    "assets/voltaexpressbrasil/inspiracoes/mkt-campanhas/quatro-cards.png": {
+      "titulo": "Grid de Destaques de Serviços",
+      "resumo": "Referência visual de grid de 4 destaques de serviços."
+    },
+    "assets/voltaexpressbrasil/midias/videos/release volta-express.mp4": {
+      "titulo": "Vídeo de lançamento",
+      "resumo": "Vídeo de apresentação do Volta Express Brasil."
+    },
+    "assets/voltaexpressbrasil/midias/videos/volta express VID-20241117-WA0026.mp4": {
+      "publico": false,
+      "motivo": "Cópia idêntica de volta-express-v4.2.mp4 (mesmo SHA-1); mantida só a versão com nome descritivo"
+    },
+    "assets/voltaexpressbrasil/midias/videos/volta-express-banner.png": {
+      "titulo": "Banner Promocional de Vídeo",
+      "resumo": "Banner promocional de divulgação em vídeo."
+    },
+    "assets/voltaexpressbrasil/midias/videos/volta-express-mapa.mp4": {
+      "titulo": "Demonstração do mapa de rotas",
+      "resumo": "Gravação das rotas interativas no Google Maps.",
+      "publico": false,
+      "motivo": "Gravação de tela real: mostra nome, telefones e notificações de WhatsApp de terceiros. Volta ao Hub depois de editada (corte/desfoque) ou regravada com dados de teste"
+    },
+    "assets/voltaexpressbrasil/midias/videos/volta-express-v4.2.mp4": {
+      "titulo": "Apresentação da versão 4.2",
+      "resumo": "Navegação da versão 4.2 com o mapa de rotas. O mesmo arquivo foi recebido por WhatsApp em 17/11/2024 (VID-20241117-WA0026).",
+      "data": "2024-11-17"
+    },
+    "assets/voltaexpressbrasil/qa-refs/imagem.png": {
+      "publico": false,
+      "motivo": "Print de anúncio de terceiro (Webmotors) com a barra do navegador pessoal"
+    },
+    "assets/voltaexpressbrasil/qa-refs/tamanhos-caminhoes-mudancas.jpg": {
+      "titulo": "Tipos de caminhão: capacidade de peso e volume",
+      "resumo": "Referência usada na seção Explicações: 3/4, toco, truck e carretas, com toneladas e metros cúbicos.",
+      "publico": false,
+      "motivo": "Infográfico de terceiro (empresa de mudanças). Os números já estão na seção Explicações, com fonte própria"
+    },
+    "assets/voltaexpressbrasil/veb-assets/banner-caixas-caminhao.png": {
+      "titulo": "Banner Caixas e Caminhão",
+      "resumo": "Banner promocional da marca Volta Express Brasil."
+    },
+    "assets/voltaexpressbrasil/veb-assets/favicon-PNG-removebg.png": {
+      "titulo": "Favicon Sem Fundo",
+      "resumo": "Favicon transparente sem fundo."
+    },
+    "assets/voltaexpressbrasil/veb-assets/favicon.ico": {
+      "titulo": "Favicon Padrão (ICO)",
+      "resumo": "Favicon ICO principal."
+    },
+    "assets/voltaexpressbrasil/veb-assets/favicon.png": {
+      "titulo": "Favicon Padrão (PNG)",
+      "resumo": "Favicon PNG principal."
+    },
+    "assets/voltaexpressbrasil/veb-assets/logo-volta-express-caminhao.png": {
+      "titulo": "Logo Variação Transportador",
+      "resumo": "Variação do logo focado em transportador."
+    },
+    "assets/voltaexpressbrasil/veb-assets/logo-volta-express-cargas.png": {
+      "titulo": "Logo Variação Cargas",
+      "resumo": "Variação do logo focado em cargas."
+    },
+    "assets/voltaexpressbrasil/veb-assets/logo-volta-express.png": {
+      "titulo": "Logotipo Volta Express",
+      "resumo": "Logotipo oficial da Volta Express."
+    },
+    "assets/voltaexpressbrasil/veb-logo/banner-caixas-caminhao-logo.png": {
+      "titulo": "Banner com Aplicação da Logo",
+      "resumo": "Banner da marca com aplicação do logotipo."
+    },
+    "assets/voltaexpressbrasil/veb-logo/caixas.png": {
+      "titulo": "Ícone Gráfico - Caixas",
+      "resumo": "Ativo gráfico isolado de caixas de carga."
+    },
+    "assets/voltaexpressbrasil/veb-logo/caminhao.png": {
+      "titulo": "Ícone Gráfico - Caminhão",
+      "resumo": "Ativo gráfico isolado de caminhão."
+    },
+    "assets/voltaexpressbrasil/veb-logo/favicon-PNG-removebg.png": {
+      "titulo": "Favicon da Marca Sem Fundo",
+      "resumo": "Favicon PNG com fundo transparente."
+    },
+    "assets/voltaexpressbrasil/veb-logo/favicon.ico": {
+      "titulo": "Favicon da Marca (ICO)",
+      "resumo": "Favicon da divisão de marca."
+    },
+    "assets/voltaexpressbrasil/veb-logo/favicon.png": {
+      "titulo": "Favicon da Marca (PNG)",
+      "resumo": "Favicon PNG da divisão de marca."
+    },
+    "assets/voltaexpressbrasil/veb-logo/logo-completa.png": {
+      "titulo": "Logotipo Versão Completa",
+      "resumo": "Versão completa do logotipo da marca."
+    },
+    "assets/voltaexpressbrasil/veb-logo/volta-express-brasil.jpg": {
+      "titulo": "Institucional Volta Express (JPG)",
+      "resumo": "Imagem institucional da marca em JPG."
+    },
+    "assets/voltaexpressbrasil/veb-logo/volta-express-brasil.png": {
+      "titulo": "Institucional Volta Express (PNG)",
+      "resumo": "Imagem institucional da marca em PNG."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/1. Transportar a um clique (1).png": {
+      "titulo": "Transportar a Um Clique (Variação)",
+      "resumo": "Ativo visual para campanha Transportar a um Clique."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/1. Transportar a um clique.png": {
+      "titulo": "Banner - Transportar a Um Clique",
+      "resumo": "Banner promocional da campanha Transportar a um Clique."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/1. Whatsapp - oportunidade de frete - Fundo Amarelo.png": {
+      "titulo": "Card WhatsApp - Fundo Amarelo",
+      "resumo": "Template de oportunidade de frete para WhatsApp em Fundo Amarelo."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/1.Transportar a um clique.png": {
+      "titulo": "Arte Publicitária Um Clique",
+      "resumo": "Variação gráfica do banner Transportar a um Clique."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/2. Logo - Volta Express - Modelo Novo.png": {
+      "titulo": "Arte MKT com Nova Logo (Variação 1)",
+      "resumo": "Peça publicitária com a versão nova da logo."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/2. Whatsapp - oportunidade de frete - Fundo Branco.png": {
+      "titulo": "Card WhatsApp - Fundo Branco",
+      "resumo": "Template de oportunidade de frete para WhatsApp em Fundo Branco."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/3. Logo - Volta Express - Modelo Novo.png": {
+      "titulo": "Arte MKT com Nova Logo (Variação 2)",
+      "resumo": "Segunda variação da peça com logo modelo novo."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/3. Whatsapp - oportunidade de frete - Fundo claro.png": {
+      "titulo": "Card WhatsApp - Fundo Claro",
+      "resumo": "Template para WhatsApp em Fundo Claro."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/4. Logo - Volta Express - Modelo Novo.png": {
+      "titulo": "Arte MKT com Nova Logo (Variação 3)",
+      "resumo": "Terceira variação da peça com logo modelo novo."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/4. Whatsapp - oportunidade de frete - Fundo preto.png": {
+      "titulo": "Card WhatsApp - Fundo Preto",
+      "resumo": "Template para WhatsApp em Fundo Preto."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/5. Logo - Volta Express - Modelo Novo (1).png": {
+      "titulo": "Arte MKT com Nova Logo (Variação 5A)",
+      "resumo": "Ativo de marketing complementar para nova logo."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/5. Logo - Volta Express - Modelo Novo.png": {
+      "titulo": "Arte MKT com Nova Logo (Variação 5B)",
+      "resumo": "Quarta variação da peça com logo modelo novo."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/5. Whatsapp - oportunidade de frete - Original.png": {
+      "titulo": "Card WhatsApp - Modelo Original",
+      "resumo": "Template para WhatsApp modelo Original."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/depositions-4.jpg": {
+      "titulo": "Prova Social / Depoimento",
+      "resumo": "Imagem de depoimento/avaliação de usuário."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/logo-1.png": {
+      "titulo": "Ativo Secundário de Logo",
+      "resumo": "Ativo visual secundário de marca."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/users-1.jpg": {
+      "titulo": "Avatar de Usuário 01",
+      "resumo": "Foto de perfil/usuário da plataforma."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-1/users-2.jpg": {
+      "titulo": "Avatar de Usuário 02",
+      "resumo": "Foto de perfil/usuário secundária."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-2/carreta-2.jpeg": {
+      "titulo": "Divulgação de Carreta Pesada",
+      "resumo": "Imagem de divulgação de veículo do tipo carreta."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-2/volta-express-brasil-dg.jpeg": {
+      "titulo": "Ativo MKT Digital (DG)",
+      "resumo": "Material promocional de design/mídia."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-2/volta-express-brasil-dt.jpeg": {
+      "titulo": "Ativo MKT Digital (DT)",
+      "resumo": "Material de mídia complementar."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-2/volta-express-brasil-gm-off.jpeg": {
+      "titulo": "Peça MKT Offline",
+      "resumo": "Peça de campanha off-line."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-2/volta-express-fluxo.png": {
+      "titulo": "Infográfico de Fluxo da Plataforma",
+      "resumo": "Diagrama visual do fluxo da plataforma."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-cabine-1.png": {
+      "titulo": "Visão Interna da Cabine",
+      "resumo": "Visão interna de cabine de transporte."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-caminhao-1.png": {
+      "titulo": "Caminhão na Estrada (Arte 1)",
+      "resumo": "Ativo de divulgação com caminhão na estrada."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-caminhao-2.png": {
+      "titulo": "Caminhão na Estrada (Arte 2)",
+      "resumo": "Variação do ativo visual de caminhão."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-estrada-1.jpg": {
+      "titulo": "Transporte em Rodovia 01",
+      "resumo": "Foto de caminhão transitando em rodovia."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-estrada-2.jpg": {
+      "titulo": "Transporte em Rodovia 02",
+      "resumo": "Segunda foto de rodovia para material gráfico."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-mapa-1.png": {
+      "titulo": "Ilustração de Rotas 01",
+      "resumo": "Ilustração temática de mapa de rotas."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-mapa-2.png": {
+      "titulo": "Ilustração de Rotas 02",
+      "resumo": "Segunda variação gráfica de mapa de rotas."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-mapa-3.png": {
+      "titulo": "Ilustração de Rotas 03",
+      "resumo": "Terceira variação gráfica de mapa de rotas."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-opcoes_de_frete-1.png": {
+      "titulo": "Modalidades de Frete 01",
+      "resumo": "Ativo explicativo de opção de frete nº 1."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-opcoes_de_frete-2.png": {
+      "titulo": "Modalidades de Frete 02",
+      "resumo": "Ativo explicativo de opção de frete nº 2."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-opcoes_de_frete-3.png": {
+      "titulo": "Modalidades de Frete 03",
+      "resumo": "Ativo explicativo de opção de frete nº 3."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-opcoes_de_frete-4.png": {
+      "titulo": "Modalidades de Frete 04",
+      "resumo": "Ativo explicativo de opção de frete nº 4."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-opcoes_de_frete-5.png": {
+      "titulo": "Modalidades de Frete 05",
+      "resumo": "Ativo explicativo de opção de frete nº 5."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-painel-1.jpg": {
+      "titulo": "Painel de Controle de Veículo",
+      "resumo": "Foto do painel de controle de veículo."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-parceiro-1.png": {
+      "titulo": "Selo de Parceiro Oficial 01",
+      "resumo": "Selo de parceiro oficial."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-parceiro-2.png": {
+      "titulo": "Selo de Parceiro Oficial 02",
+      "resumo": "Variação do selo de parceiro oficial."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-porto-1.jpg": {
+      "titulo": "Operação Logística Portuária",
+      "resumo": "Foto de logística portuária e contêineres."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/caminhao-na-mecanica.jpg": {
+      "titulo": "Caminhão em Oficina Mecânica",
+      "resumo": "Foto temática de caminhão em oficina mecânica."
+    },
+    "assets/voltaexpressbrasil/veb-mkt-3/caminhao-no-tunel.jpg": {
+      "titulo": "Caminhão em Rodovia (Túnel)",
+      "resumo": "Foto artística de caminhão em túnel."
+    },
+    "assets/voltaexpressbrasil/veb-painel/carreta-1.png": {
+      "titulo": "Gráfico de Carreta - Painel (PNG 1)",
+      "resumo": "Ativo gráfico de veículo para o painel principal."
+    },
+    "assets/voltaexpressbrasil/veb-painel/carreta-2.png": {
+      "titulo": "Gráfico de Carreta - Painel (PNG 2)",
+      "resumo": "Segunda opção gráfica de veículo para o painel."
+    },
+    "assets/voltaexpressbrasil/veb-painel/carreta-3.jpg": {
+      "titulo": "Foto de Carreta - Painel (JPG)",
+      "resumo": "Foto descritiva de carreta em JPG para o painel."
+    },
+    "assets/voltaexpressbrasil/veb-public/android-chrome-192x192.png": {
+      "titulo": "Ícone Android 192x192",
+      "resumo": "Ícone PWA Android 192x192."
+    },
+    "assets/voltaexpressbrasil/veb-public/android-chrome-512x512.png": {
+      "titulo": "Ícone Android 512x512",
+      "resumo": "Ícone PWA Android 512x512."
+    },
+    "assets/voltaexpressbrasil/veb-public/apple-touch-icon.png": {
+      "titulo": "Ícone Apple Touch iOS",
+      "resumo": "Ícone de atalho Apple iOS."
+    },
+    "assets/voltaexpressbrasil/veb-public/favicon-16x16.png": {
+      "titulo": "Favicon 16x16",
+      "resumo": "Favicon em baixa resolução 16x16."
+    },
+    "assets/voltaexpressbrasil/veb-public/favicon-32x32.png": {
+      "titulo": "Favicon 32x32",
+      "resumo": "Favicon em média resolução 32x32."
+    },
+    "assets/voltaexpressbrasil/veb-public/favicon.ico": {
+      "titulo": "Favicon Navegador ICO",
+      "resumo": "Favicon clássico do navegador."
+    },
+    "assets/voltaexpressbrasil/veb-public/favicon.png": {
+      "titulo": "Favicon Navegador PNG",
+      "resumo": "Favicon em formato PNG."
+    }
+  },
+  "links": [
+    {
+      "titulo": "GitHub — organização Volta Express",
+      "url": "https://github.com/VoltaExpress",
+      "tipo": "codigo"
+    },
+    {
+      "titulo": "Instagram @voltaexpressbrasil",
+      "url": "https://www.instagram.com/voltaexpressbrasil/",
+      "tipo": "rede"
+    },
+    {
+      "titulo": "YouTube @VoltaExpress",
+      "url": "https://www.youtube.com/@VoltaExpress",
+      "tipo": "rede"
+    },
+    {
+      "titulo": "Facebook — página institucional",
+      "url": "https://www.facebook.com/profile.php?id=61590175261643",
+      "tipo": "rede"
+    },
+    {
+      "titulo": "Facebook — comunidade",
+      "url": "https://www.facebook.com/profile.php?id=61590155552634",
+      "tipo": "rede"
+    },
+    {
+      "titulo": "TikTok @voltaexpressbrasil",
+      "url": "https://www.tiktok.com/@voltaexpressbrasil",
+      "tipo": "rede"
+    },
+    {
+      "titulo": "Landing Volta Express Brasil",
+      "url": "https://voltaexpressbrasil.com.br/",
+      "tipo": "produto"
+    },
+    {
+      "titulo": "Plataforma Volta Express",
+      "url": "https://voltaexpress.com.br/",
+      "tipo": "produto"
+    }
+  ]
+}

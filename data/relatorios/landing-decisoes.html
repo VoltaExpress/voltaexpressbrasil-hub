@@ -1,0 +1,68 @@
+<p>Cada decisão tem contexto, escolha e consequência. Mudou de ideia? Acrescente uma nova; não apague a anterior.</p>
+<h2>D1 — Contato centralizado no WhatsApp de suporte</h2>
+<ul>
+<li><strong>Contexto:</strong> os cards ilustrativos tinham telefones fictícios.</li>
+<li><strong>Decisão:</strong> todos os contatos da landing usam o número central <code>5532998615190</code>, com mensagem que identifica a carga ou o veículo.</li>
+<li><strong>Consequência:</strong> nenhum clique cai em número inexistente; o suporte faz a triagem.</li>
+</ul>
+<h2>D2 — Depoimentos mantidos</h2>
+<ul>
+<li><strong>Decisão:</strong> os depoimentos permanecem como estão nesta fase.</li>
+<li><strong>Consequência:</strong> a revisão de conteúdo dos depoimentos fica fora do plano atual.</li>
+</ul>
+<h2>D3 — Imagens em WebP geradas por script</h2>
+<ul>
+<li><strong>Decisão:</strong> conversão com <code>scripts/otimizar_imagens.py</code> (Python + Pillow), sem apagar os originais na geração, removendo o EXIF e com larguras por papel da imagem.</li>
+<li><strong>Consequência:</strong> processo repetível; toda imagem nova passa pelo script antes de entrar na página.</li>
+</ul>
+<h2>D4 — Preservar nome, logos e regras de negócio</h2>
+<ul>
+<li><strong>Decisão:</strong> as melhorias de performance, UX e UI não alteram a marca, as duas personas nem o fluxo de contato e cadastro.</li>
+</ul>
+<h2>D5 — Imagens servidas só em WebP, originais mantidos até a A1.3</h2>
+<ul>
+<li><strong>Decisão:</strong> as páginas usam apenas os WebP gerados; os PNG/JPG originais continuam no repositório até a A1.3 (remoção), para permitir nova geração com outros tamanhos.</li>
+<li><strong>Consequência:</strong> o site fica leve já, mas o repositório ainda é pesado até a A1.3.</li>
+</ul>
+<h2>D6 — Número de WhatsApp de teste em um único lugar (v7, out/2026)</h2>
+<ul>
+<li><strong>Contexto:</strong> o número estava repetido em 4 arquivos JS e em 32 registros de dados, e 2 botões flutuantes usavam texto de exemplo.</li>
+<li><strong>Decisão:</strong> o número de teste <code>5532988367667</code> (atualiza a D1 até a troca definitiva) fica em <code>shared/site.js</code> (<code>VEB.whatsapp</code>). Os registros de <code>cargas.js</code> e <code>viagens.js</code> não guardam mais número. Os <code>href</code> do HTML repetem o número só como reserva para quando o JS não carrega.</li>
+<li><strong>Consequência:</strong> trocar o número exige 1 comando (ver PLANO-DE-ACAO.md); a mensagem de cada card continua identificando a carga ou o veículo.</li>
+</ul>
+<h2>D7 — Todo CTA de plataforma aponta para <code>https://voltaexpress.com.br/</code></h2>
+<ul>
+<li><strong>Decisão:</strong> "Entrar / Cadastrar", "Encontrar Carga", "Anunciar Carga" e "Ver ofertas na plataforma" levam à raiz da plataforma, sem parâmetros.</li>
+<li><strong>Consequência:</strong> funil simples; medir a origem (UTM) fica no backlog.</li>
+</ul>
+<h2>D8 — Sem bibliotecas de animação de terceiros</h2>
+<ul>
+<li><strong>Contexto:</strong> a home escondia header e título com <code>visibility: hidden</code> até o ScrollReveal (CDN sem versão) carregar e animar por 2 s; se a CDN falhasse, a página ficava em branco.</li>
+<li><strong>Decisão:</strong> animação própria com <code>IntersectionObserver</code> (~30 linhas). O conteúdo nasce visível; o hero não anima.</li>
+<li><strong>Consequência:</strong> um script de terceiros a menos por página; a página funciona sem JS.</li>
+</ul>
+<h2>D9 — Uma família de fonte: Poppins</h2>
+<ul>
+<li><strong>Decisão:</strong> Poppins 400/600/700 via <code>&lt;link&gt;</code>. Saem Plus Jakarta Sans e Noto Sans e os <code>@import</code> dentro do CSS.</li>
+<li><strong>Consequência:</strong> a home muda de fonte (antes Plus Jakarta Sans); as personas já usavam Poppins nos títulos.</li>
+</ul>
+<h2>D10 — Design system compartilhado sem etapa de build</h2>
+<ul>
+<li><strong>Decisão:</strong> CSS e JS comuns em <code>shared/</code>. O HTML de header e rodapé continua repetido nas 3 páginas, mas idêntico.</li>
+<li><strong>Consequência:</strong> sem ferramenta nova e sem mudança no deploy do GitHub Pages. Reavaliar um gerador (11ty) se a landing passar de 5 páginas.</li>
+</ul>
+<h2>D11 — Hero no mesmo molde nas 3 páginas</h2>
+<ul>
+<li><strong>Decisão:</strong> fundo claro, texto à esquerda, banner à direita como <code>&lt;img&gt;</code>; a home deixa o fundo escuro com foto. Duas ações: plataforma (principal) e WhatsApp (secundária).</li>
+<li><strong>Consequência:</strong> as 3 páginas parecem o mesmo produto; "Voltar para o início" sai do hero (o logo e o menu cumprem esse papel).</li>
+</ul>
+<h2>D12 — Mural rotulado como "Exemplos ilustrativos"</h2>
+<ul>
+<li><strong>Decisão:</strong> selo acima da busca, com link para as ofertas reais na plataforma. Títulos, números e depoimentos foram mantidos (revisão de conteúdo fica no backlog).</li>
+<li><strong>Consequência:</strong> expectativa honesta sem mudar a mensagem nesta versão.</li>
+</ul>
+<h2>D13 — Rodapé único, sem links mortos</h2>
+<ul>
+<li><strong>Decisão:</strong> mesmo rodapé nas 3 páginas: navegação, contato (e-mail e WhatsApp) e redes. Saem os links <code>#</code> (Privacidade, Termos, CNAE/MEI), o telefone de exemplo e a menção "learnTECH Ecosystem".</li>
+<li><strong>Consequência:</strong> as páginas de Privacidade e Termos voltam ao rodapé quando existirem (backlog).</li>
+</ul>

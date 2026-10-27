@@ -1,0 +1,183 @@
+<blockquote>
+<p>Atualizado em 26/10/2026, versão 7.0 (branch <code>v6.3-incubacao</code>). Escopo: <code>index.html</code> (home), <code>/quero-carregar</code> (caminhoneiro) e <code>/quero-transportar</code> (embarcador).
+Premissa: preservar regras de negócio, nome e logos. O diagnóstico de set/2026 está no fim deste arquivo.</p>
+</blockquote>
+<h2>1. Resultado da v7.0</h2>
+<p>A landing passou de "rápida, mas quebrada" para "rápida, funcionando e consistente": os caminhos de conversão funcionam nas 3 páginas, o conteúdo não depende mais de bibliotecas externas para aparecer e as 3 páginas usam o mesmo design system.</p>
+<h3>Como foi medido</h3>
+<ul>
+<li>Celular simulado: Pixel 7, 4G lento (1,6 Mbps, 150 ms de latência), CPU 4× mais lenta (perfil mobile do Lighthouse). 5 rodadas por página, mediana.</li>
+<li>Servidor local com gzip, como o GitHub Pages faz em produção.</li>
+<li><strong>Limite:</strong> fontes, ícones e Google Maps (CDNs externas) não puderam ser carregados no ambiente de teste. Os números valem para os arquivos do próprio site. A medição de produção é a do PageSpeed Insights (seção 3).</li>
+<li><strong>Viés a favor da versão antiga:</strong> no teste, o ScrollReveal antigo foi substituído por um revelador instantâneo. No navegador real, o título da home só aparecia depois de 0,4 s de espera e 2 s de animação.</li>
+</ul>
+<h3>Desempenho (arquivos do site)</h3>
+<table>
+<thead>
+<tr>
+<th>Página</th>
+<th>FCP antes → depois</th>
+<th>LCP antes → depois</th>
+<th>CLS</th>
+<th>Primeira carga</th>
+<th>Requisições</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Home</td>
+<td>528 → 548 ms</td>
+<td>564 → <strong>736 ms</strong></td>
+<td>0 → 0</td>
+<td>67 → 68 KB</td>
+<td>9 → 9</td>
+</tr>
+<tr>
+<td>Quero Carregar</td>
+<td>720 → <strong>612 ms</strong></td>
+<td>752 → <strong>688 ms</strong></td>
+<td>0 → 0</td>
+<td>53 → 55 KB</td>
+<td>10 → 11</td>
+</tr>
+<tr>
+<td>Quero Transportar</td>
+<td>696 → <strong>600 ms</strong></td>
+<td>812 → <strong>772 ms</strong></td>
+<td>0 → 0</td>
+<td>77 → 71 KB</td>
+<td>11 → 11</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Todas as páginas ficam abaixo de 0,8 s de LCP no teste; a meta do Google é 2,5 s.</li>
+<li><strong>Home: LCP subiu 172 ms.</strong> Antes, o maior elemento era o texto; agora é a imagem do hero (1536 px no celular, 44 KB). Correção no backlog: gerar uma variante de ~1080 px com o script de imagens.</li>
+<li><strong>Personas:</strong> primeira pintura 100 ms mais cedo, pelo fim do <code>@import</code> de fontes em cadeia.</li>
+</ul>
+<h3>Qualidade, acessibilidade e robustez</h3>
+<table>
+<thead>
+<tr>
+<th>Indicador</th>
+<th>Antes (home / carregar / transportar)</th>
+<th>Depois</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caminhos de conversão quebrados</td>
+<td>7 (cadastro, 2 WhatsApp flutuantes, cards, menu, 2 âncoras inexistentes)</td>
+<td><strong>0</strong></td>
+</tr>
+<tr>
+<td>Página visível com as CDNs fora do ar</td>
+<td>Home <strong>em branco</strong></td>
+<td>As 3 visíveis, com menu funcionando</td>
+</tr>
+<tr>
+<td>Página visível sem JavaScript</td>
+<td>Não (home)</td>
+<td>Sim, nas 3</td>
+</tr>
+<tr>
+<td>Scripts de terceiros</td>
+<td>ScrollReveal nas 3</td>
+<td><strong>0</strong></td>
+</tr>
+<tr>
+<td>Famílias de fonte</td>
+<td>3</td>
+<td><strong>1</strong></td>
+</tr>
+<tr>
+<td>CSS total</td>
+<td>71,7 KB</td>
+<td><strong>32,4 KB</strong> (−55%)</td>
+</tr>
+<tr>
+<td>Falhas de contraste (WCAG AA)</td>
+<td>0 / 29 / 32</td>
+<td><strong>0 / 0 / 0</strong></td>
+</tr>
+<tr>
+<td>Alvos de toque &lt; 24 px</td>
+<td>0 / 8 / 13</td>
+<td><strong>0 / 0 / 0</strong></td>
+</tr>
+<tr>
+<td><code>&lt;h1&gt;</code> por página</td>
+<td>1 / 7 / 7</td>
+<td><strong>1 / 1 / 1</strong></td>
+</tr>
+<tr>
+<td>Links sem nome acessível</td>
+<td>0 / 3 / 4</td>
+<td><strong>0</strong></td>
+</tr>
+<tr>
+<td><code>lang="pt-BR"</code></td>
+<td>1 de 3 páginas</td>
+<td>3 de 3</td>
+</tr>
+<tr>
+<td>Rolagem horizontal em 360, 390, 768, 1024 e 1440 px</td>
+<td>Não testado</td>
+<td>Nenhuma</td>
+</tr>
+<tr>
+<td>Ícones do manifesto (instalar no celular)</td>
+<td>Caminho inexistente</td>
+<td>Corrigido</td>
+</tr>
+<tr>
+<td>Verificações automáticas</td>
+<td>—</td>
+<td><strong>76 de 76</strong> passando</td>
+</tr>
+</tbody>
+</table>
+<h2>2. O que mudou na estrutura</h2>
+<pre><code>voltaexpressbrasil/
+├── index.html · style.css           home (roteador entre as 2 personas)
+├── shared/                          NOVO: base comum às 3 páginas
+│   ├── tokens.css                   cores, fonte, espaçamento
+│   ├── components.css               componentes
+│   └── site.js                      configuração (WhatsApp, plataforma, mapa), menu, animação, modal
+├── quero-carregar/    index.html · style.css (0,7 KB) · script.js · cargas.js
+└── quero-transportar/ index.html · style.css (0,8 KB) · script.js · viagens.js
+</code></pre>
+<p>Detalhes dos componentes e das cores: <a href="DESIGN-SYSTEM.md">DESIGN-SYSTEM.md</a>. Decisões: <a href="DECISOES.md">DECISOES.md</a> (D6 a D13).</p>
+<h2>3. Pendências de medição (com você)</h2>
+<ul>
+<li>Rodar o <a href="https://pagespeed.web.dev">PageSpeed Insights</a> nas 3 URLs (mobile) depois do deploy e registrar aqui, ao lado da linha de base anotada antes da v7.</li>
+</ul>
+<h2>4. Diagnóstico de set/2026 (histórico)</h2>
+<table>
+<thead>
+<tr>
+<th>Página</th>
+<th>Peso das imagens antes</th>
+<th>Depois da A1 (set/2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Home</td>
+<td>~3 MB</td>
+<td>~60 KB</td>
+</tr>
+<tr>
+<td>Quero Carregar</td>
+<td>~31 MB</td>
+<td>~270 KB</td>
+</tr>
+<tr>
+<td>Quero Transportar</td>
+<td>~45 MB</td>
+<td>~330 KB</td>
+</tr>
+</tbody>
+</table>
+<p>Achados de set/2026 resolvidos na v7: conteúdo invisível até o ScrollReveal carregar; três combinações de fonte com <code>@import</code>; bibliotecas sem versão fixa; menu mobile sem ação e WhatsApp de exemplo no Quero Carregar; link do WhatsApp dependente de JS no Quero Transportar; telefones fictícios; rodapé com telefone de exemplo e links <code>#</code>; <code>lang="en"</code>; menu como <code>div</code>; modal sem <code>role="dialog"</code> e sem Esc; vários <code>&lt;h1&gt;</code>; contraste do laranja 3,1:1; logo diferente em cada página; menção a outra marca no rodapé; CSS duplicado entre as personas.</p>
+<p>Ainda pendentes: meta description nas personas (feita na v7), Open Graph, canonical e <code>sitemap.xml</code>; páginas de Privacidade e Termos; medição de cliques (ver PLANO-DE-ACAO.md, backlog).</p>
