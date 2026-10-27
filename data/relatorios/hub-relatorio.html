@@ -1,0 +1,234 @@
+<blockquote>
+<p>Atualizado em 27/10/2026, versão 7.0 (branch <code>features/dashboard-inteligente-v1</code>). O Hub deixa de ser um navegador de arquivos e passa a ser uma central de evidências: relatórios, pesquisa, demonstrações, explicações, jornada e marca, com cada número ligado a uma fonte e uma data.</p>
+</blockquote>
+<h2>1. Objetivo</h2>
+<p>Reunir em um só lugar o material que explica, demonstra e comprova o trabalho da Volta Express: documentos dos projetos, o que o público respondeu na pesquisa, vídeos e fluxos do produto, regras do match, a história em commits e a identidade visual. Público: parceiros, mentores, investidores e o próprio time, inclusive em reunião (versão para imprimir em PDF).</p>
+<h2>2. Antes (v6, set/2026) e depois (v7)</h2>
+<table>
+<thead>
+<tr>
+<th>Indicador</th>
+<th>v6</th>
+<th>v7</th>
+<th>Como foi medido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scripts de terceiros na página</td>
+<td>6 (Tailwind CDN, Prism ×3, SheetJS, Mammoth)</td>
+<td>0</td>
+<td><code>index.html</code></td>
+</tr>
+<tr>
+<td>Código próprio (HTML + CSS + JS)</td>
+<td>133,7 KB (25,1 KB gzip)</td>
+<td>74,5 KB (24,6 KB gzip)</td>
+<td><code>git show HEAD:&lt;arquivo&gt;</code> × arquivos novos, gzip nível 9</td>
+</tr>
+<tr>
+<td>Catálogo</td>
+<td>96 KB escritos à mão dentro do JS</td>
+<td><code>data/conteudo.json</code> gerado por script (13 KB gzip, baixado sob demanda)</td>
+<td><code>scripts/gerar_catalogo.py</code></td>
+</tr>
+<tr>
+<td>Números fixos no código</td>
+<td>Sim, divergentes (32 × 38 diretórios)</td>
+<td>Nenhum: KPIs calculados dos dados</td>
+<td>revisão de <code>js/ui.js</code></td>
+</tr>
+<tr>
+<td>Validação dos dados</td>
+<td>Nenhuma</td>
+<td>6 JSON Schemas + checagem de arquivos e de pasta privada, também no GitHub Actions</td>
+<td><code>scripts/validar_dados.py</code></td>
+</tr>
+<tr>
+<td>Peso das imagens exibidas</td>
+<td>Originais (210 arquivos, 266,4 MB no total)</td>
+<td>Derivados WebP e capas (16,6 MB no total; miniatura média 18 KB, versão grande 60 KB)</td>
+<td><code>data/midia.json</code></td>
+</tr>
+<tr>
+<td>Cópias idênticas no acervo</td>
+<td>Não detectadas</td>
+<td>23 detectadas por SHA-1 e escondidas (21,4 MB) + 1 vídeo duplicado oculto (16,2 MB)</td>
+<td><code>docs/remover-apos-v7.txt</code></td>
+</tr>
+<tr>
+<td>Seções</td>
+<td>1 (árvore de arquivos)</td>
+<td>8 (Visão geral, Relatórios, Pesquisa, Demonstrações, Explicações, Jornada, Marca, Acervo)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Rolagem lateral (10 telas × 5 larguras, 320–1440 px)</td>
+<td>não medido</td>
+<td>0 px</td>
+<td>Playwright, <code>testar-hub.js</code></td>
+</tr>
+<tr>
+<td>Erros de JavaScript</td>
+<td>aviso do Tailwind CDN no console</td>
+<td>0</td>
+<td>Playwright</td>
+</tr>
+<tr>
+<td>Falhas de contraste (WCAG AA)</td>
+<td>não medido</td>
+<td>0 nas 10 telas, em 390 e 1440 px</td>
+<td>auditoria própria (luminância relativa)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Limites da medição.</strong> O ambiente de teste não acessa a internet: a v6 não pôde ser medida (o Tailwind CDN é bloqueado e a página fica sem estilo), e na v7 as fontes e os ícones foram simulados vazios. O LCP medido na v7 (164 ms na Visão geral, 390 px) é de servidor local sem limitação de rede; serve para comparar versões futuras no mesmo ambiente, não como número de produção. As miniaturas que não foram copiadas para o teste foram trocadas por uma imagem de 9 KB.</p>
+<h2>3. Arquitetura</h2>
+<table>
+<thead>
+<tr>
+<th>Camada</th>
+<th>Arquivos</th>
+<th>Papel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fontes</td>
+<td><code>assets/**</code>, <code>docs/*.md</code> dos 3 projetos, <code>git log</code> dos 3 repositórios, planilhas da pesquisa (repositório privado)</td>
+<td>Material original</td>
+</tr>
+<tr>
+<td>Curadoria</td>
+<td><code>data/curadoria.json</code> (regras por pasta e por arquivo), <code>data/marcos.json</code>, <code>data/metricas.json</code>, <code>data/explicacoes.json</code></td>
+<td>O que é editado à mão: títulos, finalidade, persona, marcos, métricas medidas e explicações, cada um com fonte</td>
+</tr>
+<tr>
+<td>Geração</td>
+<td><code>scripts/*.py</code> (<code>gerar_tudo.py</code> roda tudo em ordem)</td>
+<td>Gera <code>midia/</code>, <code>data/conteudo.json</code>, <code>jornada.json</code>, <code>pesquisa.json</code>, <code>relatorios.json</code> e <code>data/relatorios/*.html</code></td>
+</tr>
+<tr>
+<td>Contrato</td>
+<td><code>schemas/*.schema.json</code> + <code>scripts/validar_dados.py</code> + <code>.github/workflows/validar-dados.yml</code></td>
+<td>Impede publicar dado fora do formato, arquivo inexistente ou pasta privada</td>
+</tr>
+<tr>
+<td>Apresentação</td>
+<td><code>index.html</code>, <code>shared/tokens.css</code>, <code>style.css</code>, <code>js/{config,data,renderers,ui,main}.js</code></td>
+<td>Sem build, módulos ES, rotas por <code>#</code>, gráficos em HTML/SVG com tabela de dados, <code>&lt;dialog&gt;</code> para ver o material, CSS de impressão</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Achados desta etapa</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Achado</th>
+<th>Situação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A1</td>
+<td>Formulários com nome, e-mail e celular, pitch, ata e prints internos continuam versionados no repositório público (o <code>.gitignore</code> não remove arquivos já rastreados)</td>
+<td>Fora do Hub. Remoção do repositório e do histórico: passo a passo em <a href="B0-PROTECAO-DE-DADOS.md">B0-PROTECAO-DE-DADOS.md</a></td>
+</tr>
+<tr>
+<td>A2</td>
+<td>Credencial embutida na URL do remoto Git deste repositório e do da plataforma</td>
+<td>Revogar e trocar a URL (B0, seção 0)</td>
+</tr>
+<tr>
+<td>A3</td>
+<td>O vídeo "Demonstração do mapa de rotas" é uma gravação de tela real: mostra nome de pessoa, telefones e notificações de WhatsApp de terceiros</td>
+<td><strong>Oculto do Hub</strong> (D13); regravar com dados de teste (B0, seção 7)</td>
+</tr>
+<tr>
+<td>A7</td>
+<td>30 imagens da pasta <code>inspiracoes/</code> são peças de outras marcas (layouts, fotos, componentes) e 1 infográfico de terceiro em <code>qa-refs/</code></td>
+<td><strong>Ocultas do Hub</strong> (D14, D15); continuam no disco como referência interna</td>
+</tr>
+<tr>
+<td>A4</td>
+<td>23 cópias idênticas e 1 vídeo duplicado (37,6 MB)</td>
+<td>Escondidos do Hub; lista para remover em <code>docs/remover-apos-v7.txt</code></td>
+</tr>
+<tr>
+<td>A5</td>
+<td>O primeiro commit da plataforma (01/01/2025) é o modelo do Lovable com data fixa</td>
+<td>A Jornada mostra o aviso; o trabalho real começa em fev/2026</td>
+</tr>
+<tr>
+<td>A6</td>
+<td>Pesquisa: oferta de carga concentrada em GO e caminhões saindo de MG rumo a SP; 63% dos embarcadores não informaram volume</td>
+<td>Hipótese (amostra pequena e por conveniência, 42 respostas em set/2024), mostrada assim no Hub</td>
+</tr>
+</tbody>
+</table>
+<h2>5. Notas estimadas (0–10)</h2>
+<table>
+<thead>
+<tr>
+<th>Indicador</th>
+<th>v6</th>
+<th>v7</th>
+<th>Por quê</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Performance</td>
+<td>4</td>
+<td>8</td>
+<td>Sem scripts de terceiros; imagens em WebP com carregamento sob demanda; vídeo só baixa no play</td>
+</tr>
+<tr>
+<td>Acessibilidade</td>
+<td>6</td>
+<td>9</td>
+<td>Contraste AA, foco visível, "Pular para o conteúdo", gráficos com tabela, rótulos em todos os filtros</td>
+</tr>
+<tr>
+<td>Boas práticas</td>
+<td>5</td>
+<td>8</td>
+<td>Dados validados em CI, sem números fixos, sem HTML bruto vindo do Markdown</td>
+</tr>
+<tr>
+<td>Governança de dados</td>
+<td>3</td>
+<td>7</td>
+<td>Catálogo e pesquisa protegidos; falta tirar os arquivos internos do repositório (A1) e revogar a credencial (A2)</td>
+</tr>
+<tr>
+<td>Valor para reunião</td>
+<td>3</td>
+<td>8</td>
+<td>Resultados antes/depois, pesquisa, explicações e jornada com fonte; impressão em PDF</td>
+</tr>
+</tbody>
+</table>
+<h2>6. Histórico</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Entrega</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>set/2026</td>
+<td>B0.1 — catálogo público limpo</td>
+<td>229 ativos públicos em 30 pastas; nenhum link para formulários, bases de respostas, documento mestre ou painéis administrativos</td>
+</tr>
+<tr>
+<td>27/10/2026</td>
+<td>v7 — central de evidências</td>
+<td>8 seções, 6 geradores, 6 schemas, 165 materiais únicos e próprios, 9 relatórios publicados, pesquisa agregada com 42 respostas</td>
+</tr>
+</tbody>
+</table>

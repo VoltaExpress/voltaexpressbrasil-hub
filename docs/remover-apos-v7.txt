@@ -1,0 +1,52 @@
+# Hub v7 — arquivos que podem ser removidos do repositório público
+# Gerado em 2026-10-27 a partir de data/conteudo.json (hash SHA-1). Remoção manual, depois de conferir.
+
+## 1. Cópias idênticas (23 arquivos, 21.4 MB) — o original fica
+assets/quero-carregar-transportador/buscar-carga/caixas.png    # igual a assets/logo-volta-express-cargas.png
+assets/quero-carregar-transportador/marca-transportador/favicon.png    # igual a assets/logo-volta-express-cargas.png
+assets/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-6.png    # igual a assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-6.png
+assets/quero-transportar-embarcador/buscar-caminhao/caminhao-verde-7.png    # igual a assets/quero-carregar-transportador/anunciar-caminhao/anunciar-caminhao-7.png
+assets/quero-transportar-embarcador/marca-embarcador/favicon.png    # igual a assets/quero-transportar-embarcador/buscar-caminhao/caminhao.png
+assets/voltaexpressbrasil/veb-assets/banner-caixas-caminhao.png    # igual a assets/banner-caixas-caminhao.png
+assets/voltaexpressbrasil/veb-assets/favicon-PNG-removebg.png    # igual a assets/favicon-PNG-removebg.png
+assets/voltaexpressbrasil/veb-assets/favicon-PNG.png    # igual a assets/favicon-PNG.png
+assets/voltaexpressbrasil/veb-assets/logo-volta-express-caminhao.png    # igual a assets/logo-volta-express-caminhao.png
+assets/voltaexpressbrasil/veb-assets/logo-volta-express-cargas.png    # igual a assets/logo-volta-express-cargas.png
+assets/voltaexpressbrasil/veb-assets/logo-volta-express.png    # igual a assets/logo-volta-express.png
+assets/voltaexpressbrasil/veb-logo/banner-caixas-caminhao-logo.png    # igual a assets/logo-volta-express.png
+assets/voltaexpressbrasil/veb-logo/caixas.png    # igual a assets/logo-volta-express-cargas.png
+assets/voltaexpressbrasil/veb-logo/caminhao.png    # igual a assets/logo-volta-express-caminhao.png
+assets/voltaexpressbrasil/veb-logo/favicon-PNG-removebg.png    # igual a assets/favicon-PNG-removebg.png
+assets/voltaexpressbrasil/veb-logo/favicon-PNG.png    # igual a assets/favicon-PNG.png
+assets/voltaexpressbrasil/veb-logo/volta-express-brasil.jpg    # igual a assets/logo-volta-express.png
+assets/voltaexpressbrasil/veb-mkt-1/1. Transportar a um clique.png    # igual a assets/voltaexpressbrasil/veb-mkt-1/1. Transportar a um clique (1).png
+assets/voltaexpressbrasil/veb-mkt-1/5. Logo - Volta Express - Modelo Novo.png    # igual a assets/voltaexpressbrasil/veb-mkt-1/5. Logo - Volta Express - Modelo Novo (1).png
+assets/voltaexpressbrasil/veb-mkt-1/users-2.jpg    # igual a assets/voltaexpressbrasil/veb-mkt-1/depositions-4.jpg
+assets/voltaexpressbrasil/veb-mkt-2/volta-express-fluxo.png    # igual a assets/arquivos/qa-v5/v5-fluxo.png
+assets/voltaexpressbrasil/veb-painel/carreta-3.jpg    # igual a assets/quero-carregar-transportador/anunciar-caminhao/carreta-3.jpg
+assets/voltaexpressbrasil/veb-public/favicon.png    # igual a assets/logo-volta-express.png
+
+## 2. Ocultos pela curadoria (não aparecem no Hub; +16,2 MB)
+assets/voltaexpressbrasil/midias/videos/volta express VID-20241117-WA0026.mp4    # Cópia idêntica de volta-express-v4.2.mp4 (mesmo SHA-1); mantida só a versão com nome descritivo
+assets/voltaexpressbrasil/qa-refs/imagem.png    # Print de anúncio de terceiro (Webmotors) com a barra do navegador pessoal
+midia/voltaexpressbrasil/midias/videos/volta-express-vid-20241117-wa0026-capa.webp    # capa do vídeo duplicado acima (derivado órfão)
+
+## 2b. Derivados órfãos de itens ocultos em 27/10/2026 (D13–D15)
+midia/voltaexpressbrasil/midias/videos/volta-express-mapa-capa.webp    # capa do vídeo do mapa (oculto)
+midia/voltaexpressbrasil/inspiracoes/    # pasta inteira: derivados das referências de terceiros (originais seguem em assets/ como referência interna)
+midia/voltaexpressbrasil/qa-refs/tamanhos-caminhoes-mudancas-mini.webp
+midia/voltaexpressbrasil/qa-refs/tamanhos-caminhoes-mudancas-grande.webp
+
+## 2c. Arquivos de trabalho que sobraram
+docs/ci/    # cópia do workflow; o arquivo válido está em .github/workflows/validar-dados.yml
+data/curadoria-pastas.json    # versão inicial das regras por pasta; a fonte usada é o bloco "pastas" de data/curadoria.json
+C:\veb\_temp-revisao-videos\    # fora do repositório: folhas de quadros usadas na revisão dos vídeos
+
+## 3. Sem efeito no GitHub Pages
+public/_redirects    # regra do Netlify; o Hub v7 usa rotas com # e não precisa dela
+
+## 4. NÃO remover
+# assets/** (originais): o botão 'Baixar original' do Hub aponta para eles.
+# midia/** : versões leves (WebP e capas) geradas por scripts/otimizar_midia.py; são o que o Hub exibe.
+midia/voltaexpressbrasil/qa-refs/imagem-mini.webp    # derivado do print oculto acima (órfão)
+midia/voltaexpressbrasil/qa-refs/imagem-grande.webp  # derivado do print oculto acima (órfão)

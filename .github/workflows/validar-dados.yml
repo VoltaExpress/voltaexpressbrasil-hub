@@ -1,0 +1,33 @@
+# Valida os dados do Hub a cada push e pull request.
+# Falha se: um data/*.json não segue o schema, um arquivo citado não existe,
+# o catálogo aponta para pasta privada (B0) ou a pesquisa tem coluna pessoal.
+# Os geradores (catálogo, jornada, relatórios) rodam na máquina local, porque
+# leem os outros repositórios em C:\veb; aqui só se confere o resultado.
+name: Validar dados do Hub
+
+on:
+  push:
+    paths: ["data/**", "schemas/**", "scripts/**", "midia/**", ".github/workflows/validar-dados.yml"]
+  pull_request:
+    paths: ["data/**", "schemas/**", "scripts/**", "midia/**", ".github/workflows/validar-dados.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - name: Instalar dependências
+        run: pip install -r scripts/requirements.txt
+      - name: Validar
+        run: python scripts/validar_dados.py

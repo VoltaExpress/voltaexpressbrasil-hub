@@ -1,0 +1,192 @@
+<p>As 3 páginas (home, Quero Carregar, Quero Transportar) usam a mesma base. Para mudar algo visual nas 3 de uma vez, altere <code>shared/</code>.</p>
+<h2>Arquivos</h2>
+<table>
+<thead>
+<tr>
+<th>Arquivo</th>
+<th>Conteúdo</th>
+<th>Tamanho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>shared/tokens.css</code></td>
+<td>Cores, fonte, tamanhos de texto, espaçamentos, raios, sombras</td>
+<td>2,7 KB</td>
+</tr>
+<tr>
+<td><code>shared/components.css</code></td>
+<td>Header, menu, botões, hero, passos, mural, vantagens, sobre, depoimentos, FAQ, chamada final, rodapé, WhatsApp flutuante, modal, animação</td>
+<td>26 KB</td>
+</tr>
+<tr>
+<td><code>shared/site.js</code></td>
+<td>Configuração central (<code>VEB</code>), menu, links de WhatsApp, sombra do header, animação, modal, mapa</td>
+<td>5 KB</td>
+</tr>
+<tr>
+<td><code>style.css</code> (home) e <code>quero-*/style.css</code></td>
+<td>Só o que é exclusivo da página</td>
+<td>0,7 a 2,4 KB</td>
+</tr>
+</tbody>
+</table>
+<p>Ordem de carregamento em cada página: <code>tokens.css</code> → <code>components.css</code> → <code>style.css</code> da página; <code>site.js</code> → dados (<code>cargas.js</code>/<code>viagens.js</code>) → <code>script.js</code> da página, todos com <code>defer</code>.</p>
+<h2>Cores e contraste (WCAG 2.x)</h2>
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Cor</th>
+<th>Uso</th>
+<th>Contraste</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--color-primary</code></td>
+<td><code>#104ac8</code></td>
+<td>Botão principal, links</td>
+<td>7,41:1 com texto branco</td>
+</tr>
+<tr>
+<td><code>--color-brand</code></td>
+<td><code>#fe5b3d</code></td>
+<td>Fundos, ícones, borda do rodapé</td>
+<td>Não usar em texto pequeno (3,1:1)</td>
+</tr>
+<tr>
+<td><code>--color-brand-strong</code></td>
+<td><code>#ee4f2c</code></td>
+<td>Destaques em títulos grandes (<code>.hl</code>)</td>
+<td>3,2:1 no fundo do hero (mínimo 3:1 para texto grande)</td>
+</tr>
+<tr>
+<td><code>--color-brand-text</code></td>
+<td><code>#c2410c</code></td>
+<td>Textos pequenos em laranja (<code>.eyebrow</code>)</td>
+<td>5,18:1 no branco</td>
+</tr>
+<tr>
+<td><code>--color-whatsapp</code></td>
+<td><code>#15803d</code></td>
+<td>Botões e ícone do WhatsApp</td>
+<td>5,02:1 com texto branco</td>
+</tr>
+<tr>
+<td><code>--color-text</code></td>
+<td><code>#1e293b</code></td>
+<td>Texto principal</td>
+<td>14,6:1</td>
+</tr>
+<tr>
+<td><code>--color-text-muted</code></td>
+<td><code>#475569</code></td>
+<td>Texto secundário</td>
+<td>7,58:1</td>
+</tr>
+<tr>
+<td><code>--color-text-soft</code></td>
+<td><code>#64748b</code></td>
+<td>Legendas pequenas (só em fundo branco)</td>
+<td>4,76:1</td>
+</tr>
+<tr>
+<td><code>--color-dark-text</code></td>
+<td><code>#cbd5e1</code></td>
+<td>Texto sobre o fundo escuro</td>
+<td>10,4:1</td>
+</tr>
+</tbody>
+</table>
+<h2>Componentes principais</h2>
+<table>
+<thead>
+<tr>
+<th>Classe</th>
+<th>Onde aparece</th>
+<th>Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.site-header</code>, <code>.site-nav</code>, <code>.menu-toggle</code></td>
+<td>3 páginas</td>
+<td>Menu vira painel abaixo de 960 px; ícone em CSS (não depende da fonte de ícones)</td>
+</tr>
+<tr>
+<td><code>.btn</code> + <code>.btn-primary</code>, <code>.btn-outline</code>, <code>.btn-whatsapp</code>, <code>.btn-whatsapp-outline</code>, <code>.btn-ghost</code></td>
+<td>3 páginas</td>
+<td>Altura mínima de 44 px</td>
+</tr>
+<tr>
+<td><code>.hero</code>, <code>.hero-grid</code>, <code>.hero-actions</code>, <code>.hero-media</code></td>
+<td>3 páginas</td>
+<td>Texto à esquerda e imagem à direita; empilha abaixo de 960 px</td>
+</tr>
+<tr>
+<td><code>.persona-card</code></td>
+<td>Home</td>
+<td>Escolha entre motorista e embarcador</td>
+</tr>
+<tr>
+<td><code>.steps</code> / <code>.step</code></td>
+<td>Landings</td>
+<td>5 passos: 5 colunas, 2 colunas (último centralizado) e 1 coluna</td>
+</tr>
+<tr>
+<td><code>.notice</code>, <code>.search</code>, <code>.offers</code>, <code>.offer-card</code></td>
+<td>Landings</td>
+<td>Mural de exemplos; fotos com proporção fixa de 4:3</td>
+</tr>
+<tr>
+<td><code>.benefits</code> / <code>.benefit</code></td>
+<td>Landings</td>
+<td>4, 2 e 1 coluna</td>
+</tr>
+<tr>
+<td><code>.about-grid</code>, <code>.stats</code>, <code>.features</code></td>
+<td>Landings</td>
+<td>Seção "Sobre"</td>
+</tr>
+<tr>
+<td><code>.testimonials</code> / <code>.testimonial</code>, <code>.testimonial--featured</code></td>
+<td>Landings</td>
+<td>O destaque ocupa 2 colunas</td>
+</tr>
+<tr>
+<td><code>.faq</code> / <code>.faq-item</code></td>
+<td>Landings</td>
+<td><code>&lt;details&gt;</code> nativo; <code>name="faq"</code> abre um por vez nos navegadores que suportam</td>
+</tr>
+<tr>
+<td><code>.cta-final</code> / <code>.cta-box</code></td>
+<td>Landings</td>
+<td>Chamada final para a plataforma e o WhatsApp</td>
+</tr>
+<tr>
+<td><code>.site-footer</code></td>
+<td>3 páginas</td>
+<td>Mesmo conteúdo nas 3</td>
+</tr>
+<tr>
+<td><code>.whatsapp-float</code></td>
+<td>3 páginas</td>
+<td>Verde, à direita</td>
+</tr>
+<tr>
+<td><code>.modal</code></td>
+<td>Landings</td>
+<td><code>role="dialog"</code>, Esc e clique fora fecham</td>
+</tr>
+</tbody>
+</table>
+<h2>Animação</h2>
+<ul>
+<li>Elementos com <code>data-reveal</code> sobem suavemente ao entrar na tela.</li>
+<li>O conteúdo <strong>nasce visível</strong>. Só quando o JS está ativo e o sistema não pede "reduzir movimento" é que os blocos começam ocultos.</li>
+<li>Rede de segurança: se o JS falhar, tudo aparece em 2,5 s por animação CSS.</li>
+<li>O hero nunca é animado, para não atrasar a primeira pintura (LCP).</li>
+</ul>
+<h2>Breakpoints</h2>
+<p><code>600px</code> (celular → tablet), <code>960px</code> (tablet → desktop, menu), <code>1100px</code> (desktop largo, grades de 3 a 5 colunas).</p>

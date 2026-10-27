@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Métricas medidas",
+  "type": "object",
+  "properties": {
+    "atualizado": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "blocos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "titulo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fonte": {
+            "type": "string",
+            "minLength": 1
+          },
+          "medido_em": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "metodo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "indicadores": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "antes": {},
+                "depois": {},
+                "unidade": {
+                  "type": "string"
+                },
+                "melhor": {
+                  "enum": [
+                    "menor",
+                    "maior",
+                    "igual"
+                  ]
+                }
+              },
+              "required": [
+                "nome",
+                "antes",
+                "depois",
+                "melhor"
+              ],
+              "additionalProperties": true
+            }
+          }
+        },
+        "required": [
+          "id",
+          "titulo",
+          "fonte",
+          "medido_em",
+          "metodo",
+          "indicadores"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "atualizado",
+    "blocos"
+  ],
+  "additionalProperties": true
+}

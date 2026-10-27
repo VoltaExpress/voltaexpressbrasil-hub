@@ -1,0 +1,49 @@
+<h2>ADR 1 — Dados de contato do anunciante por função segura (P1)</h2>
+<ul>
+<li><strong>Contexto:</strong> a política "Public can view active users" permitia a qualquer visitante, mesmo sem login, ler todas as colunas de <code>vt_usuario</code>.</li>
+<li><strong>Decisão:</strong> remover a política e criar a função <code>vt_anunciantes(ids)</code> (SECURITY DEFINER), que devolve só nome, telefone e foto de quem tem anúncio ativo, e só para usuários logados. Cada usuário lê apenas o próprio perfil na tabela.</li>
+<li><strong>Consequência:</strong> documento (CPF/CNPJ) deixa de ser exposto; o contato via WhatsApp continua funcionando. No Match v2, o telefone passa a ser liberado só após "tenho interesse".</li>
+</ul>
+<h2>ADR 2 — Ambiente de desenvolvimento separado</h2>
+<ul>
+<li><strong>Decisão:</strong> testes locais usam um projeto Supabase gratuito <code>voltaexpress-dev</code>, com <code>.env.development.local</code>.</li>
+<li><strong>Consequência:</strong> produção sem dados de teste; toda migração é validada no dev antes de ir para produção.</li>
+</ul>
+<h2>ADR 3 — Dados de demonstração fictícios e roteiro fixo</h2>
+<ul>
+<li><strong>Decisão:</strong> 4 usuários e 8 anúncios fictícios (DEMONSTRACAO.md), com resultados esperados documentados.</li>
+<li><strong>Consequência:</strong> o mesmo roteiro serve de linha de base para medir o Match v2.</li>
+</ul>
+<h2>ADR 1 (atualização) — Telefone só após interesse</h2>
+<ul>
+<li>A partir do Match v2, <code>vt_anunciantes</code> devolve só nome e foto. O telefone é liberado por <code>vt_registrar_interesse</code>, que registra o contato.</li>
+</ul>
+<h2>ADR 4 — Placa visível só para usuários logados (P1.1)</h2>
+<ul>
+<li><strong>Decisão:</strong> as políticas de leitura de <code>vt_veiculo</code> e <code>vt_carroceria</code> de anúncios ativos passam a valer só para <code>authenticated</code>.</li>
+<li><strong>Consequência:</strong> visitantes da página inicial veem o anúncio sem tipo de veículo e são convidados a entrar.</li>
+</ul>
+<h2>ADR 5 — Edge Functions protegidas (P2)</h2>
+<ul>
+<li><strong>Decisão:</strong> CORS só para os domínios da plataforma (<code>ALLOWED_ORIGINS</code>), login obrigatório, 30 chamadas/min por usuário e validação de entrada, num módulo comum (<code>_shared/seguranca.ts</code>).</li>
+<li><strong>Consequência:</strong> a cota do Google não fica exposta; visitantes não calculam rotas.</li>
+</ul>
+<h2>ADR 6 — Expiração automática (P3)</h2>
+<ul>
+<li><strong>Decisão:</strong> <code>pg_cron</code> roda <code>expire_anuncios()</code> todo dia às 03:05 UTC; as consultas também ignoram anúncios com data fim no passado.</li>
+</ul>
+<h2>ADR 7 — Persona define a aba inicial, não restringe (R1)</h2>
+<ul>
+<li><strong>Decisão provisória:</strong> caminhoneiro abre em "Veículo", empresa em "Carga"; ambos ainda podem publicar os dois tipos.</li>
+<li><strong>Pendente:</strong> decidir se a plataforma deve restringir o tipo de anúncio pela persona.</li>
+</ul>
+<h2>ADR 8 — Match no banco com PostGIS (M2)</h2>
+<ul>
+<li><strong>Contexto:</strong> o match no navegador ignorava carroceria, datas e sentido, e fazia até 16 chamadas ao Google por busca.</li>
+<li><strong>Decisão:</strong> rota gravada no anúncio; funções <code>vt_match_cargas</code>/<code>vt_match_veiculos</code> com filtros obrigatórios, encaixe geográfico (raio de 30 km, ordem origem→destino), score 0–100 e motivos. Regras em tabelas editáveis (<code>vt_compatibilidade</code>, <code>vt_match_config</code>).</li>
+<li><strong>Consequência:</strong> resultados corretos e explicáveis; anúncios antigos (sem rota) caem no modo cidade até serem republicados.</li>
+</ul>
+<h2>ADR 9 — Tokens de design alinhados à landing (DS1)</h2>
+<ul>
+<li><strong>Decisão:</strong> a plataforma usa a paleta da landing; tons de texto e botão escurecidos para contraste AA. Logos e nome inalterados.</li>
+</ul>

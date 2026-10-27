@@ -1,0 +1,7 @@
+# Dependências dos scripts do Hub (Python 3.10+)
+# Instalar: pip install -r scripts/requirements.txt
+# ffmpeg (capas de vídeo) é instalado à parte: https://ffmpeg.org/download.html
+Pillow>=10
+openpyxl>=3.1
+Markdown>=3.5
+jsonschema>=3.2

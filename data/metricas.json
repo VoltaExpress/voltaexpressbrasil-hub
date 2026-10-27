@@ -1,0 +1,37 @@
+{
+  "atualizado": "2026-10-27",
+  "blocos": [
+    {
+      "id": "landing-v7",
+      "titulo": "Landing v6 → v7",
+      "fonte": "voltaexpressbrasil/docs/RELATORIO.md",
+      "medido_em": "2026-10-26",
+      "metodo": "Celular simulado (Pixel 7, 4G lento 1,6 Mbps/150 ms, CPU 4×), 5 rodadas, mediana, servidor com gzip. Fontes, ícones e mapas externos não carregados no teste.",
+      "indicadores": [
+        { "nome": "Caminhos de conversão quebrados", "antes": 7, "depois": 0, "unidade": "", "melhor": "menor" },
+        { "nome": "Falhas de contraste (3 páginas)", "antes": 61, "depois": 0, "unidade": "", "melhor": "menor" },
+        { "nome": "Alvos de toque menores que 24 px", "antes": 21, "depois": 0, "unidade": "", "melhor": "menor" },
+        { "nome": "CSS total", "antes": 71.7, "depois": 32.4, "unidade": "KB", "melhor": "menor" },
+        { "nome": "Scripts de terceiros por página", "antes": 1, "depois": 0, "unidade": "", "melhor": "menor" },
+        { "nome": "LCP · Home", "antes": 564, "depois": 736, "unidade": "ms", "melhor": "menor" },
+        { "nome": "LCP · Quero Carregar", "antes": 752, "depois": 688, "unidade": "ms", "melhor": "menor" },
+        { "nome": "LCP · Quero Transportar", "antes": 812, "depois": 772, "unidade": "ms", "melhor": "menor" },
+        { "nome": "Primeira pintura · Quero Carregar", "antes": 720, "depois": 612, "unidade": "ms", "melhor": "menor" },
+        { "nome": "Primeira pintura · Quero Transportar", "antes": 696, "depois": 600, "unidade": "ms", "melhor": "menor" }
+      ]
+    },
+    {
+      "id": "plataforma-match-v2",
+      "titulo": "Plataforma: Match v1 → v2",
+      "fonte": "voltaexpress/docs/RELATORIO.md e docs/ROADMAP.md",
+      "medido_em": "2026-09-28",
+      "metodo": "Números declarados nos documentos da plataforma (não reexecutados neste Hub). Testes SQL em Postgres 16 + PostGIS 3.4 com os dados de demonstração.",
+      "indicadores": [
+        { "nome": "Chamadas ao Google por busca", "antes": 16, "depois": 1, "unidade": "", "melhor": "menor" },
+        { "nome": "Testes automatizados (front + SQL)", "antes": 1, "depois": 26, "unidade": "", "melhor": "maior" },
+        { "nome": "Bundle inicial", "antes": 910, "depois": 684, "unidade": "KB", "melhor": "menor" },
+        { "nome": "Cenários do match aprovados", "antes": 0, "depois": 13, "unidade": "de 13", "melhor": "maior" }
+      ]
+    }
+  ]
+}

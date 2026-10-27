@@ -1,0 +1,220 @@
+{
+  "gerado_em": "2026-10-27",
+  "metodologia": {
+    "fonte": "Formulários Microsoft Forms de interesse no Volta Express (exportação .xlsx)",
+    "periodo": {
+      "de": "2024-09-08",
+      "ate": "2024-09-27",
+      "observacao": "datas de coleta informadas pelos respondentes"
+    },
+    "anonimizacao": [
+      "Nome, e-mail, celular, empresa, horários e textos livres não são lidos para o resultado.",
+      "Localização só por estado (UF).",
+      "Categorias com menos de 3 respostas agrupadas em \"Outros\".",
+      "Formulários com menos de 10 respostas excluídos."
+    ],
+    "limitacoes": "Amostra pequena e de conveniência (quem respondeu ao formulário); não representa o mercado.",
+    "excluidos": [
+      {
+        "formulario": "Junte-se a todos nósno Volta Express",
+        "respostas": 2,
+        "motivo": "menos de 10 respostas"
+      },
+      {
+        "formulario": "Sou uma transportadora e busco fretes",
+        "respostas": 1,
+        "motivo": "menos de 10 respostas"
+      }
+    ]
+  },
+  "grupos": [
+    {
+      "id": "embarcadores",
+      "titulo": "Embarcadores",
+      "descricao": "Formulário \"Anuncie sua carga com o Volta Express\": quem tem carga para transportar.",
+      "respostas": 16,
+      "perguntas": [
+        {
+          "id": "mercadoria",
+          "titulo": "Tipo de mercadoria",
+          "dados": [
+            {
+              "rotulo": "Alimento não perecível",
+              "valor": 6
+            },
+            {
+              "rotulo": "Algodão",
+              "valor": 4
+            },
+            {
+              "rotulo": "Peças e indústria",
+              "valor": 4
+            },
+            {
+              "rotulo": "Outros (grupos com menos de 3)",
+              "valor": 2
+            }
+          ]
+        },
+        {
+          "id": "volume",
+          "titulo": "Informou o volume da carga?",
+          "dados": [
+            {
+              "rotulo": "Não informou",
+              "valor": 10
+            },
+            {
+              "rotulo": "Informou",
+              "valor": 6
+            }
+          ]
+        },
+        {
+          "id": "uf_origem",
+          "titulo": "Estado de coleta",
+          "dados": [
+            {
+              "rotulo": "GO",
+              "valor": 13
+            },
+            {
+              "rotulo": "Não identificado",
+              "valor": 1
+            },
+            {
+              "rotulo": "Outros (grupos com menos de 3)",
+              "valor": 2
+            }
+          ]
+        },
+        {
+          "id": "uf_destino",
+          "titulo": "Estado de entrega",
+          "dados": [
+            {
+              "rotulo": "MG",
+              "valor": 6
+            },
+            {
+              "rotulo": "GO",
+              "valor": 5
+            },
+            {
+              "rotulo": "SP",
+              "valor": 3
+            },
+            {
+              "rotulo": "Não identificado",
+              "valor": 1
+            },
+            {
+              "rotulo": "Outros (grupos com menos de 3)",
+              "valor": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "caminhoneiros",
+      "titulo": "Caminhoneiros",
+      "descricao": "Formulário \"Complete sua viagem com o Volta Express\": quem tem caminhão com espaço livre.",
+      "respostas": 26,
+      "perguntas": [
+        {
+          "id": "tipo_caminhao",
+          "titulo": "Tipo de caminhão",
+          "dados": [
+            {
+              "rotulo": "Truck",
+              "valor": 10
+            },
+            {
+              "rotulo": "3/4",
+              "valor": 5
+            },
+            {
+              "rotulo": "Toco",
+              "valor": 3
+            },
+            {
+              "rotulo": "Carreta 3 eixos",
+              "valor": 3
+            },
+            {
+              "rotulo": "Outros (grupos com menos de 3)",
+              "valor": 5
+            }
+          ]
+        },
+        {
+          "id": "capacidade",
+          "titulo": "Capacidade disponível",
+          "dados": [
+            {
+              "rotulo": "Até 5 t",
+              "valor": 9
+            },
+            {
+              "rotulo": "5 a 14 t",
+              "valor": 9
+            },
+            {
+              "rotulo": "Mais de 30 t",
+              "valor": 5
+            },
+            {
+              "rotulo": "15 a 30 t",
+              "valor": 3
+            }
+          ]
+        },
+        {
+          "id": "uf_origem",
+          "titulo": "Estado de início da rota",
+          "dados": [
+            {
+              "rotulo": "MG",
+              "valor": 16
+            },
+            {
+              "rotulo": "SP",
+              "valor": 4
+            },
+            {
+              "rotulo": "Não identificado",
+              "valor": 2
+            },
+            {
+              "rotulo": "Outros (grupos com menos de 3)",
+              "valor": 4
+            }
+          ]
+        },
+        {
+          "id": "uf_destino",
+          "titulo": "Estado de fim da rota",
+          "dados": [
+            {
+              "rotulo": "SP",
+              "valor": 15
+            },
+            {
+              "rotulo": "MG",
+              "valor": 5
+            },
+            {
+              "rotulo": "Não identificado",
+              "valor": 2
+            },
+            {
+              "rotulo": "Outros (grupos com menos de 3)",
+              "valor": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

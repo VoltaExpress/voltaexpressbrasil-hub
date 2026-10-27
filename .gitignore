@@ -8,8 +8,19 @@ assets/arquivos/supabase/
 assets/arquivos/vaga-dev/
 assets/voltaexpressbrasil/live/
 assets/voltaexpressbrasil/qa-infos/
+# D13 — gravação de tela com dados reais de pessoas (ver docs/B0, seção 7)
+assets/voltaexpressbrasil/midias/videos/volta-express-mapa.mp4
 
 # Sistema e editores
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Derivados gerados de itens ocultos pela curadoria (D13–D15): não publicar
+midia/voltaexpressbrasil/inspiracoes/
+midia/voltaexpressbrasil/midias/videos/volta-express-mapa-capa.webp
+midia/voltaexpressbrasil/midias/videos/volta-express-vid-20241117-wa0026-capa.webp
+midia/voltaexpressbrasil/qa-refs/
+# Arquivos de trabalho (ver docs/remover-apos-v7.txt)
+docs/ci/
+data/curadoria-pastas.json

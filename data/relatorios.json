@@ -1,0 +1,104 @@
+{
+  "gerado_em": "2026-10-27",
+  "itens": [
+    {
+      "id": "landing-relatorio",
+      "projeto": "Landing",
+      "tipo": "relatorio",
+      "titulo": "Relatório — Landing Page Volta Express Brasil",
+      "resumo": " Atualizado em 26/10/2026, versão 7.0 (branch v6.3-incubacao). Escopo: index.html (home), /quero-carregar (caminhoneiro) e /quero-transportar (embarcador).  Premissa: preservar regras de negócio, nome e logos. O diagnóst…",
+      "fonte": "voltaexpressbrasil/docs/RELATORIO.md",
+      "atualizado": "2026-10-01",
+      "palavras": 758,
+      "arquivo": "data/relatorios/landing-relatorio.html"
+    },
+    {
+      "id": "landing-design-system",
+      "projeto": "Landing",
+      "tipo": "explicacao",
+      "titulo": "Design system — Landing Volta Express Brasil (v7.0)",
+      "resumo": "As 3 páginas (home, Quero Carregar, Quero Transportar) usam a mesma base. Para mudar algo visual nas 3 de uma vez, altere shared/.",
+      "fonte": "voltaexpressbrasil/docs/DESIGN-SYSTEM.md",
+      "atualizado": "2026-10-27",
+      "palavras": 532,
+      "arquivo": "data/relatorios/landing-design-system.html"
+    },
+    {
+      "id": "landing-decisoes",
+      "projeto": "Landing",
+      "tipo": "analise",
+      "titulo": "Registro de Decisões — Landing Page",
+      "resumo": "Cada decisão tem contexto, escolha e consequência. Mudou de ideia? Acrescente uma nova; não apague a anterior.",
+      "fonte": "voltaexpressbrasil/docs/DECISOES.md",
+      "atualizado": "2026-10-01",
+      "palavras": 676,
+      "arquivo": "data/relatorios/landing-decisoes.html"
+    },
+    {
+      "id": "plataforma-relatorio",
+      "projeto": "Plataforma",
+      "tipo": "relatorio",
+      "titulo": "Relatório — Plataforma Volta Express",
+      "resumo": " Diagnóstico em set/2026 e execução do plano no mesmo mês. Foco: o match entre as duas personas.",
+      "fonte": "voltaexpress/docs/RELATORIO.md",
+      "atualizado": "2026-10-01",
+      "palavras": 499,
+      "arquivo": "data/relatorios/plataforma-relatorio.html"
+    },
+    {
+      "id": "plataforma-arquitetura",
+      "projeto": "Plataforma",
+      "tipo": "explicacao",
+      "titulo": "Arquitetura de Software — Volta Express Brasil",
+      "resumo": " Atualizada em set/2026, após P1, P1.1, P2, P3, R1, Match v2 e DS1–DS6.",
+      "fonte": "voltaexpress/docs/ARQUITETURA.md",
+      "atualizado": "2026-10-01",
+      "palavras": 626,
+      "arquivo": "data/relatorios/plataforma-arquitetura.html"
+    },
+    {
+      "id": "plataforma-match",
+      "projeto": "Plataforma",
+      "tipo": "explicacao",
+      "titulo": "Especificação — Match v2 (implementado em set/2026)",
+      "resumo": "Para mudar: editar a tabela vtcompatibilidade no Supabase (Table Editor). Não precisa de deploy.",
+      "fonte": "voltaexpress/docs/MATCH.md",
+      "atualizado": "2026-10-01",
+      "palavras": 732,
+      "arquivo": "data/relatorios/plataforma-match.html"
+    },
+    {
+      "id": "plataforma-roadmap",
+      "projeto": "Plataforma",
+      "tipo": "analise",
+      "titulo": "Roadmap — Volta Express Brasil",
+      "resumo": "Legenda: ✅ feito (código pronto e testado) · 🔄 depende de você · ⬜ a fazer",
+      "fonte": "voltaexpress/docs/ROADMAP.md",
+      "atualizado": "2026-10-01",
+      "palavras": 439,
+      "arquivo": "data/relatorios/plataforma-roadmap.html"
+    },
+    {
+      "id": "plataforma-decisoes",
+      "projeto": "Plataforma",
+      "tipo": "analise",
+      "titulo": "Registro de Decisões — Plataforma Volta Express",
+      "resumo": "",
+      "fonte": "voltaexpress/docs/DECISOES.md",
+      "atualizado": "2026-10-01",
+      "palavras": 461,
+      "arquivo": "data/relatorios/plataforma-decisoes.html"
+    },
+    {
+      "id": "hub-relatorio",
+      "projeto": "Hub",
+      "tipo": "relatorio",
+      "titulo": "Relatório — Hub Volta Express Brasil",
+      "resumo": " Atualizado em 27/10/2026, versão 7.0 (branch features/dashboard-inteligente-v1). O Hub deixa de ser um navegador de arquivos e passa a ser uma central de evidências: relatórios, pesquisa, demonstrações, explicações, jor…",
+      "fonte": "voltaexpressbrasil-hub/docs/RELATORIO.md",
+      "atualizado": "2026-10-01",
+      "palavras": 986,
+      "arquivo": "data/relatorios/hub-relatorio.html"
+    }
+  ]
+}
