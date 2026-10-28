@@ -983,9 +983,19 @@
   },
   "links": [
     {
-      "titulo": "GitHub — organização Volta Express",
-      "url": "https://github.com/VoltaExpress",
-      "tipo": "codigo"
+      "titulo": "Plataforma Volta Express",
+      "url": "https://voltaexpress.com.br/",
+      "tipo": "produto"
+    },
+    {
+      "titulo": "Landing Volta Express Brasil",
+      "url": "https://voltaexpressbrasil.com.br/",
+      "tipo": "produto"
+    },
+    {
+      "titulo": "WhatsApp (32) 98836-7667",
+      "url": "https://wa.me/5532988367667",
+      "tipo": "contato"
     },
     {
       "titulo": "Instagram @voltaexpressbrasil",
@@ -993,18 +1003,18 @@
       "tipo": "rede"
     },
     {
-      "titulo": "YouTube @VoltaExpress",
-      "url": "https://www.youtube.com/@VoltaExpress",
+      "titulo": "Facebook /voltaexpressbrasil",
+      "url": "https://www.facebook.com/voltaexpressbrasil",
       "tipo": "rede"
     },
     {
-      "titulo": "Facebook — página institucional",
-      "url": "https://www.facebook.com/profile.php?id=61590175261643",
+      "titulo": "YouTube @voltaexpressbrasil",
+      "url": "https://www.youtube.com/@voltaexpressbrasil",
       "tipo": "rede"
     },
     {
-      "titulo": "Facebook — comunidade",
-      "url": "https://www.facebook.com/profile.php?id=61590155552634",
+      "titulo": "X @voltaexpressbrasil",
+      "url": "https://x.com/voltaexpressbrasil",
       "tipo": "rede"
     },
     {
@@ -1013,14 +1023,9 @@
       "tipo": "rede"
     },
     {
-      "titulo": "Landing Volta Express Brasil",
-      "url": "https://voltaexpressbrasil.com.br/",
-      "tipo": "produto"
-    },
-    {
-      "titulo": "Plataforma Volta Express",
-      "url": "https://voltaexpress.com.br/",
-      "tipo": "produto"
+      "titulo": "GitHub — organização Volta Express",
+      "url": "https://github.com/VoltaExpress",
+      "tipo": "codigo"
     }
   ]
 }

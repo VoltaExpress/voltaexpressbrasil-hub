@@ -75,5 +75,12 @@
     "titulo": "Hub v7: central de evidências",
     "descricao": "O Hub passa de navegador de arquivos a relatórios, pesquisa, demonstrações, explicações, jornada e marca, com dados gerados por script.",
     "fonte": "voltaexpressbrasil-hub/CHANGELOG.md"
+  },
+  {
+    "data": "2026-10-28",
+    "projeto": "Plataforma",
+    "titulo": "Plataforma v3: pronta para demonstração",
+    "descricao": "Personas \"Tenho caminhão\" e \"Tenho carga\", Política de Privacidade com aceite registrado, indicador de frete fechado e Home com a tese do frete de retorno.",
+    "fonte": "voltaexpress/CHANGELOG.md (branch feature/projeto)"
   }
 ]
