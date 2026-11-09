@@ -24,3 +24,7 @@ midia/voltaexpressbrasil/qa-refs/
 # Arquivos de trabalho (ver docs/remover-apos-v7.txt)
 docs/ci/
 data/curadoria-pastas.json
+
+# Python (gerado ao rodar os scripts)
+__pycache__/
+*.pyc

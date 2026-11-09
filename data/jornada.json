@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-27",
+  "gerado_em": "2026-10-28",
   "fonte": "git log --all --no-merges (data do commit) nos 3 repositórios",
   "meses": [
     "2024-03",
@@ -38,15 +38,15 @@
   "projetos": {
     "landing": {
       "nome": "Landing (voltaexpressbrasil)",
-      "commits": 27,
+      "commits": 29,
       "primeiro": "2024-03-20",
-      "ultimo": "2026-10-01",
+      "ultimo": "2026-10-27",
       "por_mes": {
         "2024-03": 1,
         "2026-04": 16,
         "2026-05": 1,
         "2026-08": 5,
-        "2026-10": 4
+        "2026-10": 6
       }
     },
     "plataforma": {
@@ -65,17 +65,17 @@
     },
     "hub": {
       "nome": "Hub (voltaexpressbrasil-hub)",
-      "commits": 21,
+      "commits": 22,
       "primeiro": "2026-05-27",
-      "ultimo": "2026-10-01",
+      "ultimo": "2026-10-27",
       "por_mes": {
         "2026-05": 4,
         "2026-08": 15,
-        "2026-10": 2
+        "2026-10": 3
       }
     }
   },
-  "total_commits": 104,
+  "total_commits": 107,
   "marcos": [
     {
       "data": "2024-03-20",
@@ -153,6 +153,13 @@
       "titulo": "Hub v7: central de evidências",
       "descricao": "O Hub passa de navegador de arquivos a relatórios, pesquisa, demonstrações, explicações, jornada e marca, com dados gerados por script.",
       "fonte": "voltaexpressbrasil-hub/CHANGELOG.md"
+    },
+    {
+      "data": "2026-10-28",
+      "projeto": "Plataforma",
+      "titulo": "Plataforma v3: pronta para demonstração",
+      "descricao": "Personas \"Tenho caminhão\" e \"Tenho carga\", Política de Privacidade com aceite registrado, indicador de frete fechado e Home com a tese do frete de retorno.",
+      "fonte": "voltaexpress/CHANGELOG.md (branch feature/projeto)"
     }
   ]
 }
