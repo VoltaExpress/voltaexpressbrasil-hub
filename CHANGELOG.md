@@ -1,5 +1,19 @@
 # Changelog — Hub Volta Express Brasil
 
+## [7.1.0] — 09/11/2026 · branch `chore/limpeza-v7-relatorios`
+### Adicionado
+- 3 relatórios da plataforma em `#/relatorios`: Pontuação do Match v3, Design e Referências (#8).
+
+### Removido
+- `scripts/__pycache__` do Git (continua ignorado pelo `.gitignore`) (#6).
+- 23 cópias idênticas em `assets/`, o vídeo duplicado `VID-20241117-WA0026.mp4`, o print de anúncio de terceiro em `qa-refs/` e `public/_redirects`, conforme `docs/remover-apos-v7.txt`; as 23 entradas correspondentes saíram de `data/curadoria.json` (#6).
+
+### Corrigido
+- Resumo dos relatórios mantém o `_` de nomes técnicos (`vt_match_cargas`, `m3_match_v3`).
+
+### Dados regenerados
+- Catálogo (165 materiais), jornada (git log até 09/11/2026) e relatórios (12, com o conteúdo da v3 da plataforma).
+
 ## [7.0.0] — 27/10/2026 · branch `features/dashboard-inteligente-v1`
 O Hub passa de navegador de arquivos a central de evidências.
 

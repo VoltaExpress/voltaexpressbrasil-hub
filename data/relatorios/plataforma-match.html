@@ -1,3 +1,6 @@
+<blockquote>
+<p><strong>Match v3</strong> (migração <code>20261029120000_m3_match_v3.sql</code>): resumo na seção 11 e análise da nota em <a href="MATCH-PONTUACAO-V3.md">MATCH-PONTUACAO-V3.md</a>. As seções 1 a 10 descrevem a v2 e continuam válidas, exceto onde a seção 11 diz o contrário.</p>
+</blockquote>
 <h2>1. Objetivo</h2>
 <p>Conectar cada veículo com rota disponível às cargas que cabem no caminho dele, <strong>no sentido certo e na data certa</strong>, ordenadas pelo melhor aproveitamento. Objetivo de negócio: eliminar a viagem vazia (frete de retorno).</p>
 <h2>2. Regras de negócio preservadas</h2>
@@ -288,3 +291,77 @@
 <li>Ajustar pesos com dados reais (taxa de contato e de fechamento por faixa de score).</li>
 <li>Precision@5 em conjunto de pares avaliado pela operação (meta ≥ 0,8).</li>
 </ul>
+<h2>11. Match v3 (out/2026)</h2>
+<table>
+<thead>
+<tr>
+<th>Peça</th>
+<th>O que mudou</th>
+<th>Onde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raio</td>
+<td>Proporcional: 5% da rota, entre 25 e 60 km (<code>raio_pct</code>, <code>raio_min_km</code>, <code>raio_max_km</code>). <code>raio_pct = 0</code> volta ao raio fixo</td>
+<td><code>vt_raio_km()</code></td>
+</tr>
+<tr>
+<td>Desempenho</td>
+<td>Pré-filtro por índice: <code>ST_DWithin</code> em <code>vt_localizacao.ponto</code> (nova coluna calculada + GIST) e em <code>vt_anuncio.rota</code> (índice que já existia e não era usado)</td>
+<td>funções de match</td>
+</tr>
+<tr>
+<td>Modo cidade</td>
+<td>Desvio e aproveitamento valem <code>nota_modo_cidade</code> (0,7) em vez de 1; motivo "rota não calculada"</td>
+<td>funções de match</td>
+</tr>
+<tr>
+<td>Pesos</td>
+<td>Aproveitamento 20 → 15, valor 10 → 15 (<code>versao_pesos = 'v3'</code>)</td>
+<td><code>vt_match_config</code></td>
+</tr>
+<tr>
+<td>Motivos</td>
+<td>"coleta e entrega a X km da sua rota (≈ Y km a mais na estrada)", "coleta no km X da sua rota", "caminhão voltando de viagem (frete de retorno)"</td>
+<td>funções de match</td>
+</tr>
+<tr>
+<td>Frete de retorno</td>
+<td>Caminhão que tem outro anúncio do mesmo veículo terminando a até 50 km da origem deste: selo e +5 (<code>bonus_retorno</code>)</td>
+<td><code>vt_match_veiculos</code></td>
+</tr>
+<tr>
+<td>Perto de mim</td>
+<td><code>perto_lat</code>, <code>perto_lng</code>, <code>perto_km</code> (5 a 300; padrão 50): coleta a até X km da posição</td>
+<td><code>vt_match_cargas</code></td>
+</tr>
+<tr>
+<td>Novas colunas no resultado</td>
+<td><code>modo</code>, <code>raio_km</code>, <code>km_coleta</code>, <code>desvio_estrada_km</code>, <code>origem_lat/lng</code>, <code>destino_lat/lng</code> e, nos caminhões, <code>frete_retorno</code></td>
+<td>as duas funções</td>
+</tr>
+<tr>
+<td>Municípios IBGE</td>
+<td><code>vt_uf</code>, <code>vt_municipio</code>, <code>vt_buscar_municipios(q, uf)</code>; gatilho preenche latitude/longitude de <code>vt_localizacao</code> quando faltam</td>
+<td>importação: <code>docs/sql/05-importar-municipios.sql</code></td>
+</tr>
+<tr>
+<td>Valor por tipo de veículo</td>
+<td><code>vt_valor_referencia</code> (vazio = R$ 6,50 geral)</td>
+<td>preencher com a calculadora da ANTT</td>
+</tr>
+<tr>
+<td>Cache de rota</td>
+<td><code>vt_rota_cache</code> (30 dias), lido e gravado só pela Edge Function <code>route-distance</code> (service role)</td>
+<td><code>supabase/functions/route-distance</code></td>
+</tr>
+<tr>
+<td>Mapa</td>
+<td><code>vt_rota_anuncio(id)</code> devolve a rota gravada; o mapa não pede outra ao Google</td>
+<td><code>RouteMap.tsx</code>, <code>AnuncioDetailDialog.tsx</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Testes do Match v3 (Postgres 16 com geografia simulada)</h3>
+<p><code>docs/sql/02-popular-demo.sql</code>, bloco 3: <strong>11 de 11</strong> buscas com o resultado esperado (ida, volta, refrigerada, Nordeste, sem Google, três buscas de empresa com selo de retorno, controle fora da rota e perto de mim). Também conferidos: autocompletar ("sao jo" → São José dos Campos/SP), gatilho do IBGE, rota gravada para o mapa, pesos e raios (<code>vt_raio_km(340) = 25</code>, <code>vt_raio_km(840) = 42</code>, <code>vt_raio_km(2000) = 60</code>).</p>

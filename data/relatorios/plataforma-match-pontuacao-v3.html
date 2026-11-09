@@ -1,0 +1,350 @@
+<blockquote>
+<p>28/10/2026 · migração <code>supabase/migrations/20261029120000_m3_match_v3.sql</code> · branch <code>feature/projeto</code>.
+Os números das seções 4 e 5 saíram das funções reais do banco (<code>vt_match_cargas</code> e <code>vt_match_veiculos</code>) rodando sobre os dados de <code>docs/sql/02-popular-demo.sql</code>, num Postgres 16 de teste com a geografia simulada (não é o PostGIS real; diferença esperada de até 1 ponto).</p>
+</blockquote>
+<h2>1. Resumo</h2>
+<table>
+<thead>
+<tr>
+<th>Pergunta</th>
+<th>Resposta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A nota ordena bem?</td>
+<td>Sim, nos 13 cenários de teste o melhor encaixe sempre ficou em primeiro, e os casos que não servem (fora da rota, sentido errado, carroceria, peso, data) nem aparecem.</td>
+</tr>
+<tr>
+<td>O que estava distorcido na v2?</td>
+<td>(1) Sem rota calculada, a nota de desvio e de aproveitamento era a máxima, e uma busca "só por cidade" tirava 91, igual a uma rota conferida. (2) Carga curta e bem paga perdia muito (peso 20 no aproveitamento, 10 no valor). (3) O raio era fixo em 30 km. (4) O "desvio de X km" era em linha reta e parecia menor do que é.</td>
+</tr>
+<tr>
+<td>O que a v3 muda</td>
+<td>Modo cidade com nota neutra (0,7), raio proporcional à rota (5%, entre 25 e 60 km), pesos de aproveitamento e valor iguais (15 e 15), +5 pontos para caminhão em frete de retorno e motivos honestos ("≈ 30 km a mais na estrada", "coleta no km 191 da sua rota").</td>
+</tr>
+<tr>
+<td>Efeito nos números</td>
+<td>Encaixes reais mudam de −3 a +4 pontos; busca sem rota cai de 91 para 75; caminhão voltando de viagem sobe 6 a 7 pontos.</td>
+</tr>
+<tr>
+<td>Os pesos estão certos?</td>
+<td>Ainda são hipótese. A régua para confirmar é a taxa de contato e de frete fechado por faixa de nota: <code>docs/sql/04-calibracao-score.sql</code> (seção 6).</td>
+</tr>
+</tbody>
+</table>
+<h2>2. Como a nota é calculada (v3)</h2>
+<p>Primeiro passam os <strong>filtros obrigatórios</strong> (ativo, de outra pessoa, carroceria compatível, refrigeração, peso e volume, datas que se cruzam, encaixe geográfico no sentido certo). Só quem passa recebe nota.</p>
+<p>Nota = soma de (peso × critério de 0 a 1) ÷ soma dos pesos × 100. No match de caminhões, +5 se for frete de retorno (limite 100).</p>
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Peso v3</th>
+<th>Mede</th>
+<th>Cálculo (0 a 1)</th>
+<th>Quanto vale na prática</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desvio</td>
+<td>35</td>
+<td>Distância da coleta e da entrega até a rota</td>
+<td>1 − (dist. coleta + dist. entrega) ÷ (2 × raio)</td>
+<td>Raio 25 km: <strong>0,7 ponto por km</strong> fora da rota. Raio 42 km (rota de ~840 km): 0,42/km. Raio 60 km: 0,29/km</td>
+</tr>
+<tr>
+<td>Aproveitamento</td>
+<td>15</td>
+<td>Quanto da rota a carga percorre</td>
+<td>fração da rota entre coleta e entrega</td>
+<td><strong>1,5 ponto a cada 10%</strong> da rota</td>
+</tr>
+<tr>
+<td>Data</td>
+<td>15</td>
+<td>Quanto falta para a coleta</td>
+<td>1 − dias de espera ÷ 30</td>
+<td><strong>0,5 ponto por dia</strong> de espera</td>
+</tr>
+<tr>
+<td>Capacidade</td>
+<td>15</td>
+<td>Quanto a carga enche o caminhão</td>
+<td>média de peso÷capacidade e volume÷capacidade</td>
+<td><strong>1,5 ponto a cada 10%</strong> de ocupação</td>
+</tr>
+<tr>
+<td>Valor</td>
+<td>15</td>
+<td>R$/km comparado com a referência</td>
+<td>Cargas: (R$/km ÷ referência) ÷ 1,5 · Caminhões: referência ÷ (R$/km)</td>
+<td>Cargas: <strong>1,5 ponto por R$ 1/km</strong>, até R$ 9,75/km (1,5 × R$ 6,50)</td>
+</tr>
+<tr>
+<td>Anunciante</td>
+<td>5</td>
+<td>Perfil com foto</td>
+<td>foto = 1; sem foto = 0,6</td>
+<td>2 pontos</td>
+</tr>
+<tr>
+<td>Frete de retorno</td>
+<td>+5</td>
+<td>Caminhão voltando de uma viagem anunciada (só na busca de caminhões)</td>
+<td>bônus</td>
+<td>+5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Quando falta um dado</strong> (capacidade, valor), o critério vale 0,5 (neutro): não pune nem premia.
+<strong>Modo cidade</strong> (sem rota calculada): desvio e aproveitamento valem 0,7. Teto prático ~85, e o motivo avisa "rota não calculada".
+<strong>Referência de valor:</strong> R$ 6,50/km, ou o valor do tipo de veículo em <code>vt_valor_referencia</code> quando você preencher (calculadora da ANTT).</p>
+<h2>3. O que mudou da v2 para a v3</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>v2</th>
+<th>v3</th>
+<th>Por quê</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raio da faixa</td>
+<td>30 km fixo</td>
+<td>5% da rota, entre 25 e 60 km</td>
+<td>30 km era 10% de Goiânia–Uberlândia e 3,5% de Recife–Salvador</td>
+</tr>
+<tr>
+<td>Modo cidade</td>
+<td>desvio = 1, aproveitamento = 1</td>
+<td>0,7 e 0,7</td>
+<td>Sem rota, não sabemos se o caminho bate; a nota não pode parecer conferida</td>
+</tr>
+<tr>
+<td>Pesos aproveitamento / valor</td>
+<td>20 / 10</td>
+<td>15 / 15</td>
+<td>Carga curta e bem paga deixava de aparecer bem; a decisão do motorista é muito ligada ao valor</td>
+</tr>
+<tr>
+<td>Frete de retorno</td>
+<td>não existia</td>
+<td>+5 e selo "Frete de retorno"</td>
+<td>É a proposta de valor da empresa; caminhão voltando tende a aceitar melhor preço</td>
+</tr>
+<tr>
+<td>Texto do desvio</td>
+<td>"desvio de 21 km"</td>
+<td>"coleta e entrega a 21 km da sua rota (≈ 55 km a mais na estrada)"</td>
+<td>O desvio real é ida e volta, por estrada (2 × 1,3 × distância)</td>
+</tr>
+<tr>
+<td>Onde a carga entra</td>
+<td>—</td>
+<td>"coleta no km 191 da sua rota"</td>
+<td>Motivo concreto para o motorista</td>
+</tr>
+<tr>
+<td>Perto de mim</td>
+<td>não existia</td>
+<td>coleta a até 25/50/100/200 km da posição</td>
+<td>Motorista parado procurando carga</td>
+</tr>
+</tbody>
+</table>
+<p>Os pesos só mudaram sozinhos porque ainda estavam no padrão da v2. Se alguém já tivesse ajustado à mão, a migração não sobrescreveria (<code>versao_pesos</code>).</p>
+<h2>4. Antes × depois nos cenários de demonstração</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Busca</th>
+<th>Resultado</th>
+<th>v2</th>
+<th>v3</th>
+<th>Leitura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Truck Goiânia → Uberlândia</td>
+<td>Sementes (mesma rota inteira)</td>
+<td>91</td>
+<td><strong>90</strong></td>
+<td>Encaixe perfeito continua no topo</td>
+</tr>
+<tr>
+<td>1</td>
+<td></td>
+<td>Fertilizante (embarca em Itumbiara, km 191)</td>
+<td>79</td>
+<td><strong>80</strong></td>
+<td>Carga de 38% da rota, bem paga: sobe 1</td>
+</tr>
+<tr>
+<td>1</td>
+<td></td>
+<td>Embalagens (Goiatuba, 21 km fora)</td>
+<td>63</td>
+<td><strong>61</strong></td>
+<td>Raio menor (25 km) pesa mais no desvio; motivo diz "≈ 55 km a mais"</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Volta Uberlândia → Goiânia</td>
+<td>Leite UHT (volta inteira)</td>
+<td>92</td>
+<td><strong>91</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td>Ração (Itumbiara → Goiânia)</td>
+<td>79</td>
+<td><strong>78</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Carreta refrigerada Brasília → Ribeirão Preto</td>
+<td>Frango congelado</td>
+<td>77</td>
+<td><strong>78</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td>Peças agrícolas</td>
+<td>72</td>
+<td><strong>74</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Toco Recife → Salvador</td>
+<td>Bebidas (Aracaju, 11 km fora)</td>
+<td>74</td>
+<td><strong>74</strong></td>
+<td>Raio 35 km (rota longa)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Volta Salvador → Recife</td>
+<td>Calçados</td>
+<td>84</td>
+<td><strong>81</strong></td>
+<td>Usa 87% da rota; perde no peso menor do aproveitamento</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Truck Goiânia → Uberlândia <strong>sem Google</strong></td>
+<td>Sementes</td>
+<td><strong>91</strong></td>
+<td><strong>75</strong></td>
+<td>Correção principal: sem rota a nota não iguala a de uma rota conferida</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Empresa: ração Itumbiara → Goiânia</td>
+<td>Truck voltando Uberlândia → Goiânia</td>
+<td>84</td>
+<td><strong>91</strong></td>
+<td>+5 de frete de retorno e valor mais pesado</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Empresa: frango Catalão → Uberaba</td>
+<td>Carreta refrigerada</td>
+<td>80</td>
+<td><strong>84</strong></td>
+<td>Preço do caminhão abaixo da referência conta mais</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Empresa: calçados Alagoinhas → Recife</td>
+<td>Toco voltando Salvador → Recife</td>
+<td>90</td>
+<td><strong>96</strong></td>
+<td>Frete de retorno</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Perto de mim (Goiânia, 50 km)</td>
+<td>Sementes</td>
+<td>—</td>
+<td><strong>81</strong></td>
+<td>Novo</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Empresa: Alagoinhas → Recife <strong>sem coordenadas</strong></td>
+<td>—</td>
+<td>nenhum</td>
+<td>nenhum</td>
+<td>Sem Google e sem cidade escolhida na lista, o modo cidade exige a mesma origem e destino. Com o autocompletar do IBGE, a busca manda as coordenadas e volta a dar o Toco (caso 10)</td>
+</tr>
+</tbody>
+</table>
+<p>Os casos de controle continuam fora nas duas versões: carga a 51 km da rota, carroceria incompatível, 28 t num Truck de 14 t, sentido contrário e data fora da janela.</p>
+<h2>5. Como ler a nota</h2>
+<table>
+<thead>
+<tr>
+<th>Faixa (selo no card)</th>
+<th>Nota</th>
+<th>Significado prático</th>
+<th>Exemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ótimo encaixe</td>
+<td>75 a 100</td>
+<td>No caminho (ou quase), boa parte da rota, logo, bom valor</td>
+<td>Sementes 90, Leite 91, Truck voltando 91</td>
+</tr>
+<tr>
+<td>Bom encaixe</td>
+<td>55 a 74</td>
+<td>Vale a ligação: desvio moderado, trecho curto ou valor baixo</td>
+<td>Peças 74, Bebidas 74, Embalagens 61</td>
+</tr>
+<tr>
+<td>Encaixe parcial</td>
+<td>abaixo de 55</td>
+<td>Serve só se nada melhor aparecer</td>
+<td>Desvio no limite da faixa, coleta daqui a semanas</td>
+</tr>
+</tbody>
+</table>
+<p>A faixa não mudou; a v3 só muda o que entra nela. Uma busca sem rota chega no máximo a ~85; o motivo "rota não calculada" deixa claro que é estimativa.</p>
+<h2>6. Como calibrar com dados reais (Q9)</h2>
+<ol>
+<li>Depois de ~2 semanas de uso real (ou ~50 contatos), rode <code>docs/sql/04-calibracao-score.sql</code> no projeto de produção.</li>
+<li><strong>Bloco A:</strong> a taxa de contato precisa subir de "Encaixe parcial" para "Ótimo encaixe". Se as faixas tiverem taxas parecidas, a nota não está diferenciando.</li>
+<li><strong>Bloco B:</strong> o mesmo para frete fechado (a medida que importa para o negócio).</li>
+<li>Ajuste um peso por vez e meça de novo. Exemplos (rodar no SQL Editor):</li>
+</ol>
+<pre><code class="language-sql">-- valor pesa mais, aproveitamento menos
+UPDATE vt_match_config SET peso_valor = 20, peso_aproveitamento = 10, versao_pesos = 'ajuste-1' WHERE id = 1;
+-- raio maior para rotas curtas
+UPDATE vt_match_config SET raio_min_km = 30 WHERE id = 1;
+-- modo cidade mais conservador
+UPDATE vt_match_config SET nota_modo_cidade = 0.6 WHERE id = 1;
+</code></pre>
+<ol start="5">
+<li>Meta da operação: dos 5 primeiros cartões de uma busca, pelo menos 4 serem "eu ligaria" (precisão@5 ≥ 0,8). Uma revisão manual de 20 buscas reais já dá o número.</li>
+</ol>
+<h2>7. Limites</h2>
+<ul>
+<li>A geografia dos testes é simulada (distâncias por haversine, a mesma ordem de grandeza do PostGIS). As notas no Supabase podem diferir em até 1 ponto.</li>
+<li>No app, a rota da busca vem do Google e não é idêntica às rotas aproximadas do script de demonstração: as notas podem mudar alguns pontos, mas a ordem e quem entra/sai não mudam nos cenários testados.</li>
+<li>O desvio "na estrada" é estimado (fator 1,3 sobre a linha reta, ida e volta). O exato precisa de uma rota com paradas no Google (M7, próxima etapa).</li>
+</ul>

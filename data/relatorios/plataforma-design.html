@@ -1,0 +1,172 @@
+<h2>1. O produto</h2>
+<p>Marketplace de dois lados <strong>simétrico</strong>: caminhoneiros publicam veículos e rotas, empresas publicam cargas, e os dois lados buscam. O valor está em conectar o veículo que voltaria vazio à carga que cabe no caminho dele.</p>
+<h2>2. Diagnóstico visual (set/2026)</h2>
+<table>
+<thead>
+<tr>
+<th>Ponto</th>
+<th>Situação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identidade</td>
+<td>Visual padrão do shadcn/Lovable, sem personalidade própria</td>
+</tr>
+<tr>
+<td>Marca</td>
+<td>Paleta diferente da landing (laranja e azul em tons distintos)</td>
+</tr>
+<tr>
+<td>Matching</td>
+<td>Formulário + lista; sem mapa, sem ranking visível, sem explicação do resultado</td>
+</tr>
+<tr>
+<td>Card de anúncio</td>
+<td>Não mostra confiança (perfil, verificação) nem o motivo do match</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Formulários longos para quem usa o celular na estrada</td>
+</tr>
+<tr>
+<td>Acessibilidade</td>
+<td>Não auditada (meta: WCAG 2.2 AA)</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Referências de mercado (princípios, não cópia)</h2>
+<table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>Princípio</th>
+<th>Aplicação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uber</td>
+<td>Mapa como tela principal; uma ação principal; estado em tempo real; design system</td>
+<td>Matching com a rota desenhada e os resultados sobre o mapa</td>
+</tr>
+<tr>
+<td>Airbnb</td>
+<td>Busca primeiro; card com sinais de confiança; ranking como produto; design system</td>
+<td>Card com perfil verificado, avaliação e "por que este match"</td>
+</tr>
+<tr>
+<td>Red Bull</td>
+<td>Narrativa visual, imagem e vídeo em tela cheia</td>
+<td>Landing e conteúdo institucional (histórias reais de rota)</td>
+</tr>
+<tr>
+<td>Fórmula 1</td>
+<td>Dados densos com hierarquia clara; números em destaque; movimento que informa</td>
+<td>Painel do caminhoneiro: km vazios evitados, receita estimada, score</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Diretrizes</h2>
+<ol>
+<li><strong>Marca preservada:</strong> nome e logos não mudam; tokens de cor unificados com a landing.</li>
+<li><strong>Mobile primeiro:</strong> alvos de toque ≥ 44 px, poucos campos, ação principal ao alcance do polegar (Lei de Fitts).</li>
+<li><strong>Uma ação principal por tela</strong> e menos escolhas simultâneas (Lei de Hick).</li>
+<li><strong>Transparência do algoritmo:</strong> todo resultado mostra o motivo ("desvio de 12 km · coleta em 2 dias · 80% da capacidade").</li>
+<li><strong>Confiança visível:</strong> perfil completo, documento verificado e placa verificada como selos.</li>
+<li><strong>Movimento com propósito:</strong> animação só para mostrar estado (buscando, encontrado, contato feito), respeitando <code>prefers-reduced-motion</code>.</li>
+<li><strong>Acessibilidade:</strong> contraste AA, foco visível, navegação por teclado, textos alternativos.</li>
+</ol>
+<h2>5. Plano (sujeito a aprovação)</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Entrega</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DS1</td>
+<td>Tokens unificados landing + plataforma (cores, tipografia, espaçamento, raio, sombra)</td>
+</tr>
+<tr>
+<td>DS2</td>
+<td>Matching com mapa como tela principal: rota, marcadores e resultados em cards/bottom sheet no mobile</td>
+</tr>
+<tr>
+<td>DS3</td>
+<td>Card de anúncio v2: sinais de confiança, score e motivo do match</td>
+</tr>
+<tr>
+<td>DS4</td>
+<td>Painel do caminhoneiro e da empresa: indicadores estilo telemetria</td>
+</tr>
+<tr>
+<td>DS5</td>
+<td>Revisão mobile e WCAG 2.2 AA</td>
+</tr>
+<tr>
+<td>DS6</td>
+<td>Movimento com propósito e estados vazios, de carregamento e de erro</td>
+</tr>
+</tbody>
+</table>
+<h2>6. Métricas de UX</h2>
+<ul>
+<li>Tempo até o primeiro match útil</li>
+<li>Taxa de contato por match exibido</li>
+<li>Taxa de conclusão da criação de anúncio</li>
+<li>SUS (System Usability Scale) em testes com 5 caminhoneiros e 5 empresas</li>
+</ul>
+<p>Referências: ver <a href="REFERENCIAS.md">REFERENCIAS.md</a>.</p>
+<h2>7. Execução (set/2026)</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Status</th>
+<th>O que foi feito</th>
+<th>Arquivos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DS1</td>
+<td>✅</td>
+<td>Tokens alinhados à landing: azul <code>#104ac8</code> (primária), laranja da marca <code>#fe5b3d</code> em faixas e gradientes, laranja escurecido <code>hsl(10 85% 46%)</code> em botões e textos (contraste 4,7:1), verde de sucesso e do WhatsApp escurecidos para AA</td>
+<td><code>src/index.css</code>, <code>tailwind.config.ts</code></td>
+</tr>
+<tr>
+<td>DS2</td>
+<td>✅</td>
+<td>Matching com o mapa da rota pesquisada acima dos resultados, indicação do modo (rota ou cidades), datas e volume no formulário</td>
+<td><code>src/pages/Matching.tsx</code></td>
+</tr>
+<tr>
+<td>DS3</td>
+<td>✅</td>
+<td>Card v2: score em destaque, "por que este match", anunciante com avatar e selo de perfil, botão "Tenho interesse"</td>
+<td><code>src/components/AnuncioCard.tsx</code>, <code>src/components/anuncio/*</code></td>
+</tr>
+<tr>
+<td>DS4</td>
+<td>✅</td>
+<td>Meu painel: 4 indicadores em estilo telemetria e gestão dos anúncios</td>
+<td><code>src/pages/Painel.tsx</code></td>
+</tr>
+<tr>
+<td>DS5</td>
+<td>✅</td>
+<td>Rótulos ligados aos campos, cards acessíveis por teclado, <code>aria-live</code> nos resultados, <code>aria-label</code> no menu mobile, contraste AA, <code>prefers-reduced-motion</code></td>
+<td>páginas e <code>index.css</code></td>
+</tr>
+<tr>
+<td>DS6</td>
+<td>✅</td>
+<td>Esqueletos de carregamento, estados vazios com orientação, animações respeitando "reduzir movimento"</td>
+<td><code>Matching.tsx</code>, <code>Painel.tsx</code>, <code>App.tsx</code></td>
+</tr>
+</tbody>
+</table>
+<p>Contrastes medidos (texto branco sobre a cor): laranja de ação 4,74 · azul primário 7,41 · verde WhatsApp 4,63 · verde sucesso 4,66 (antes: laranja 2,58 e WhatsApp 1,98).</p>

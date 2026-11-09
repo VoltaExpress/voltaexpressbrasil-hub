@@ -232,3 +232,64 @@
 <li><a href="ARQUITETURA.md">ARQUITETURA.md</a> · <a href="MATCH.md">MATCH.md</a> · <a href="ROADMAP.md">ROADMAP.md</a> · <a href="DESIGN.md">DESIGN.md</a></li>
 <li><a href="AMBIENTE-LOCAL.md">AMBIENTE-LOCAL.md</a> · <a href="DEMONSTRACAO.md">DEMONSTRACAO.md</a> · <a href="DECISOES.md">DECISOES.md</a> · <a href="REFERENCIAS.md">REFERENCIAS.md</a></li>
 </ul>
+<h2>7. Versão 3 (27–28/10/2026) — pronta para demonstração a investidor</h2>
+<p>Branch <code>feature/projeto</code>. Decisões em <code>DECISOES.md</code> (ADR 7 final e ADR 10 a 16); execução detalhada em <code>V3-ANOTACOES.md</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Área</th>
+<th>Antes (v2)</th>
+<th>Depois (v3)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Personas</td>
+<td>"Caminhoneiro (PF)" e "Empresa (PJ)"</td>
+<td>"Tenho caminhão" (autônomo ou transportadora) e "Tenho carga"; CPF sempre, CNPJ opcional</td>
+</tr>
+<tr>
+<td>LGPD</td>
+<td>Sem política, sem aceite</td>
+<td><code>/privacidade</code>, aceite obrigatório com data e versão; CPF oculto no Perfil</td>
+</tr>
+<tr>
+<td>Conversão</td>
+<td>Só exibição e contato</td>
+<td>Evento "frete fechado" e indicador no painel (North Star)</td>
+</tr>
+<tr>
+<td>Home</td>
+<td>Frases genéricas e "centenas de usuários" sem fonte</td>
+<td>Tese do frete de retorno; seção ilustrativa só com números com fonte</td>
+</tr>
+<tr>
+<td>Marca</td>
+<td>Fonte e cores diferentes da landing</td>
+<td>Poppins, paleta e termos da landing; contato e redes oficiais</td>
+</tr>
+<tr>
+<td>Erros</td>
+<td>Mensagens técnicas em inglês</td>
+<td>Português claro, num lugar só (<code>src/lib/erros.ts</code>)</td>
+</tr>
+<tr>
+<td>Segurança</td>
+<td>Chave do Google no código</td>
+<td>Só por variável de ambiente; mapa com alternativa sem chave</td>
+</tr>
+<tr>
+<td>Demonstração</td>
+<td>Datas fixas, vencidas em outubro</td>
+<td>Datas relativas + script de renovação</td>
+</tr>
+<tr>
+<td>Operação</td>
+<td>Supabase free podia pausar</td>
+<td>Action 2x por semana; CI de qualidade</td>
+</tr>
+</tbody>
+</table>
+<p>Verificação feita: TypeScript sem erros; lint igual à v2 (2 erros conhecidos em <code>src/components/ui</code>); 6 testes novos executados e passando;
+migrações v3 testadas num PostgreSQL 16 com o esquema da plataforma (idempotentes; um usuário não encerra o anúncio de outro).
+Não verificado aqui: <code>npm test</code> completo, build e telas no navegador (fica no roteiro de teste).</p>
