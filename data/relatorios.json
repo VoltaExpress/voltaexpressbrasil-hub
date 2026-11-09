@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-27",
+  "gerado_em": "2026-11-09",
   "itens": [
     {
       "id": "landing-relatorio",
@@ -8,7 +8,7 @@
       "titulo": "Relatório — Landing Page Volta Express Brasil",
       "resumo": " Atualizado em 26/10/2026, versão 7.0 (branch v6.3-incubacao). Escopo: index.html (home), /quero-carregar (caminhoneiro) e /quero-transportar (embarcador).  Premissa: preservar regras de negócio, nome e logos. O diagnóst…",
       "fonte": "voltaexpressbrasil/docs/RELATORIO.md",
-      "atualizado": "2026-10-01",
+      "atualizado": "2026-10-27",
       "palavras": 758,
       "arquivo": "data/relatorios/landing-relatorio.html"
     },
@@ -30,7 +30,7 @@
       "titulo": "Registro de Decisões — Landing Page",
       "resumo": "Cada decisão tem contexto, escolha e consequência. Mudou de ideia? Acrescente uma nova; não apague a anterior.",
       "fonte": "voltaexpressbrasil/docs/DECISOES.md",
-      "atualizado": "2026-10-01",
+      "atualizado": "2026-10-27",
       "palavras": 676,
       "arquivo": "data/relatorios/landing-decisoes.html"
     },
@@ -41,8 +41,8 @@
       "titulo": "Relatório — Plataforma Volta Express",
       "resumo": " Diagnóstico em set/2026 e execução do plano no mesmo mês. Foco: o match entre as duas personas.",
       "fonte": "voltaexpress/docs/RELATORIO.md",
-      "atualizado": "2026-10-01",
-      "palavras": 499,
+      "atualizado": "2026-10-28",
+      "palavras": 734,
       "arquivo": "data/relatorios/plataforma-relatorio.html"
     },
     {
@@ -60,12 +60,45 @@
       "id": "plataforma-match",
       "projeto": "Plataforma",
       "tipo": "explicacao",
-      "titulo": "Especificação — Match v2 (implementado em set/2026)",
-      "resumo": "Para mudar: editar a tabela vtcompatibilidade no Supabase (Table Editor). Não precisa de deploy.",
+      "titulo": "Especificação — Match (v2 em set/2026; v3 em out/2026)",
+      "resumo": " Match v3 (migração 20261029120000_m3_match_v3.sql): resumo na seção 11 e análise da nota em [MATCH-PONTUACAO-V3.md](MATCH-PONTUACAO-V3.md). As seções 1 a 10 descrevem a v2 e continuam válidas, exceto onde a seção 11 diz…",
       "fonte": "voltaexpress/docs/MATCH.md",
-      "atualizado": "2026-10-01",
-      "palavras": 732,
+      "atualizado": "2026-10-28",
+      "palavras": 1114,
       "arquivo": "data/relatorios/plataforma-match.html"
+    },
+    {
+      "id": "plataforma-match-pontuacao-v3",
+      "projeto": "Plataforma",
+      "tipo": "analise",
+      "titulo": "Pontuação do Match (0 a 100) — análise da v3",
+      "resumo": " 28/10/2026 · migração supabase/migrations/20261029120000_m3_match_v3.sql · branch feature/projeto.  Os números das seções 4 e 5 saíram das funções reais do banco (vt_match_cargas e vt_match_veiculos) rodando sobre os da…",
+      "fonte": "voltaexpress/docs/MATCH-PONTUACAO-V3.md",
+      "atualizado": "2026-10-28",
+      "palavras": 1462,
+      "arquivo": "data/relatorios/plataforma-match-pontuacao-v3.html"
+    },
+    {
+      "id": "plataforma-design",
+      "projeto": "Plataforma",
+      "tipo": "explicacao",
+      "titulo": "Design — Plataforma Volta Express",
+      "resumo": "Referências: ver [REFERENCIAS.md](REFERENCIAS.md).",
+      "fonte": "voltaexpress/docs/DESIGN.md",
+      "atualizado": "2026-10-01",
+      "palavras": 639,
+      "arquivo": "data/relatorios/plataforma-design.html"
+    },
+    {
+      "id": "plataforma-referencias",
+      "projeto": "Plataforma",
+      "tipo": "explicacao",
+      "titulo": "Referências — Ciência da Computação, Economia e Design",
+      "resumo": "",
+      "fonte": "voltaexpress/docs/REFERENCIAS.md",
+      "atualizado": "2026-10-01",
+      "palavras": 499,
+      "arquivo": "data/relatorios/plataforma-referencias.html"
     },
     {
       "id": "plataforma-roadmap",
@@ -74,8 +107,8 @@
       "titulo": "Roadmap — Volta Express Brasil",
       "resumo": "Legenda: ✅ feito (código pronto e testado) · 🔄 depende de você · ⬜ a fazer",
       "fonte": "voltaexpress/docs/ROADMAP.md",
-      "atualizado": "2026-10-01",
-      "palavras": 439,
+      "atualizado": "2026-10-28",
+      "palavras": 678,
       "arquivo": "data/relatorios/plataforma-roadmap.html"
     },
     {
@@ -85,8 +118,8 @@
       "titulo": "Registro de Decisões — Plataforma Volta Express",
       "resumo": "",
       "fonte": "voltaexpress/docs/DECISOES.md",
-      "atualizado": "2026-10-01",
-      "palavras": 461,
+      "atualizado": "2026-10-28",
+      "palavras": 1321,
       "arquivo": "data/relatorios/plataforma-decisoes.html"
     },
     {
@@ -96,7 +129,7 @@
       "titulo": "Relatório — Hub Volta Express Brasil",
       "resumo": " Atualizado em 27/10/2026, versão 7.0 (branch features/dashboard-inteligente-v1). O Hub deixa de ser um navegador de arquivos e passa a ser uma central de evidências: relatórios, pesquisa, demonstrações, explicações, jor…",
       "fonte": "voltaexpressbrasil-hub/docs/RELATORIO.md",
-      "atualizado": "2026-10-01",
+      "atualizado": "2026-10-27",
       "palavras": 986,
       "arquivo": "data/relatorios/hub-relatorio.html"
     }
