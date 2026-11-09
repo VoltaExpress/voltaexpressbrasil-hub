@@ -25,6 +25,9 @@ DOCUMENTOS = [
     ("plataforma-relatorio", "Plataforma", "voltaexpress/docs/RELATORIO.md", "relatorio"),
     ("plataforma-arquitetura", "Plataforma", "voltaexpress/docs/ARQUITETURA.md", "explicacao"),
     ("plataforma-match", "Plataforma", "voltaexpress/docs/MATCH.md", "explicacao"),
+    ("plataforma-match-pontuacao-v3", "Plataforma", "voltaexpress/docs/MATCH-PONTUACAO-V3.md", "analise"),
+    ("plataforma-design", "Plataforma", "voltaexpress/docs/DESIGN.md", "explicacao"),
+    ("plataforma-referencias", "Plataforma", "voltaexpress/docs/REFERENCIAS.md", "explicacao"),
     ("plataforma-roadmap", "Plataforma", "voltaexpress/docs/ROADMAP.md", "analise"),
     ("plataforma-decisoes", "Plataforma", "voltaexpress/docs/DECISOES.md", "analise"),
     ("hub-relatorio", "Hub", "voltaexpressbrasil-hub/docs/RELATORIO.md", "relatorio"),
@@ -42,7 +45,8 @@ def primeiro_paragrafo(texto: str) -> str:
     for bloco in re.split(r"\n\s*\n", texto):
         bloco = bloco.strip()
         if bloco and not bloco.startswith(("#", "|", "```", "-", "*", "<")):
-            limpo = re.sub(r"[>*_`]", "", bloco).replace("\n", " ")
+            # Tira só marcação de Markdown; "_" fica, porque aparece em nomes técnicos (vt_match_cargas)
+            limpo = re.sub(r"[>*`]", "", bloco).replace("\n", " ")
             return (limpo[:220] + "…") if len(limpo) > 220 else limpo
     return ""
 

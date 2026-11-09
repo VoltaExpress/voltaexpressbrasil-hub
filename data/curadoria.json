@@ -247,10 +247,6 @@
       "titulo": "Banner Cargas Disponíveis",
       "resumo": "Banner promocional da vitrine de cargas disponíveis."
     },
-    "assets/quero-carregar-transportador/buscar-carga/caixas.png": {
-      "titulo": "Filtro Rápido de Categorias",
-      "resumo": "Ilustração de mercadorias para filtro rápido de categorias."
-    },
     "assets/quero-carregar-transportador/buscar-carga/caminhao-caixas-1.jpg": {
       "titulo": "Embarque de Mercadorias 01",
       "resumo": "Imagem de veículo carregado com caixas e mercadorias."
@@ -321,10 +317,6 @@
     },
     "assets/quero-carregar-transportador/marca-transportador/favicon.ico": {
       "titulo": "Favicon Quero Carregar (ICO)",
-      "resumo": "Ícone oficial e favicons para navegador do módulo Quero Carregar."
-    },
-    "assets/quero-carregar-transportador/marca-transportador/favicon.png": {
-      "titulo": "Favicon Quero Carregar (PNG)",
       "resumo": "Ícone oficial e favicons para navegador do módulo Quero Carregar."
     },
     "assets/quero-carregar-transportador/persona/caminhoneiro-1.jpeg": {
@@ -435,10 +427,6 @@
       "titulo": "Veículo Disponível - Azul 03",
       "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
     },
-    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-azul-6.png": {
-      "titulo": "Veículo Disponível - Azul 02",
-      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
-    },
     "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-branco-12.jpg": {
       "titulo": "Veículo Disponível - Branco",
       "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
@@ -479,10 +467,6 @@
       "titulo": "Veículo Disponível - Preto",
       "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
     },
-    "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-verde-7.png": {
-      "titulo": "Veículo Disponível - Verde 01",
-      "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
-    },
     "assets/quero-transportar-embarcador/buscar-caminhao/caminhao-verde-9.jpg": {
       "titulo": "Veículo Disponível - Verde 02",
       "resumo": "Ativo visual de veículo/frota disponível para busca e contratação do Embarcador."
@@ -513,10 +497,6 @@
     },
     "assets/quero-transportar-embarcador/marca-embarcador/favicon.ico": {
       "titulo": "Favicon Quero Transportar (ICO)",
-      "resumo": "Ícone oficial e favicons de navegador do módulo Quero Transportar."
-    },
-    "assets/quero-transportar-embarcador/marca-embarcador/favicon.png": {
-      "titulo": "Favicon Quero Transportar (PNG)",
       "resumo": "Ícone oficial e favicons de navegador do módulo Quero Transportar."
     },
     "assets/quero-transportar-embarcador/persona-embarcador/ana-lucia.png": {
@@ -683,10 +663,6 @@
       "titulo": "Vídeo de lançamento",
       "resumo": "Vídeo de apresentação do Volta Express Brasil."
     },
-    "assets/voltaexpressbrasil/midias/videos/volta express VID-20241117-WA0026.mp4": {
-      "publico": false,
-      "motivo": "Cópia idêntica de volta-express-v4.2.mp4 (mesmo SHA-1); mantida só a versão com nome descritivo"
-    },
     "assets/voltaexpressbrasil/midias/videos/volta-express-banner.png": {
       "titulo": "Banner Promocional de Vídeo",
       "resumo": "Banner promocional de divulgação em vídeo."
@@ -702,23 +678,11 @@
       "resumo": "Navegação da versão 4.2 com o mapa de rotas. O mesmo arquivo foi recebido por WhatsApp em 17/11/2024 (VID-20241117-WA0026).",
       "data": "2024-11-17"
     },
-    "assets/voltaexpressbrasil/qa-refs/imagem.png": {
-      "publico": false,
-      "motivo": "Print de anúncio de terceiro (Webmotors) com a barra do navegador pessoal"
-    },
     "assets/voltaexpressbrasil/qa-refs/tamanhos-caminhoes-mudancas.jpg": {
       "titulo": "Tipos de caminhão: capacidade de peso e volume",
       "resumo": "Referência usada na seção Explicações: 3/4, toco, truck e carretas, com toneladas e metros cúbicos.",
       "publico": false,
       "motivo": "Infográfico de terceiro (empresa de mudanças). Os números já estão na seção Explicações, com fonte própria"
-    },
-    "assets/voltaexpressbrasil/veb-assets/banner-caixas-caminhao.png": {
-      "titulo": "Banner Caixas e Caminhão",
-      "resumo": "Banner promocional da marca Volta Express Brasil."
-    },
-    "assets/voltaexpressbrasil/veb-assets/favicon-PNG-removebg.png": {
-      "titulo": "Favicon Sem Fundo",
-      "resumo": "Favicon transparente sem fundo."
     },
     "assets/voltaexpressbrasil/veb-assets/favicon.ico": {
       "titulo": "Favicon Padrão (ICO)",
@@ -727,34 +691,6 @@
     "assets/voltaexpressbrasil/veb-assets/favicon.png": {
       "titulo": "Favicon Padrão (PNG)",
       "resumo": "Favicon PNG principal."
-    },
-    "assets/voltaexpressbrasil/veb-assets/logo-volta-express-caminhao.png": {
-      "titulo": "Logo Variação Transportador",
-      "resumo": "Variação do logo focado em transportador."
-    },
-    "assets/voltaexpressbrasil/veb-assets/logo-volta-express-cargas.png": {
-      "titulo": "Logo Variação Cargas",
-      "resumo": "Variação do logo focado em cargas."
-    },
-    "assets/voltaexpressbrasil/veb-assets/logo-volta-express.png": {
-      "titulo": "Logotipo Volta Express",
-      "resumo": "Logotipo oficial da Volta Express."
-    },
-    "assets/voltaexpressbrasil/veb-logo/banner-caixas-caminhao-logo.png": {
-      "titulo": "Banner com Aplicação da Logo",
-      "resumo": "Banner da marca com aplicação do logotipo."
-    },
-    "assets/voltaexpressbrasil/veb-logo/caixas.png": {
-      "titulo": "Ícone Gráfico - Caixas",
-      "resumo": "Ativo gráfico isolado de caixas de carga."
-    },
-    "assets/voltaexpressbrasil/veb-logo/caminhao.png": {
-      "titulo": "Ícone Gráfico - Caminhão",
-      "resumo": "Ativo gráfico isolado de caminhão."
-    },
-    "assets/voltaexpressbrasil/veb-logo/favicon-PNG-removebg.png": {
-      "titulo": "Favicon da Marca Sem Fundo",
-      "resumo": "Favicon PNG com fundo transparente."
     },
     "assets/voltaexpressbrasil/veb-logo/favicon.ico": {
       "titulo": "Favicon da Marca (ICO)",
@@ -768,10 +704,6 @@
       "titulo": "Logotipo Versão Completa",
       "resumo": "Versão completa do logotipo da marca."
     },
-    "assets/voltaexpressbrasil/veb-logo/volta-express-brasil.jpg": {
-      "titulo": "Institucional Volta Express (JPG)",
-      "resumo": "Imagem institucional da marca em JPG."
-    },
     "assets/voltaexpressbrasil/veb-logo/volta-express-brasil.png": {
       "titulo": "Institucional Volta Express (PNG)",
       "resumo": "Imagem institucional da marca em PNG."
@@ -779,10 +711,6 @@
     "assets/voltaexpressbrasil/veb-mkt-1/1. Transportar a um clique (1).png": {
       "titulo": "Transportar a Um Clique (Variação)",
       "resumo": "Ativo visual para campanha Transportar a um Clique."
-    },
-    "assets/voltaexpressbrasil/veb-mkt-1/1. Transportar a um clique.png": {
-      "titulo": "Banner - Transportar a Um Clique",
-      "resumo": "Banner promocional da campanha Transportar a um Clique."
     },
     "assets/voltaexpressbrasil/veb-mkt-1/1. Whatsapp - oportunidade de frete - Fundo Amarelo.png": {
       "titulo": "Card WhatsApp - Fundo Amarelo",
@@ -820,10 +748,6 @@
       "titulo": "Arte MKT com Nova Logo (Variação 5A)",
       "resumo": "Ativo de marketing complementar para nova logo."
     },
-    "assets/voltaexpressbrasil/veb-mkt-1/5. Logo - Volta Express - Modelo Novo.png": {
-      "titulo": "Arte MKT com Nova Logo (Variação 5B)",
-      "resumo": "Quarta variação da peça com logo modelo novo."
-    },
     "assets/voltaexpressbrasil/veb-mkt-1/5. Whatsapp - oportunidade de frete - Original.png": {
       "titulo": "Card WhatsApp - Modelo Original",
       "resumo": "Template para WhatsApp modelo Original."
@@ -840,10 +764,6 @@
       "titulo": "Avatar de Usuário 01",
       "resumo": "Foto de perfil/usuário da plataforma."
     },
-    "assets/voltaexpressbrasil/veb-mkt-1/users-2.jpg": {
-      "titulo": "Avatar de Usuário 02",
-      "resumo": "Foto de perfil/usuário secundária."
-    },
     "assets/voltaexpressbrasil/veb-mkt-2/carreta-2.jpeg": {
       "titulo": "Divulgação de Carreta Pesada",
       "resumo": "Imagem de divulgação de veículo do tipo carreta."
@@ -859,10 +779,6 @@
     "assets/voltaexpressbrasil/veb-mkt-2/volta-express-brasil-gm-off.jpeg": {
       "titulo": "Peça MKT Offline",
       "resumo": "Peça de campanha off-line."
-    },
-    "assets/voltaexpressbrasil/veb-mkt-2/volta-express-fluxo.png": {
-      "titulo": "Infográfico de Fluxo da Plataforma",
-      "resumo": "Diagrama visual do fluxo da plataforma."
     },
     "assets/voltaexpressbrasil/veb-mkt-3/Volta-Express-cabine-1.png": {
       "titulo": "Visão Interna da Cabine",
@@ -948,10 +864,6 @@
       "titulo": "Gráfico de Carreta - Painel (PNG 2)",
       "resumo": "Segunda opção gráfica de veículo para o painel."
     },
-    "assets/voltaexpressbrasil/veb-painel/carreta-3.jpg": {
-      "titulo": "Foto de Carreta - Painel (JPG)",
-      "resumo": "Foto descritiva de carreta em JPG para o painel."
-    },
     "assets/voltaexpressbrasil/veb-public/android-chrome-192x192.png": {
       "titulo": "Ícone Android 192x192",
       "resumo": "Ícone PWA Android 192x192."
@@ -975,10 +887,6 @@
     "assets/voltaexpressbrasil/veb-public/favicon.ico": {
       "titulo": "Favicon Navegador ICO",
       "resumo": "Favicon clássico do navegador."
-    },
-    "assets/voltaexpressbrasil/veb-public/favicon.png": {
-      "titulo": "Favicon Navegador PNG",
-      "resumo": "Favicon em formato PNG."
     }
   },
   "links": [

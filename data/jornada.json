@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-28",
+  "gerado_em": "2026-11-09",
   "fonte": "git log --all --no-merges (data do commit) nos 3 repositórios",
   "meses": [
     "2024-03",
@@ -33,49 +33,53 @@
     "2026-07",
     "2026-08",
     "2026-09",
-    "2026-10"
+    "2026-10",
+    "2026-11"
   ],
   "projetos": {
     "landing": {
       "nome": "Landing (voltaexpressbrasil)",
-      "commits": 29,
+      "commits": 32,
       "primeiro": "2024-03-20",
-      "ultimo": "2026-10-27",
+      "ultimo": "2026-11-09",
       "por_mes": {
         "2024-03": 1,
         "2026-04": 16,
         "2026-05": 1,
         "2026-08": 5,
-        "2026-10": 6
+        "2026-10": 7,
+        "2026-11": 2
       }
     },
     "plataforma": {
       "nome": "Plataforma (voltaexpress)",
-      "commits": 56,
+      "commits": 58,
       "primeiro": "2025-01-01",
-      "ultimo": "2026-10-02",
+      "ultimo": "2026-11-09",
       "por_mes": {
         "2025-01": 1,
         "2026-02": 14,
         "2026-03": 10,
         "2026-04": 14,
         "2026-05": 11,
-        "2026-10": 6
+        "2026-10": 7,
+        "2026-11": 1
       }
     },
     "hub": {
       "nome": "Hub (voltaexpressbrasil-hub)",
-      "commits": 22,
+      "commits": 24,
       "primeiro": "2026-05-27",
-      "ultimo": "2026-10-27",
+      "ultimo": "2026-11-09",
       "por_mes": {
         "2026-05": 4,
         "2026-08": 15,
-        "2026-10": 3
+        "2026-10": 4,
+        "2026-11": 1
       }
     }
   },
-  "total_commits": 107,
+  "total_commits": 114,
   "marcos": [
     {
       "data": "2024-03-20",

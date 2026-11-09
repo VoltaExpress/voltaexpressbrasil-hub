@@ -16,8 +16,8 @@
 <li>[x] Testes unitários e de componente (13) + testes SQL do match (13 casos).</li>
 <li>[ ] 🔄 Aplicar as migrações no projeto <strong>dev</strong>, testar com DEMONSTRACAO.md e depois em <strong>produção</strong>.</li>
 <li>[ ] 🔄 Configurar <code>VITE_GOOGLE_MAPS_BROWSER_KEY</code> no Netlify e restringir as chaves no Google Cloud.</li>
-<li>[ ] ⬜ Monitoramento para evitar a pausa do Supabase free (7 dias sem uso).</li>
-<li>[ ] ⬜ Decisão R1 definitiva: restringir o tipo de anúncio pela persona?</li>
+<li>[x] Monitoramento para evitar a pausa do Supabase free: <code>.github/workflows/manter-supabase-ativo.yml</code> (v3). 🔄 Configurar os segredos no GitHub.</li>
+<li>[x] Decisão R1 definitiva (v3): não restringe; a persona só define a aba inicial.</li>
 </ul>
 <h2>Fase 2 — Match v2 (o cérebro)</h2>
 <ul>
@@ -26,7 +26,7 @@
 <li>[x] <code>vt_match_cargas</code> e <code>vt_match_veiculos</code>: filtros, encaixe na rota no sentido certo, score 0–100 e motivos.</li>
 <li>[x] Sem baixar a base inteira no navegador; nenhuma chamada extra ao Google na busca além da rota digitada.</li>
 <li>[x] <code>vt_match_evento</code> (exibido/contato) e pesos configuráveis.</li>
-<li>[ ] 🔄 Validar a tabela de compatibilidade com a operação.</li>
+<li>[ ] 🔄 Validar a tabela de compatibilidade com a operação: perguntas em <code>docs/COMPATIBILIDADE-PARA-VALIDAR.md</code>.</li>
 <li>[ ] ⬜ Conjunto de pares avaliados pela operação (meta precision@5 ≥ 0,8).</li>
 </ul>
 <h2>Fase 3 — Produto e conversão</h2>
@@ -87,3 +87,23 @@
 </tr>
 </tbody>
 </table>
+<h2>Versão 3 — Demo para investidor (out/2026)</h2>
+<ul>
+<li>[x] Personas "Tenho caminhão" e "Tenho carga"; CPF obrigatório e CNPJ opcional (migração v3).</li>
+<li>[x] Política de Privacidade (LGPD) em <code>/privacidade</code>, aceite obrigatório e registrado. 🔄 Revisão jurídica e dados da empresa.</li>
+<li>[x] Frete fechado ao encerrar o anúncio, com indicador no painel (migração v3).</li>
+<li>[x] Home com a tese do frete de retorno e a seção ilustrativa (pesquisa, match e exemplo).</li>
+<li>[x] Identidade única com a landing e o Hub (fonte, cores, contato, redes); imagem de compartilhamento.</li>
+<li>[x] Erros em português claro; R$/km lido do banco; mapa sem chave no código.</li>
+<li>[x] Demonstração com datas relativas e roteiro para investidor.</li>
+<li>[x] CI de qualidade (TypeScript, lint, testes e build) em <code>.github/workflows/qualidade.yml</code>.</li>
+</ul>
+<h2>Próximas prioridades (depois da v3)</h2>
+<ul>
+<li>[ ] ⬜ <strong>Validar CPF/CNPJ</strong> (dígito verificador) e o telefone com DDD no cadastro e no Perfil — prioridade definida em 27/10/2026.</li>
+<li>[ ] ⬜ <strong>Termos de Uso</strong> como página da plataforma, com aceite junto da Política de Privacidade.</li>
+<li>[ ] ⬜ Exigir peso e volume também na função do banco (<code>vt_criar_anuncio</code>), além da tela.</li>
+<li>[ ] ⬜ Métricas da plataforma para o Hub (anúncios ativos, matches, contatos, fretes fechados por mês).</li>
+<li>[ ] ⬜ Remover os lockfiles do Bun (<code>bun.lock</code>, <code>bun.lockb</code>) e usar só npm.</li>
+<li>[ ] ⬜ Renomear <code>src/lib/mock-data.ts</code> para <code>catalogos.ts</code> (o arquivo guarda listas reais, não dados falsos).</li>
+</ul>
