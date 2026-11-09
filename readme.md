@@ -66,7 +66,23 @@ Os geradores leem os repositórios vizinhos em `C:\veb` (`voltaexpressbrasil`, `
 - Pesquisa só em agregado: grupos com menos de 3 respostas viram "Outros", formulários com menos de 10 respostas ficam de fora, local só por UF, nenhum dado pessoal.
 - Todo número tem fonte e data. Detalhes em [docs/DECISOES.md](docs/DECISOES.md).
 
+## Status e próximos passos (06/11/2026)
+- **Feito:** v7.0 publicada no GitHub Pages, com 8 seções, dados gerados por script, validação automática passando e catálogo sem conteúdo interno.
+- **Falta para o MVP:** concluir o B0 (credencial do remoto, mover os documentos internos para o repositório privado e limpar o histórico), a limpeza da lista de remoção, o acervo histórico curado, novos relatórios da plataforma e a North Star com dados reais.
+- Detalhes, critérios de pronto e a lista de issues em [docs/STATUS-MVP.md](docs/STATUS-MVP.md).
+
+**Issues do MVP (criadas em 09/11/2026):**
+- [#3](https://github.com/VoltaExpress/voltaexpressbrasil-hub/issues/3) B0.0: remover credencial da URL do remoto e revogar o token
+- [#4](https://github.com/VoltaExpress/voltaexpressbrasil-hub/issues/4) B0.2: mover documentos internos para o repositório privado
+- [#5](https://github.com/VoltaExpress/voltaexpressbrasil-hub/issues/5) B0.3: limpar o histórico com `git filter-repo`
+- [#6](https://github.com/VoltaExpress/voltaexpressbrasil-hub/issues/6) Limpeza: `__pycache__` e lista `remover-apos-v7.txt`
+- [#7](https://github.com/VoltaExpress/voltaexpressbrasil-hub/issues/7) Acervo: incluir histórico curado (Ferrex 2023, v3/v4, landing v5)
+- [#8](https://github.com/VoltaExpress/voltaexpressbrasil-hub/issues/8) Relatórios: publicar match v3, referências e design da plataforma
+- [#9](https://github.com/VoltaExpress/voltaexpressbrasil-hub/issues/9) Dashboard: North Star e funil com dados reais da plataforma
+- [#10](https://github.com/VoltaExpress/voltaexpressbrasil-hub/issues/10) Métricas: PageSpeed da v7 em `data/metricas.json`
+
 ## Documentação
+- [Status e caminho até o MVP](docs/STATUS-MVP.md)
 - [Relatório (antes/depois da v7)](docs/RELATORIO.md)
 - [Plano de ação](docs/PLANO-DE-ACAO.md)
 - [Decisões](docs/DECISOES.md)
